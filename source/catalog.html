@@ -93,16 +93,24 @@
 
     <section class="modal-order">
       <h2 class="modal-order__title title">Добавить в корзину</h2>
-      <p class="modal-order__text">Выберите размер:</p>
-      <input class="visually-hidden" type="radio" name="size-group" value="s" id="s_field">
-      <input class="visually-hidden" type="radio" name="size-group" value="s" id="m_field">
-      <input class="visually-hidden" type="radio" name="size-group" value="s" id="l_field">
-      <div class="modal-order__size">
-        <label for="s_field">s</label>
-        <label for="m_field">m</label>
-        <label for="l_field">l</label>
-      </div>
-      <a class="modal-order__add button" type="button">Добавить</a>
+      <form class="modal-order__form size-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="size-form__text">Выберите размер:</p>
+        <ul class="size-form__list">
+          <li class="size-form__item">
+            <input class="visually-hidden" type="radio" name="size_group" value="s" id="s_field" checked>
+            <label class="size-form__value" for="s_field">s</label>
+          </li>
+          <li class="size-form__item">
+            <input class="visually-hidden" type="radio" name="size-group" value="m" id="m_field">
+            <label class="size-form__value" for="m_field">m</label>
+          </li>
+          <li class="size-form__item">
+            <input class="visually-hidden" type="radio" name="size-group" value="l" id="l_field">
+            <label class="size-form__value" for="l_field">l</label>
+          </li>
+        </ul>
+        <button class="size-form__add-button button" type="submit">Добавить</button>
+      </form>
     </section>
 
   </body>
