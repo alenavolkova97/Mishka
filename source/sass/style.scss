@@ -1,7 +1,14 @@
 @import "fonts.scss";
 @import "variables.scss";
+@import "mixins.scss";
 @import "blocks/header.scss";
+@import "blocks/site-list.scss";
+@import "blocks/user-list.scss";
 @import "blocks/categories-list.scss";
 @import "blocks/button.scss";
+@import "blocks/reviews.scss";
 @import "blocks/footer.scss";
 @import "blocks/modal-order.scss";
+@import "blocks/page-title.scss";
+@import "blocks/catalog-item.scss";
+@import "blocks/production.scss";
