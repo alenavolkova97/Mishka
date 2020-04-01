@@ -82,32 +82,32 @@
             <ul>
               <li>
                 <label>Имя:</label>
-                <input type="text" name="name" id="name_field" placeholder="Введите ваше имя*" required>
+                <input class="text-input" type="text" name="name" id="name_field" placeholder="Введите ваше имя*" required>
               </li>
               <li>
                 <label>Фамилия:</label>
-                <input type="text" name="surname" id="surname_field" placeholder="Укажите фамилию*" required>
+                <input class="text-input" type="text" name="surname" id="surname_field" placeholder="Укажите фамилию*" required>
               </li>
               <li>
                 <label>Отчество:</label>
-                <input type="text" name="patronymic" id="patronymic_field" placeholder="Отчество, если желаете">
+                <input class="text-input" type="text" name="patronymic" id="patronymic_field" placeholder="Отчество, если желаете">
               </li>
             </ul>
         </fieldset>
         <fieldset class="form-number">
           <legend>Тел</legend>
             <label class="visually-hidden" for="tel_field">Ваш мобильный номер</label>
-            <input type="tel" name="tel" id="tel_field" pattern="\+7\s[0-9]{3}\s[0-9]{3}\s[0-9]{2}\s[0-9]{2}" placeholder="+7 XXX XXX XX XX*" required>
+            <input class="text-input" type="tel" name="tel" id="tel_field" pattern="\+7\s[0-9]{3}\s[0-9]{3}\s[0-9]{2}\s[0-9]{2}" placeholder="+7 XXX XXX XX XX*" required>
         </fieldset>
         <fieldset class="form-email">
           <legend>e-mail</legend>
             <label class="visually-hidden" for="e-mail_field">Ваш e-mail</label>
-            <input type="email" name="e-mail" id="e-mail_field" placeholder="Ваш Email*" required>
+            <input class="text-input" type="email" name="e-mail" id="e-mail_field" placeholder="Ваш Email*" required>
         </fieldset>
         <fieldset>
           <legend>Доп</legend>
           <label for="message_field">Пожелания к заказу</label>
-          <textarea name="message" id="message_field" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          <textarea class="text-input text-input--textarea" name="message" id="message_field" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </fieldset>
         <small class="form-main__legend">*Поля обязательны для заполнения</small>
         <button class="form-main__order button" type="submit">Отправить заказ</button>
