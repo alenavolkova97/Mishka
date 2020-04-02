@@ -1,0 +1,48 @@
+.form-main__text {
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.form-main__legend {
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: $font-bold;
+  text-transform: $text-transform;
+  color: $main-green;
+}
+
+.form-main__label {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: $font-bold;
+  color: $black;
+}
+
+.form-main__input {
+  font: inherit;
+  font-size: 19px;
+  line-height: 18px;
+  color: inherit;
+
+  box-shadow: inset 0 -2px 0 0 #000000;
+}
+
+.form-main__input::placeholder {   /*доб префиксы для ie11*/
+  font: inherit;
+  font-size: 19px;
+  line-height: 18px;
+  color: $placeholder-color;
+}
+
+.form-main__input--textarea {
+  background-color: $white;
+  border: solid 2px $greyish-brown;
+  box-shadow: none;
+
+  resize: none;
+}
+
+.form-main__note {
+  font-size: 14px;
+  line-height: 16px;
+}
