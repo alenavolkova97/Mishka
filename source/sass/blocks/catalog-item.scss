@@ -2,3 +2,21 @@
   background-color: $white;
   border: solid 1px $border-grey;
 }
+
+.catalog-item__title {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: $font-bold;
+  color: $black;
+}
+
+.catalog-item__desc {
+  font-size: 13px;
+}
+
+.catalog-item__price {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: $font-bold;
+  color: $black;
+}

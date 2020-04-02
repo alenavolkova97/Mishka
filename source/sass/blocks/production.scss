@@ -2,3 +2,14 @@
   background-color: $white;
   border: solid 1px $border-grey;
 }
+
+.production__title {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: $font-bold;
+  color: $black;
+}
+
+.production__text {
+  font-size: 13px;
+}

@@ -2,3 +2,8 @@
   border: solid 1px #c6c6c6;
   box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
 }
+
+.modal-order__title {
+  text-align: $text-center;
+  text-transform: $text-transform;
+}
