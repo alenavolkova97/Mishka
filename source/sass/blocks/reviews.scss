@@ -1,4 +1,22 @@
-.reviews__button {
+.reviews__control {
   background-color: $white;
   border: solid 1px $border-grey;
+}
+
+.reviews__author-name {
+  font-style: normal;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: $font-bold;
+  color: $black;
+}
+
+.reviews__author-nickname {
+  font-style: normal;
+  font-size: 17px;
+}
+
+.reviews__write {
+  font-size: 18px;
+  line-height: 20px;
 }

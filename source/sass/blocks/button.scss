@@ -1,4 +1,9 @@
 .button {
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: $font-bold;
+  text-align: $text-center;
+
   background-color: $white;
   border: solid 2px $greyish-brown;
 }

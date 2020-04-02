@@ -3,3 +3,10 @@
     0 1px 0 0 $border-grey,
     inset 0 1px 0 0 $border-grey;
 }
+
+@mixin nav-link {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: $font-bold;
+  color: $black;
+}

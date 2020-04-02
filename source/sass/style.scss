@@ -1,6 +1,6 @@
+@import "variables.scss";
 @import "global.scss";
 @import "fonts.scss";
-@import "variables.scss";
 @import "mixins.scss";
 @import "blocks/visually-hidden.scss";
 @import "blocks/header.scss";
@@ -16,3 +16,8 @@
 @import "blocks/catalog-item.scss";
 @import "blocks/production.scss";
 @import "blocks/text-input.scss";
+@import "blocks/categories.scss";
+@import "blocks/popular.scss";
+@import "blocks/about-us.scss";
+@import "blocks/contacts.scss";
+@import "blocks/contacts-info.scss";

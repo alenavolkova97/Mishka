@@ -1,0 +1,26 @@
+.popular__title {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: $font-bold;
+  text-transform: $text-transform;
+  color: $main-green;
+}
+
+.popular__desc {
+  line-height: 24px;
+}
+
+.popular__features {
+  line-height: 20px;
+}
+
+.popular__price {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: $font-bold;
+  text-align: $text-center;
+}
+
+.popular__order {
+  line-height: 20px;
+}

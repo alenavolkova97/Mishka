@@ -1,3 +1,10 @@
+.categories-list__link {
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: $font-bold;
+  color: $white;
+}
+
 .categories-list__link--interior {
   background-color: $main-green;
 }

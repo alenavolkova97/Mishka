@@ -1,3 +1,4 @@
 .site-list__item {
+  @include nav-link;
   @include header-shadow;
 }
