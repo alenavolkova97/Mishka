@@ -1,0 +1,32 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-style: normal;
+  font-size: 15px;
+  line-height: 30px;
+  font-family: "OpenSans", "Arial", sans-serif;
+  text-align: $text-left;
+  font-weight: $font-usual;
+  letter-spacing: normal;
+  color: $greyish-brown;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
