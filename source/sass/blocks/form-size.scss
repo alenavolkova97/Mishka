@@ -1,14 +1,14 @@
-.size-form__text {
+.form-size__text {
   margin: 0;
 
   text-align: $text-center;
 }
 
-.size-form__list {
+.form-size__list {
   @include list-reset;
 }
 
-.size-form__value {
+.form-size__value {
   font-size: 17px;
   line-height: 16px;
   font-weight: $font-bold;
