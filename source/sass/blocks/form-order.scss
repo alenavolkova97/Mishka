@@ -1,0 +1,51 @@
+.form-order__legend {
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: $font-bold;
+  text-transform: $text-transform;
+  color: $main-green;
+}
+
+.form-order__list {
+  @include list-reset;
+}
+
+.form-order__label {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: $font-bold;
+  color: $black;
+}
+
+.form-order__input {
+  font: inherit;
+  font-size: 19px;
+  line-height: 18px;
+  color: inherit;
+
+  box-shadow: inset 0 -2px 0 0 $black;
+
+  &--textarea {
+    background-color: $white;
+    border: solid 2px $greyish-brown;
+    box-shadow: none;
+
+    resize: none;
+  }
+
+  &::placeholder {   /*доб префиксы для ie11*/
+    font: inherit;
+    font-size: 17px;
+    line-height: 18px;
+    color: $placeholder-color;
+  }
+
+  &--tel::placeholder {   /*допустима ли такая вложенность?*/                /*доб префиксы для ie11*/
+    font-size: 19px;
+  }
+}
+
+.form-order__note {
+  font-size: 14px;
+  line-height: 16px;
+}
