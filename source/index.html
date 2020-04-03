@@ -9,7 +9,7 @@
 
   <body>
 
-    <header class="header">
+    <header class="header container">
       <a class="header__logo logo">
         <img class="logo__image" src="" width="" height="" alt="Логотип интернет-магазина игрушек ручной работы «Мишка»">
       </a>
@@ -37,7 +37,7 @@
           <li><a class="categories-list__link categories-list__link--toys" href="#">Детские игрушки</a></li>
         </ul>
       </section>
-      <article class="popular">
+      <article class="popular container">
         <h2 class="popular__title">Товар недели</h2> <!--порядок поменяю order'ом-->
         <h3 class="popular__subtitle title">Вязаные корзинки</h3>
         <p class="popular__desc">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
@@ -60,7 +60,7 @@
         <p class="popular__price">Цена: 990 руб.</p>
         <a class="popular__order button" href="#">Заказать</a>
       </article>
-      <section class="about-us">
+      <section class="about-us container">
         <h2 class="about-us__title title">Коротко о нас:</h2>
         <ul class="about-us__list">
           <li class="about-us__item about-us__item--ecology">Экологически чистые материалы</li>
@@ -71,7 +71,7 @@
           <li class="about-us__item about-us__item--present">Поставляется в подарочной упаковке</li>
         </ul>
       </section>
-      <section class="reviews">
+      <section class="reviews container">
         <h2 class="reviews__title title">Отзывы</h2>
         <ul class="reviews__list">
           <li class="reviews__item">
@@ -121,7 +121,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer container">
       <ul class="social__list social">
         <li class="social__item"><a class="social__link social__link--instagram" href="#" aria-label="Мы в Инстаграме"></a></li>
         <li class="social__item"><a class="social__link social__link--facebook" href="#" aria-label="Мы в Фейсбуке"></a></li>
@@ -135,7 +135,7 @@
       </div>
     </footer>
 
-    <section class="modal-order">
+    <section class="modal-order container">
       <h2 class="modal-order__title title">Добавить в корзину</h2>
       <form class="modal-order__form size-form" action="https://echo.htmlacademy.ru" method="post">
         <p class="size-form__text">Выберите размер:</p>
@@ -153,7 +153,7 @@
             <label class="size-form__value" for="l_field">l</label>
           </li>
         </ul>
-        <button class="size-form__to-basket button button--to-basket" type="submit">Добавить</button>
+        <button class="size-form__to-basket button button--modal" type="submit">Добавить</button>
       </form>
     </section>
 

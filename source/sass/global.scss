@@ -3,6 +3,7 @@ html {
 }
 
 body {
+  min-width: 260px;
   margin: 0;
   padding: 0;
 
@@ -14,6 +15,8 @@ body {
   text-align: $text-left;
   letter-spacing: normal;
   color: $greyish-brown;
+
+  background-color: $white;
 }
 
 *,
