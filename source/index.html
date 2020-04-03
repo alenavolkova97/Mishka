@@ -13,8 +13,8 @@
       <a class="header__logo logo">
         <img class="logo__image" src="" width="" height="" alt="Логотип интернет-магазина игрушек ручной работы «Мишка»">
       </a>
+      <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item"><a class="site-list__link" href="catalog.html">Каталог товаров</a></li>
           <li class="site-list__item"><a class="site-list__link"  href="form.html">Вязание на заказ</a></li>
@@ -30,11 +30,19 @@
       <h1 class="visually-hidden">Интернет-магазин игрушек ручной работы «Мишка»</h1>
       <section class="categories">
         <h2 class="visually-hidden">Категории товаров интернет-магазина</h2>
-        <p class="categories__intro">Милые штуки ручной работы для дома</p>
+        <p class="categories__intro container">Милые штуки ручной работы для дома</p>
         <img class="categories__image" src="" width="" height="" alt="Игрушки и корзинки в интерьере">
         <ul class="categories__list categories-list">
-          <li><a class="categories-list__link categories-list__link--interior" href="#">Предметы интерьера</a></li>
-          <li><a class="categories-list__link categories-list__link--toys" href="#">Детские игрушки</a></li>
+          <li>
+            <a class="categories-list__link categories-list__link--interior" href="#">
+              <div class="container">Предметы интерьера</div> <!--можно так?-->
+            </a>
+          </li>
+          <li>
+            <a class="categories-list__link categories-list__link--toys" href="#">
+              <div class="container">Детские игрушки</div> <!--можно так?-->
+            </a>
+          </li>
         </ul>
       </section>
       <article class="popular container">
@@ -75,7 +83,7 @@
         <h2 class="reviews__title title">Отзывы</h2>
         <ul class="reviews__list">
           <li class="reviews__item">
-            <blockquote>
+            <blockquote class="reviews__blockquote">
               <p class="reviews__text">
                 Я молодая мама, но всё равно
                 фотографии не набирали и близко
@@ -97,41 +105,45 @@
         <a class="reviews__write button" href="#">Написать</a>
       </section>
       <section class="contacts">
-        <h2 class="contacts__title">Контакты</h2>
-        <table class="contacts__info contacts-info">
-          <caption class="visually-hidden">Контактная информация</caption>
-          <tr>
-            <td class="contacts-info__field">e-mail:</td>
-            <td class="contacts-info__value"><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
-          </tr>
-          <tr>
-            <td class="contacts-info__field">адрес:</td>
-            <td class="contacts-info__value">
-              <address class="contacts-info__address">
-                г. Санкт-Петербург,
-                ул. Большая Конюшенная,
-                д. 19/8, офис 101
-              </address>
-            </td>
-          </tr>
-        </table>
+        <div class="container">
+          <h2 class="contacts__title">Контакты</h2>
+          <table class="contacts__info contacts-info">
+            <caption class="visually-hidden">Контактная информация</caption>
+            <tr>
+              <td class="contacts-info__field">e-mail:</td>
+              <td class="contacts-info__value"><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
+            </tr>
+            <tr>
+              <td class="contacts-info__field">адрес:</td>
+              <td class="contacts-info__value">
+                <address class="contacts-info__address">
+                  г. Санкт-Петербург,
+                  ул. Большая Конюшенная,
+                  д. 19/8, офис 101
+                </address>
+              </td>
+            </tr>
+          </table>
+        </div>
         <!--будет iframe-->
         <img class="contacts__image map" src="" width="" height="" alt="Офис интернет-магазина по адресу ул. Большая Конюшенная, д. 19/8, офис 101, г. Санкт-Петербург">
-        <a class="contacts__write-us button" href="#">Напишите нам</a>
+        <a class="contacts__write-us button container" href="#">Напишите нам</a>
       </section>
     </main>
 
-    <footer class="footer container">
-      <ul class="social__list social">
-        <li class="social__item"><a class="social__link social__link--instagram" href="#" aria-label="Мы в Инстаграме"></a></li>
-        <li class="social__item"><a class="social__link social__link--facebook" href="#" aria-label="Мы в Фейсбуке"></a></li>
-        <li class="social__item"><a class="social__link social__link--twitter" href="#" aria-label="Мы в Твиттере"></a></li>
-      </ul>
-      <div class="footer__copyright copyright">
-        <p class="copyright__text">Разработано</p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Профессиональный онлайн‑курс HTML и CSS, уровень 2" target="_blank">
-          <img src="" width="" height="" alt="Логотип «HTML Academy»">
-        </a>
+    <footer class="footer">
+      <div class="container">
+        <ul class="social__list social">
+          <li class="social__item"><a class="social__link social__link--instagram" href="#" aria-label="Мы в Инстаграме"></a></li>
+          <li class="social__item"><a class="social__link social__link--facebook" href="#" aria-label="Мы в Фейсбуке"></a></li>
+          <li class="social__item"><a class="social__link social__link--twitter" href="#" aria-label="Мы в Твиттере"></a></li>
+        </ul>
+        <div class="footer__copyright copyright">
+          <p class="copyright__text">Разработано</p>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Профессиональный онлайн‑курс HTML и CSS, уровень 2" target="_blank">
+            <img src="" width="" height="" alt="Логотип «HTML Academy»">
+          </a>
+        </div>
       </div>
     </footer>
 

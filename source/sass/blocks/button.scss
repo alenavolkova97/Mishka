@@ -13,11 +13,12 @@
 
   background-color: $white;
   border: solid 2px $greyish-brown;
+
+  &--modal {
+    color: $white;
+
+    background-color: $main-green;
+    border: none;
+  }
 }
 
-.button--modal {
-  color: $white;
-
-  background-color: $main-green;
-  border: none;
-}
