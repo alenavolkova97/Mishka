@@ -4,9 +4,16 @@
     inset 0 1px 0 0 $border-grey;
 }
 
-@mixin nav-link {
+@mixin nav-item-font {
   font-size: 17px;
   line-height: 24px;
   font-weight: $font-bold;
   color: $black;
+}
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }

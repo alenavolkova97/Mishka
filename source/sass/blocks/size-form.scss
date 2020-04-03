@@ -1,5 +1,11 @@
 .size-form__text {
+  margin: 0;
+
   text-align: $text-center;
+}
+
+.size-form__list {
+  @include list-reset;
 }
 
 .size-form__value {

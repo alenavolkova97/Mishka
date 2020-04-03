@@ -1,6 +1,12 @@
 .button {
+  display: block;
+  width: 100%; /*?*/
+  margin: 0;
+  padding: 20px 0;
+
   font-size: 17px;
   line-height: 16px;
+  font-family: inherit;
   font-weight: $font-bold;
   text-align: $text-center;
   text-transform: $text-transform;

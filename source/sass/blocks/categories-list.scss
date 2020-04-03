@@ -1,4 +1,13 @@
+.categories-list {
+  @include list-reset;
+}
+
 .categories-list__link {
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+
   font-size: 19px;
   line-height: 24px;
   font-weight: $font-bold;

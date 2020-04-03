@@ -1,4 +1,16 @@
-.site-list__item {
-  @include nav-link;
+.site-list {
+  @include list-reset;
+}
+
+.site-list__item { /*если не нужен - перенести миксин в link*/
   @include header-shadow;
+}
+
+.site-list__link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 30px;
+  padding-left: 76px;
+
+  @include nav-item-font;
 }

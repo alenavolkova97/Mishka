@@ -1,3 +1,7 @@
+.about-us__list {
+  @include list-reset;
+}
+
 .about-us__item {
   font-size: 17px;
   line-height: 20px;

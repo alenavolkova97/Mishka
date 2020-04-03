@@ -7,6 +7,8 @@
 }
 
 .popular__desc {
+  margin: 0;
+
   line-height: 24px;
 }
 
@@ -15,6 +17,8 @@
 }
 
 .popular__price {
+  margin: 0;
+
   font-size: 17px;
   line-height: 24px;
   font-weight: $font-bold;
