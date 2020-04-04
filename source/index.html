@@ -147,26 +147,28 @@
       </div>
     </footer>
 
-    <section class="modal-order container">
-      <h2 class="modal-order__title title">Добавить в корзину</h2>
-      <form class="modal-order__form form-size" action="https://echo.htmlacademy.ru" method="post">
-        <p class="form-size__text">Выберите размер:</p>
-        <ul class="form-size__list">
-          <li class="form-size__item">
-            <input class="visually-hidden" type="radio" name="size_group" value="s" id="s_field" checked>
-            <label class="form-size__value" for="s_field">s</label>
-          </li>
-          <li class="form-size__item">
-            <input class="visually-hidden" type="radio" name="size-group" value="m" id="m_field">
-            <label class="form-size__value" for="m_field">m</label>
-          </li>
-          <li class="form-size__item">
-            <input class="visually-hidden" type="radio" name="size-group" value="l" id="l_field">
-            <label class="form-size__value" for="l_field">l</label>
-          </li>
-        </ul>
-        <button class="form-size__to-basket button button--modal" type="submit">Добавить</button>
-      </form>
+    <section class="modal-order">
+      <div class="container">
+        <h2 class="modal-order__title title">Добавить в корзину</h2>
+        <form class="modal-order__form form-size" action="https://echo.htmlacademy.ru" method="post">
+          <p class="form-size__text">Выберите размер:</p>
+          <ul class="form-size__list">
+            <li class="form-size__item">
+              <input class="visually-hidden" type="radio" name="size_group" value="s" id="s_field" checked>
+              <label class="form-size__value" for="s_field">s</label>
+            </li>
+            <li class="form-size__item">
+              <input class="visually-hidden" type="radio" name="size-group" value="m" id="m_field">
+              <label class="form-size__value" for="m_field">m</label>
+            </li>
+            <li class="form-size__item">
+              <input class="visually-hidden" type="radio" name="size-group" value="l" id="l_field">
+              <label class="form-size__value" for="l_field">l</label>
+            </li>
+          </ul>
+          <button class="form-size__to-basket button button--modal" type="submit">Добавить</button>
+        </form>
+      </div>
     </section>
 
   </body>
