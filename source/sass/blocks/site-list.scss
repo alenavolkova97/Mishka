@@ -13,4 +13,13 @@
   padding-left: 46px;
 
   @include nav-item-font;
+
+  &[href]:hover,
+  &[href]:focus {
+    color: $black-60;
+  }
+
+  &[href]:active {
+    color: $black-30;
+  }
 }
