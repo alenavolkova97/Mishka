@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  min-width: 260px;
+  min-width: 320px;
   margin: 0;
   padding: 0;
 
@@ -11,8 +11,8 @@ body {
   font-size: 15px;
   line-height: 30px;
   font-family: "OpenSans", "Arial", sans-serif;
-  font-weight: $font-usual;
-  text-align: $text-left;
+  font-weight: normal;
+  text-align: left;
   letter-spacing: normal;
   color: $greyish-brown;
 

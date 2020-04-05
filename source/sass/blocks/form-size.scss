@@ -1,7 +1,7 @@
 .form-size__text {
   margin: 0;
 
-  text-align: $text-center;
+  text-align: center;
 }
 
 .form-size__list {
@@ -11,7 +11,7 @@
 .form-size__value {
   font-size: 17px;
   line-height: 16px;
-  font-weight: $font-bold;
-  text-align: $text-center;
-  text-transform: $text-transform;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
 }

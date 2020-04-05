@@ -1,8 +1,8 @@
 .form-order__legend {
   font-size: 17px;
   line-height: 16px;
-  font-weight: $font-bold;
-  text-transform: $text-transform;
+  font-weight: bold;
+  text-transform: uppercase;
   color: $main-green;
 }
 
@@ -13,7 +13,7 @@
 .form-order__label {
   font-size: 17px;
   line-height: 18px;
-  font-weight: $font-bold;
+  font-weight: bold;
   color: $black;
 }
 
@@ -43,7 +43,7 @@
     color: $placeholder-color;
   }
 
-  &--tel::placeholder {   /*допустима ли такая вложенность?*/                /*доб префиксы для ie11*/
+  &--tel::placeholder { /*доб префиксы для ie11*/
     font-size: 19px;
   }
 }
