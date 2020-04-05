@@ -9,12 +9,12 @@
 
   <body>
 
-    <header class="header container">
+    <header class="header">
       <a class="header__logo logo" href="index.html" aria-label="Перейти на главную страницу сайта">
         <img class="logo__image" src="" width="" height="" alt="Логотип интернет-магазина игрушек ручной работы «Мишка»">
       </a>
       <button class="header__toggle" type="button" aria-label="Открыть меню"></button>
-      <nav class="main-nav">
+      <nav class="main-nav container">
         <ul class="main-nav__list site-list">
           <li class="site-list__item"><a class="site-list__link">Каталог товаров</a></li>
           <li class="site-list__item"><a class="site-list__link" href="form.html">Вязание на заказ</a></li>
@@ -72,20 +72,23 @@
           </li>
         </ul>
       </section>
-      <section class="catalog-main__production production container">
-        <h2 class="production__title">Процесс производства</h2>
-        <div class="production__process production-process">
-          <img src="" width="" height="" alt="Процесс производства товаров интернет-магазина">
-          <button class="production-process__play" type="button" aria-label="Смотреть "></button>
+      <section class="production container">
+        <div class="production__wrapper">
+          <h2 class="production__title">Процесс производства</h2>
+          <div class="production__process production-process">
+            <img src="" width="" height="" alt="Процесс производства товаров интернет-магазина">
+            <button class="production-process__play" type="button" aria-label="Смотреть "></button>
+          </div>
+          <p class="production__text">
+            По просьбам наших
+            любимых фолловеров мы
+            сняли для вас подробное
+            видео о том, как появляются
+            наши товары.
+          </p>
+          <a class="production__link button" href="form.html">Сделать заказ</a>
         </div>
-        <p class="production__text">
-          По просьбам наших
-          любимых фолловеров мы
-          сняли для вас подробное
-          видео о том, как появляются
-          наши товары.
-        </p>
-        <a class="production__link button" href="form.html">Сделать заказ</a>
+
       </section>
     </main>
 
