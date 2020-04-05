@@ -1,5 +1,7 @@
 .categories-list {
-  @include list-reset;
+  padding: 0;
+
+  list-style: none;
 }
 
 .categories-list__link {
