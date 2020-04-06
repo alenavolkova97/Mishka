@@ -1,0 +1,36 @@
+.reviews__list {
+  @include list-reset;
+}
+
+.reviews__blockquote {
+  margin: 0;
+}
+
+.reviews__text {
+  margin: 0;
+}
+
+.reviews__control {
+  background-color: $white;
+  border: solid 1px $border-grey;
+}
+
+.reviews__author-name {
+  font-style: normal;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  color: $black;
+}
+
+.reviews__author-nickname {
+  font-style: normal;
+  font-size: 17px;
+}
+
+.reviews__write {
+  padding: 14px 0;
+
+  font-size: 18px;
+  line-height: 20px;
+}

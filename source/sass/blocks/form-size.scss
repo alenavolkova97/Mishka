@@ -1,0 +1,17 @@
+.form-size__text {
+  margin: 0;
+
+  text-align: center;
+}
+
+.form-size__list {
+  @include list-reset;
+}
+
+.form-size__value {
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}

@@ -1,0 +1,25 @@
+.categories-list {
+  @include list-reset;
+}
+
+.categories-list__link {
+  display: block;
+  margin-right: -30px;
+  margin-left: -30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: bold;
+  color: $white;
+
+  &--interior {
+    background-color: $main-green;
+  }
+
+  &--toys {
+    background-color: $dark-green;
+  }
+}

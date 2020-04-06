@@ -1,0 +1,9 @@
+.header {
+  @include header-shadow;
+}
+
+.header__toggle {
+  padding: 0;
+
+  border: none;
+}

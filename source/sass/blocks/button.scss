@@ -1,0 +1,29 @@
+.button {
+  display: block;
+  width: 260px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 16px 0;
+
+  font-size: 17px;
+  line-height: 16px;
+  font-family: inherit;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: $greyish-brown;
+
+  background-color: $white;
+  border: solid 2px $greyish-brown;
+
+  cursor: pointer;
+
+  &--modal {
+    padding: 18px 0;
+
+    color: $white;
+
+    background-color: $main-green;
+    border: none;
+  }
+}

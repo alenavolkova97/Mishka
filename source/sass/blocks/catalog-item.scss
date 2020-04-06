@@ -1,0 +1,32 @@
+.catalog-item__features {
+  background-color: $white;
+  border: solid 1px $border-grey;
+}
+
+.catalog-item__title {
+  margin: 0;
+
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  color: $black;
+}
+
+.catalog-item__link {
+  color: inherit;
+}
+
+.catalog-item__desc {
+  margin: 0;
+
+  font-size: 13px;
+}
+
+.catalog-item__price {
+  margin: 0;
+
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: bold;
+  color: $black;
+}
