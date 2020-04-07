@@ -23,3 +23,21 @@
     background-color: $dark-green;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .categories-list {
+    display: flex;
+  }
+
+  .categories-list__link {
+    width: 334px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .categories-list__link {
+    width: 525px;
+  }
+}
