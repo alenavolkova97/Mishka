@@ -7,3 +7,17 @@
 
   outline: 1px solid black;
 }
+
+@media (min-width: $tablet-width) {
+  .container {
+    width: 768px;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    width: 1150px;
+  }
+}

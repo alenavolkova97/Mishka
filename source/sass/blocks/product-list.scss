@@ -1,0 +1,11 @@
+.product-list {
+  display: none;
+
+  @include list-reset;
+}
+
+@media (min-width: $desktop-width) {
+  .product-list {
+    display: flex;
+  }
+}

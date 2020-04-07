@@ -1,4 +1,7 @@
 .header {
+  display: flex;
+  flex-direction: column;
+
   @include header-shadow;
 }
 
@@ -6,4 +9,29 @@
   padding: 0;
 
   border: none;
+}
+
+.header__text {
+  margin: 0;
+
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .header__logo-container {
+    position: absolute;
+  }
+
+  .header__nav-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header__user-list {
+    display: flex;
+  }
+
+  .header__text {
+    display: block;
+  }
 }

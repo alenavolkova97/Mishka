@@ -3,6 +3,7 @@
 
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Интернет-магазин игрушек ручной работы «Мишка»</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -10,20 +11,31 @@
   <body>
 
     <header class="header">
-      <a class="header__logo logo">
-        <img class="logo__image" src="" width="" height="" alt="Логотип интернет-магазина игрушек ручной работы «Мишка»">
-      </a>
-      <button class="header__toggle" type="button" aria-label="Открыть меню"></button>
-      <nav class="main-nav container">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a class="site-list__link" href="catalog.html">Каталог товаров</a></li>
-          <li class="site-list__item"><a class="site-list__link"  href="form.html">Вязание на заказ</a></li>
-        </ul>
-        <ul class="main-nav__list user-list">
-          <li class="user-list__item user-list__item--search"><a class="user-list__link" href="#">Поиск по сайту</a></li>
-          <li class="user-list__item user-list__item--basket"><a class="user-list__link" href="#">Корзина: пока пуста</a></li>
-        </ul>
-      </nav>
+      <div class="header__logo-container container">
+        <a class="header__logo logo">
+          <img class="logo__image" src="" width="" height="" alt="Логотип интернет-магазина игрушек ручной работы «Мишка»">
+        </a>
+        <button class="header__toggle" type="button" aria-label="Открыть меню"></button>
+      </div>
+      <div class="header__nav-container container">
+        <nav class="main-nav">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item"><a class="site-list__link" href="catalog.html">Каталог товаров</a></li>
+            <li class="site-list__item"><a class="site-list__link"  href="form.html">Вязание на заказ</a></li>
+          </ul>
+          <ul class="main-nav__list product-list">
+            <li class="product-list__item"><a class="product-list__link" href="#">Новые поступления</a></li>
+            <li class="product-list__item"><a class="product-list__link"  href="#">Распродажа</a></li>
+          </ul>
+        </nav>
+        <div class="header__wrapper">
+          <ul class="header__user-list user-list">
+            <li class="user-list__item user-list__item--search"><a class="user-list__link" href="#">Поиск по сайту</a></li>
+            <li class="user-list__item user-list__item--basket"><a class="user-list__link" href="#">Корзина: пока пуста</a></li>
+          </ul>
+          <p class="header__text">Бесплатная доставка по России</p>
+        </div>
+      </div>
     </header>
 
     <main class="page-main">
