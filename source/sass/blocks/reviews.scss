@@ -34,3 +34,19 @@
   font-size: 18px;
   line-height: 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    background: url("../img/review@1x.jpg") no-repeat;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    background: none;
+  }
+
+  .reviews__wrapper {
+    background: url("../img/review@1x.jpg") no-repeat;
+  }
+}
