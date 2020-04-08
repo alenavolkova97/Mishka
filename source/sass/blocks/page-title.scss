@@ -10,3 +10,23 @@
 
   background-color: $main-grey;
 }
+
+@media (min-width: $tablet-width) {
+  .page-title {
+    padding-top: 106px;
+    padding-bottom: 78px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-title {
+    padding-top: 105px;
+    padding-bottom: 99px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+}

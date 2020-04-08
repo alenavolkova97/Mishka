@@ -9,3 +9,35 @@
 .catalog__item {
   margin-bottom: 30px;
 }
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    padding-top: 79px;
+  }
+
+  .catalog__item {
+    display: flex;
+    margin-bottom: 54px;
+  }
+
+  .catalog-item__features {
+    width: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    padding-top: 128px;
+  }
+
+  .catalog__list {
+    display: flex;
+    justify-content: space-between; /*или маргины*/
+  }
+
+  .catalog__item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 57px;
+  }
+}
