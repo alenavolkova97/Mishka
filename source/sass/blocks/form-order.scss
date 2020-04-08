@@ -25,6 +25,7 @@
 }
 
 .form-order__input {
+  width: 100%; /*на планшете и десктопе съедает все пространство*/
   padding: 0;
 
   font: inherit;
@@ -65,6 +66,29 @@
     padding-left: 167px;
   }
 
+  .form-order__fieldset {
+    position: relative;
+  }
+
+  .form-order__legend {
+    position: absolute;
+    top: 0;
+    left: -167px;
+  }
+
+  .form-order__list--color {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form-order__item-color {
+    width: 50%;
+  }
+
+  .form-order__item-text {
+    display: flex;
+  }
+
   .form-order__flex-wrapper {
     position: relative;
 
@@ -84,18 +108,30 @@
 }
 
 @media (min-width: $desktop-width) {
-  .form-order__order {
-    position: static;
-
-    margin-right: 0;
-    margin-left: 0;
+  .form-main__text {
+    padding-left: 175px;
   }
 
   .form-order__fieldset {
     width: 80%; /* или 700px*/
   }
 
+  .form-order__legend {
+    left: -112px;
+  }
+
+  .form-order__item-color {
+    width: 33.3%;
+  }
+
   .form-order__flex-wrapper {
     width: 80%; /* или 700px*/
+  }
+
+  .form-order__order {
+    position: static;
+
+    margin-right: 0;
+    margin-left: 0;
   }
 }
