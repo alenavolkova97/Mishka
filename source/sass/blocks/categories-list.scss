@@ -1,5 +1,8 @@
 .categories-list {
-  @include list-reset;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  list-style: none;
 }
 
 .categories-list__link {

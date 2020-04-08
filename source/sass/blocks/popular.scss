@@ -1,5 +1,6 @@
 .popular {
   padding-top: 34px;
+  padding-bottom: 40px;
 }
 
 .popular__title-wrapper {
@@ -15,11 +16,6 @@
   font-weight: bold;
   text-transform: uppercase;
   color: $main-green;
-}
-
-.popular__desc-wrapper {
-  display: flex;
-  flex-direction: column;
 }
 
 .popular__desc {
@@ -48,23 +44,49 @@
 }
 
 @media (min-width: $tablet-width) {
+  .popular {
+    padding-top: 60px;
+    padding-bottom: 70px;
+  }
+
   .popular__title-wrapper {
     flex-direction: row-reverse;
     justify-content: space-between;
   }
 
-  .popular__flex-wrapper {
-    display: flex;
+  .popular__desc-wrapper {
+    position: relative;
+
+    padding-right: 50%;
+  }
+
+  .popular__image {
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .popular {
+    position: relative;
+  }
+
   .popular__title-wrapper {
+    position: absolute;
+    top: 135px;
+    left: 50px;
+    z-index: 1;
+
+    width: 700px; /*?*/
+
     flex-direction: row;
-    justify-content: flex-start;
   }
 
   .popular__desc-wrapper {
-    margin-left: 175px;
+    height: 540px;  /*ВРЕМЕННО ДЛЯ СЕТКИ*/
+    padding-top: 170px;
+    padding-right: 60%;
+    padding-left: 16.67%; /*175px*/
   }
 }
