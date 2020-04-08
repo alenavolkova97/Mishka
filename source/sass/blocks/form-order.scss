@@ -1,7 +1,8 @@
 .form-order__fieldset {
-  border-right: 0;
-  border-bottom: 0;
-  border-left: 0;
+  width: 100%;
+  padding: 0;
+
+  border: none;
 }
 
 .form-order__legend {
@@ -57,4 +58,44 @@
 .form-order__note {
   font-size: 14px;
   line-height: 16px;
+}
+
+@media (min-width: $tablet-width) {
+  .form-order {
+    padding-left: 167px;
+  }
+
+  .form-order__flex-wrapper {
+    position: relative;
+
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .form-order__note {
+    margin-left: auto;
+  }
+
+  .form-order__order {
+    position: absolute;
+    top: 0;
+    left: -167px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-order__order {
+    position: static;
+
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .form-order__fieldset {
+    width: 80%; /* или 700px*/
+  }
+
+  .form-order__flex-wrapper {
+    width: 80%; /* или 700px*/
+  }
 }
