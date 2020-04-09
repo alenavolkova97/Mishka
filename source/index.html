@@ -131,24 +131,30 @@
           <h2 class="contacts__title">Контакты</h2>
           <table class="contacts__info contacts-info">
             <caption class="visually-hidden">Контактная информация</caption>
-            <tr>
-              <td class="contacts-info__field">e-mail:</td>
-              <td class="contacts-info__value"><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
-            </tr>
-            <tr>
-              <td class="contacts-info__field">адрес:</td>
-              <td class="contacts-info__value">
-                <address class="contacts-info__address">
-                  г. Санкт-Петербург,
-                  ул. Большая Конюшенная,
-                  д. 19/8, офис 101
-                </address>
-              </td>
-            </tr>
+            <tbody class="contacts-info__tbody">
+              <tr>
+                <td class="contacts-info__field">e-mail:</td>
+                <td class="contacts-info__value"><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
+              </tr>
+              <tr>
+                <td class="contacts-info__field">адрес:</td>
+                <td class="contacts-info__value">
+                  <address class="contacts-info__address">
+                    г. Санкт-Петербург,
+                    ул. Большая Конюшенная,
+                    д. 19/8, офис 101
+                  </address>
+                </td>
+              </tr>
+            </tbody>
           </table>
         </div>
         <!--будет iframe-->
-        <img class="contacts__image map" src="" width="" height="" alt="Офис интернет-магазина по адресу ул. Большая Конюшенная, д. 19/8, офис 101, г. Санкт-Петербург">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg">
+          <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg">
+          <img class="contacts__image map" src="img/map-mobile@1x.jpg" alt="Офис интернет-магазина по адресу ул. Большая Конюшенная, д. 19/8, офис 101, г. Санкт-Петербург"> <!--класс map?-->
+        </picture>
         <a class="contacts__write-us button" href="#">Напишите нам</a>
       </section>
     </main>

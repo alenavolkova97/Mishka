@@ -6,9 +6,25 @@
   color: $black;
 }
 
+.contacts__image {
+  width: 100%;
+}
+
 .contacts__write-us {
   padding: 14px 0;
 
   font-size: 18px;
   line-height: 20px;
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    padding-left: 175px; /*?*/
+  }
+
+  .contacts__image {
+    position: absolute;
+
+    width: auto;
+  }
 }

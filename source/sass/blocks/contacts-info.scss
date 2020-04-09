@@ -1,3 +1,9 @@
 .contacts-info__address {
   font-style: normal;
 }
+
+@media (min-width: $tablet-width) {
+  .contacts-info__tbody {
+    display: flex;
+  }
+}
