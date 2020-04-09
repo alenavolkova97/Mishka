@@ -2,13 +2,78 @@
   padding-top: 34px;
 }
 
+.about-us__title {
+  margin-bottom: 40px;
+}
+
 .about-us__list {
   @include list-reset;
 }
 
 .about-us__item {
+  margin-bottom: 40px;
+
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
   color: $black;
+}
+
+@media (min-width: $tablet-width) {
+  .about-us {
+    padding-top: 60px;
+  }
+
+  .about-us__title {
+    margin-bottom: 55px;
+  }
+
+  .about-us__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about-us__item {
+    width: 50%;
+    margin-bottom: 60px;
+
+    &--ecology {
+      order: 1;
+    }
+
+    &--handmade {
+      order: 2;
+    }
+
+    &--price {
+      order: 3;
+    }
+
+    &--native {
+      order: 4;
+    }
+
+    &--likes {
+      order: 5;
+    }
+
+    &--present {
+      order: 6;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-us {
+    padding-top: 70px;
+  }
+
+  .about-us__title {
+    padding-left: 16.67%;
+  }
+
+  .about-us__list {
+    padding-right: 16.67%;
+    padding-left: 16.67%;
+  }
 }
