@@ -4,10 +4,6 @@
   background-color: #ffffff;
 }
 
-.header__logo-wrapper {
-  position: relative;
-}
-
 .header__toggle {
   padding: 0;
 
@@ -22,9 +18,19 @@
 
 @media (min-width: $tablet-width) {
   .header {
+    position: relative;
+
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    width: 768px;
     height: 88px; /*min?*/
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 50px;
+    padding-left: 50px;
+
+    outline: 1px dashed black;
   }
 
   .header__logo {
@@ -35,6 +41,10 @@
 
   .header__toggle {
     display: none;
+  }
+
+  .header__user-wrapper {
+    margin-left: auto;
   }
 
   .header__user-list {
