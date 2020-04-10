@@ -1,8 +1,11 @@
 .header {
-  display: flex;
-  flex-direction: column;
-
   @include header-shadow;
+
+  background-color: #ffffff;
+}
+
+.header__logo-wrapper {
+  position: relative;
 }
 
 .header__toggle {
@@ -18,20 +21,29 @@
 }
 
 @media (min-width: $tablet-width) {
-  .header__logo-container {
-    position: absolute;
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    height: 88px; /*min?*/
   }
 
-  .header__nav-container {
-    display: flex;
-    justify-content: space-between;
+  .header__logo {
+    position: absolute;
+    top: 22px;
+    left: 50px;
+  }
+
+  .header__toggle {
+    display: none;
   }
 
   .header__user-list {
     display: flex;
+    padding-left: 115px;
   }
 
   .header__text {
     display: block;
+    order: 2;
   }
 }

@@ -1,4 +1,8 @@
 @media (min-width: $tablet-width) {
+  .main-nav {
+    order: 1;
+  }
+
   .main-nav__list {
     display: flex;
   }

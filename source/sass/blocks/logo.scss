@@ -1,0 +1,9 @@
+.logo {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .logo__image {
+    margin: 0;
+  }
+}

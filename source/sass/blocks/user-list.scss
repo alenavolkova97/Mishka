@@ -2,17 +2,15 @@
   @include list-reset;
 }
 
-.user-list__item { /*если не нужен - перенести миксин в link*/
-  @include header-shadow;
-}
-
 .user-list__link {
   display: block;
+  margin: 0 -30px;
   padding-top: 32px;
   padding-bottom: 30px;
-  padding-left: 46px;
+  padding-left: 46px; /*выровнять*/
 
   @include nav-item-font;
+  @include header-shadow;
 
   &:hover,
   &:focus {
@@ -21,5 +19,15 @@
 
   &:active {
     color: $black-30;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .user-list__link {
+    margin: 0;
+  }
+
+  .user-list__item--search {
+    font-size: 0; /*не работает*/
   }
 }
