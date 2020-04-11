@@ -22,6 +22,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .contacts__title {
+    font-size: 53px;
+  }
+
   .contacts__image {
     position: absolute;
 

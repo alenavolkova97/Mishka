@@ -4,7 +4,7 @@
 }
 
 .about-us__title {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .about-us__list {
@@ -12,7 +12,7 @@
 }
 
 .about-us__item {
-  margin-bottom: 35px;
+  margin-bottom: 33px;
 
   font-size: 17px;
   line-height: 20px;
@@ -23,11 +23,11 @@
 @media (min-width: $tablet-width) {
   .about-us {
     padding-top: 60px;
-    padding-bottom: 20px;
+    padding-bottom: 24px;
   }
 
   .about-us__title {
-    margin-bottom: 55px;
+    margin-bottom: 47px;
   }
 
   .about-us__list {
@@ -36,11 +36,16 @@
   }
 
   .about-us__item {
-    width: 50%;
-    margin-bottom: 60px;
+    width: 50%; /*резина*/
+    margin-bottom: 58px;
+    padding-right: 85px;
+
+    font-size: 20px;
+    line-height: 22px;
 
     &--ecology {
       order: 1;
+      padding-right: 130px;
     }
 
     &--handmade {
@@ -49,14 +54,17 @@
 
     &--price {
       order: 3;
+      padding-right: 90px;
     }
 
     &--native {
       order: 4;
+      padding-right: 35px;
     }
 
     &--likes {
       order: 5;
+      padding-right: 120px;
     }
 
     &--present {
@@ -71,11 +79,11 @@
   }
 
   .about-us__title {
-    padding-left: 16.67%;
+    padding-left: 16.67%; /*резина*/
   }
 
   .about-us__list {
-    padding-right: 16.67%;
-    padding-left: 16.67%;
+    padding-right: 16.67%; /*резина*/
+    padding-left: 16.67%; /*резина*/
   }
 }
