@@ -4,6 +4,19 @@
   @include list-reset;
 }
 
+.product-list__link {
+  padding-top: 32px;
+  padding-bottom: 30px;
+
+  line-height: 24px;
+  font-weight: bold;
+  color: $black;
+}
+
+.product-list__item:nth-child(2) {
+  margin-left: 60px;
+}
+
 @media (min-width: $desktop-width) {
   .product-list {
     display: flex;

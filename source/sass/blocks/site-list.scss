@@ -23,8 +23,26 @@
 }
 
 @media (min-width: $tablet-width) {
+  .site-list__item:nth-child(2) {
+    margin-left: 37px;
+  }
+
   .site-list__link {
     margin: 0;
     padding-left: 0;
+
+    font-size: 15px;
+
+    box-shadow: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__item:nth-child(2) {
+    margin-left: 71px;
+  }
+
+  .site-list__link {
+    font-size: 17px;
   }
 }

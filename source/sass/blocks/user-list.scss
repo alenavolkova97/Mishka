@@ -25,9 +25,12 @@
 @media (min-width: $tablet-width) {
   .user-list__link {
     margin: 0;
-  }
+    padding-left: 83px;
 
-  .user-list__item--search {
-    font-size: 0; /*не работает*/
+    box-shadow: none;
+
+    &--no-text {
+      font-size: 0;
+    }
   }
 }
