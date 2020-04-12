@@ -1,4 +1,9 @@
 .catalog-item__features {
+  padding-top: 32px;
+  padding-right: 10.38%;
+  padding-bottom: 29px;
+  padding-left: 10.77%;
+
   background-color: $white;
   border: solid 1px $border-grey;
 }
@@ -19,9 +24,18 @@
 }
 
 .catalog-item__desc {
-  margin: 0;
+  margin-top: 17px;
+  margin-bottom: 27px;
 
   font-size: 13px;
+}
+
+.catalog-item__order-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 27px;
+
+  border-top: 1px solid $border-grey;
 }
 
 .catalog-item__price {
@@ -35,12 +49,44 @@
 
 @media (min-width: $tablet-width) {
   .catalog-item__features {
-    width: 50%; /*или 335px*/
+    width: 50%; /*резина*/
+    padding-top: 29px;
+    padding-right: 4.94%;  /*резина*/
+    padding-left: 4.04%;  /*резина*/
+  }
+
+  .catalog-item__title {
+    font-size: 20px;
+  }
+
+  .catalog-item__desc {
+    margin-top: 15px;
+    margin-bottom: 182px;
+
+    font-size: 15px;
+
+    &--long-title {
+      margin-bottom: 156px;
+    }
+  }
+
+  .catalog-item__price {
+    font-size: 17px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .catalog-item__features {
-    width: 100%; /*или 316px*/
+    width: 100%; /*резина*/
+    padding-right: 8.86%;  /*резина*/
+    padding-left: 10.13%;  /*резина*/
+  }
+
+  .catalog-item__desc {
+    margin-bottom: 45px;
+
+    &--long-title {
+      margin-bottom: 20px;
+    }
   }
 }
