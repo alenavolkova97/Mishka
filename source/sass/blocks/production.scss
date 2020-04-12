@@ -1,4 +1,6 @@
 .production {
+  padding-bottom: 58px;
+
   background-color: $white;
 }
 
@@ -39,6 +41,7 @@
     position: relative;
 
     padding-top: 455px;
+    padding-bottom: 63px;
   }
 
   .production__wrapper {
@@ -75,6 +78,7 @@
 @media (min-width: $desktop-width) {
   .production {
     padding-top: 0;
+    padding-bottom: 105px;
     padding-left: 63.65%; /*резина*/
   }
 
