@@ -1,17 +1,48 @@
 .form-size__text {
   margin: 0;
+  margin-bottom: 28px;
 
   text-align: center;
 }
 
 .form-size__list {
+  display: flex;
+  flex-wrap: wrap;
+
   @include list-reset;
 }
 
+.form-size__item {
+  width: 31.54%; /*резина*/
+  margin-right: 2.69%;  /*резина*/
+
+  background-color: $white;
+}
+
+.form-size__item:nth-child(3n) {
+  margin-right: 0;
+}
+
 .form-size__value {
+  display: block;
+  padding: 20px 0;
+
   font-size: 17px;
   line-height: 16px;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
+
+  border: 2px solid $border-grey;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+.form-size__field:checked + .form-size__value {
+  border-color: $main-green;
+}
+
+.form-size__to-basket {
+  margin-top: 31px;
 }
