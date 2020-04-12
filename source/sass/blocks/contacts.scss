@@ -79,13 +79,12 @@
     right: 4.35%;
 
     width: auto;
+    margin-bottom: 0;
   }
 
-  // .contacts__write-wrapper {
-  //   padding-left: 19.57%;
-  // }
-
-  // .contacts__write-us {
-  //   margin: 0;
-  // }
+  .contacts__write-us {
+    width: 22%; /*резина*/
+    margin-top: 84px;
+    margin-left: 16.67%; /*резина*/
+  }
 }
