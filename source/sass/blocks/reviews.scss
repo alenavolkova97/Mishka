@@ -104,7 +104,7 @@
   // }
 
   .reviews__write {
-    width: 175px;
+    width: 26.2%; /*резина*/
     margin: 0;
 
     font-size: 17px;
@@ -137,5 +137,9 @@
 
   .reviews__button-wrapper {
     bottom: 160px;
+  }
+
+  .reviews__write {
+    width: 16.67%; /*резина*/
   }
 }
