@@ -1,11 +1,22 @@
+.contacts {
+  padding-top: 44px;
+  padding-bottom: 39px;
+}
+
 .contacts__title {
   margin: 0;
 
   font-size: 18px;
 }
 
+.contacts__info {
+  width: 100%;
+  margin-bottom: 42px;
+}
+
 .contacts__image {
   width: 100%;
+  margin-bottom: 39px;
 }
 
 .contacts__write-us {
@@ -16,19 +27,65 @@
 }
 
 @media (min-width: $tablet-width) {
+  .contacts {
+    padding-top: 72px;
+    padding-bottom: 57px;
+  }
+
   .contacts__title {
     font-size: 43px;
+  }
+
+  .contacts__info {
+    margin-bottom: 61px;
+  }
+
+  .contacts__image {
+    margin-bottom: 55px;
+  }
+
+  .contacts__write-us {
+    width: 34.43%;
+    margin: 0 auto;
+
+    font-size: 17px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .contacts {
+    position: relative;
+
+    padding-bottom: 105px;
+  }
+
   .contacts__title {
+    margin-top: 80px;
+    margin-bottom: 25px;
+    padding-right: 50%; /*резина*/
+    padding-left: 16.67%; /*резина*/
+
     font-size: 53px;
+  }
+
+  .contacts__info {
+    padding-left: 16.67%; /*резина*/
+    padding-right: 50%; /*резина*/
   }
 
   .contacts__image {
     position: absolute;
+    top: 71px;
+    right: 4.35%;
 
     width: auto;
   }
+
+  // .contacts__write-wrapper {
+  //   padding-left: 19.57%;
+  // }
+
+  // .contacts__write-us {
+  //   margin: 0;
+  // }
 }

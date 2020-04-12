@@ -1,9 +1,54 @@
+.contacts-info__field {
+  width: 29px;
+  padding: 0;
+  padding-top: 40px;
+  padding-right: 32px;
+
+  vertical-align: top;
+}
+
+.contacts-info__value {
+  padding: 0;
+  padding-top: 40px;
+}
+
+// .contacts-info__value--email { делалось для подчеркивания
+//   border-bottom: 1px solid $link-color;
+// }
+
+.contacts-info__link {
+  color: inherit;
+
+  border-bottom: 1px solid $link-color;
+}
+
 .contacts-info__address {
+  padding-right: 30px;
+
   font-style: normal;
 }
 
 @media (min-width: $tablet-width) {
   .contacts-info__tbody {
     display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contacts-info__field {
+    padding-right: 26px;
+  }
+
+  .contacts-info__trow {
+    width: 50%; /*резина*/
+  }
+
+  .contacts-info__address {
+    padding-right: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts-info__tbody {
+    display: block;
   }
 }
