@@ -1,16 +1,17 @@
 .production {
-  padding-top: 29px;
-  padding-bottom: 33px;
-
   background-color: $white;
 }
 
 .production__wrapper {
+  padding-top: 29px;
+  padding-bottom: 33px;
+
   border: solid 1px $border-grey;
 }
 
 .production__title {
   margin: 0;
+  padding-left: 34.62%; /*резина*/
 
   font-size: 17px;
   line-height: 24px;
@@ -18,14 +19,84 @@
   color: $black;
 }
 
+.production__process {
+  margin-top: 26px;
+  margin-bottom: 34px;
+}
+
 .production__text {
   margin: 0;
+  margin-bottom: 29px;
+  padding-right: 16.2%; /*резина*/
+  padding-left: 13.08%; /*резина*/
 
   font-size: 13px;
   line-height: 24px;
 }
 
-.production__link {
-  width: 192px;
-  margin: 0 auto;
+@media (min-width: $tablet-width) {
+  .production {
+    position: relative;
+
+    padding-top: 455px;
+  }
+
+  .production__wrapper {
+    padding-top: 43px;
+    padding-right: 6.29%; /*резина*/
+    padding-left: 6.29%; /*резина*/
+    padding-bottom: 46px;
+  }
+
+  .production__title {
+    padding-left: 9.73%; /*резина*/
+
+    font-size: 20px;
+  }
+
+  .production__process {
+    position: absolute;
+    top: 0;
+    left: 6.51%; /*резина*/
+
+    margin: 0;
+  }
+
+  .production__text {
+    margin-top: 41px;
+    margin-bottom: 40px;
+    padding: 0;
+
+    font-size: 15px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .production {
+    padding-top: 0;
+    padding-left: 63.65%; /*резина*/
+  }
+
+  .production__wrapper {
+    padding-top: 47px;
+    padding-right: 15.53%;/*резина*/
+    padding-bottom: 60px;
+    padding-left: 21.53%; /*резина*/
+  }
+
+  .production__title {
+    padding-top: 53px;
+    padding-left: 0;
+  }
+
+  .production__process {
+    left: 4.35%; /*резина*/
+
+    margin: 0;
+  }
+
+  .production__text {
+    margin-bottom: 51px;
+  }
 }
