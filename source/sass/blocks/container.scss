@@ -18,6 +18,8 @@
 
 @media (min-width: $desktop-width) {
   .container {
-    width: 1150px;
+    width: 1150px; /*ограничить*/
+    padding-right: 50px;
+    padding-left: 50px;
   }
 }

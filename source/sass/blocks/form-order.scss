@@ -1,11 +1,33 @@
 .form-order__fieldset {
+  position: relative;
+
   width: 100%;
+  margin: 0;
   padding: 0;
 
   border: none;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 8px;
+    right: 0;
+
+    width: 76.15%; /*резина*/
+    height: 1px;
+
+    background-color: $underline-color;
+  }
+
+  &--email::before {
+    width: 68.85%; /*резина*/
+  }
 }
 
 .form-order__legend {
+  padding: 0;
+
   font-size: 17px;
   line-height: 16px;
   font-weight: bold;
@@ -15,6 +37,38 @@
 
 .form-order__list {
   @include list-reset;
+
+  &--choice {
+    padding-left: 23.85%; /*резина*/
+  }
+
+  &--type {
+    padding-top: 43px;
+    padding-bottom: 26px;
+  }
+
+  &--color {
+    padding-top: 44px;
+    padding-bottom: 5px;
+  }
+
+  &--personification {
+    padding-top: 33px;
+    padding-bottom: 10px;
+  }
+}
+
+.form-order__list--personification .form-order__input {
+  margin-bottom: 24px;
+  padding: 18px 0;
+}
+
+.form-order__item-type {
+  margin-bottom: 25px;
+}
+
+.form-order__item-color {
+  margin-bottom: 44px;
 }
 
 .form-order__label {
@@ -36,7 +90,26 @@
   border: none;
   box-shadow: inset 0 -2px 0 0 $black;
 
+  &--tel {
+    margin-top: 9px;
+    margin-bottom: 34px;
+    padding-top: 16px;
+    padding-bottom: 21px;
+  }
+
+  &--email {
+    margin-top: 9px;
+    margin-bottom: 34px;
+    padding-top: 18px;
+    padding-bottom: 20px;
+  }
+
   &--textarea {
+    margin-top: 23px;
+    margin-bottom: 18px;
+    padding-top: 18px;
+    padding-left: 6.54%; /*резина*/
+
     background-color: $white;
     border: solid 2px $greyish-brown;
     box-shadow: none;
@@ -57,59 +130,136 @@
 }
 
 .form-order__note {
+  margin-top: 0;
+  margin-bottom: 31px;
+
   font-size: 14px;
   line-height: 16px;
 }
 
 @media (min-width: $tablet-width) {
   .form-order {
-    padding-left: 167px;
+    padding-left: 25%; /*резина*/
   }
 
   .form-order__fieldset {
     position: relative;
+
+    padding-left: 25%; /*резина*/
+
+    &::before {
+      display: none;
+    }
+
+    &--tel {
+      margin-top: 50px;
+    }
+
+    &--email {
+      margin-bottom: 26px;
+    }
   }
 
   .form-order__legend {
     position: absolute;
     top: 0;
-    left: -167px;
+    left: 0;
   }
 
-  .form-order__list--color {
-    display: flex;
-    flex-wrap: wrap;
+  .form-order__list {
+    &--choice {
+      padding-left: 11.98%; /*резина*/
+    }
+
+    &--type {
+      padding-top: 0;
+      padding-bottom: 9px;
+    }
+
+    &--color {
+      display: flex;
+      flex-wrap: wrap;
+      padding-top: 66px;
+      padding-bottom: 14px;
+    }
+
+    &--personification {
+      padding-top: 50px;
+      padding-bottom: 26px;
+      padding-left: 11.98%; /*резина*/
+    }
+  }
+
+  .form-order__list--personification .form-order__label {
+    padding-right: 5.19%;
+  }
+
+  .form-order__item-type {
+    margin-bottom: 57px;
   }
 
   .form-order__item-color {
-    width: 50%;
+    width: 50%; /*резина*/
+    margin-bottom: 56px;
+  }
+
+  .form-order__item-color:nth-child(2n) {
+    padding-left: 11.98%; /*резина*/
   }
 
   .form-order__item-text {
     display: flex;
+    align-items: baseline;
+  }
+
+  .form-order__label {
+    font-size: 19px;
+    line-height: 18px;
+  }
+
+  .form-order__input {
+    &--tel {
+      margin-top: 0;
+      margin-bottom: 24px;
+    }
+
+    &--email {
+      margin-top: 0;
+      margin-bottom: 24px;
+    }
+
+    &--textarea {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      padding-left: 3.39%;
+    }
+
+    &::placeholder {   /*доб префиксы для ie11*/
+      font-size: 19px;
+    }
   }
 
   .form-order__flex-wrapper {
-    position: relative;
-
     display: flex;
     flex-direction: row-reverse;
+    align-items: baseline;
   }
 
   .form-order__note {
     margin-left: auto;
+
+    font-size: 17px;
+    line-height: 30px;
   }
 
   .form-order__order {
-    position: absolute;
-    top: 0;
-    left: -167px;
+    width: 34.43%; /*резина*/
   }
 }
 
 @media (min-width: $desktop-width) {
   .form-main__text {
-    width: 83.3%;
+    width: 83.3%; /*резина*/
     padding-left: 175px;
   }
 
@@ -122,11 +272,11 @@
   }
 
   .form-order__item-color {
-    width: 33.3%;
+    width: 33.3%; /*резина*/
   }
 
   .form-order__flex-wrapper {
-    width: 80%; /* или 700px*/
+    width: 80%; /*резина*/
   }
 
   .form-order__order {

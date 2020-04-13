@@ -1,0 +1,18 @@
+.catalog-main__title {
+  padding-top: 76px;
+  padding-bottom: 74px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-main__title {
+    padding-top: 106px;
+    padding-bottom: 78px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-main__title {
+    padding-top: 105px;
+    padding-bottom: 99px;
+  }
+}
