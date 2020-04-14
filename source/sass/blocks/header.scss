@@ -1,4 +1,7 @@
 .header {
+  position: relative;
+  z-index: 2;
+
   @include header-shadow;
 
   background-color: #ffffff;
