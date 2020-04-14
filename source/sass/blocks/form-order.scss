@@ -148,18 +148,20 @@
     }
 
     &--tel {
-      margin-top: 50px;
+      margin-top: 0;
     }
 
     &--email {
-      margin-bottom: 26px;
+      margin-bottom: 0;
     }
   }
 
   .form-order__fieldset-wrapper {
     margin-right: -7.49%;  /*резина*/
     margin-left: -7.49%; /*резина*/
+    padding-top: 50px;
     padding-right: 7.49%; /*резина*/
+    padding-bottom: 26px;
     padding-left: 7.49%; /*резина*/
 
     background-color: $main-grey;
@@ -190,6 +192,7 @@
       flex-wrap: wrap;
       padding-top: 66px;
       padding-bottom: 14px;
+      padding-left: 0;
     }
 
     &--personification {
@@ -209,9 +212,6 @@
   .form-order__item-color {
     width: 50%; /*резина*/
     margin-bottom: 56px;
-  }
-
-  .form-order__item-color:nth-child(2n) {
     padding-left: 11.98%; /*резина*/
   }
 
@@ -254,6 +254,7 @@
   }
 
   .form-order__note {
+    margin-bottom: 0;
     margin-left: auto;
 
     font-size: 17px;
@@ -266,31 +267,39 @@
 }
 
 @media (min-width: $desktop-width) {
-  .form-main__text {
-    width: 83.3%; /*резина*/
-    padding-left: 175px;
+  .form-order__fieldset {
+    padding-right: 16.67%; /*резина*/
+    padding-left: 16.67%; /*резина*/
+
+    &--color {
+      padding-right: 14.19%;
+    }
   }
 
-  .form-order__fieldset {
-    width: 80%; /* или 700px*/
+  .form-order__fieldset-wrapper {
+    margin-right: -4.77%;  /*резина*/
+    margin-left: -4.77%; /*резина*/
+    padding-right: 4.77%; /*резина*/
+    padding-left: 4.77%; /*резина*/
   }
 
   .form-order__legend {
-    left: -112px;
+    position: absolute;
+    top: 0;
+    left: 6.1%; /*резина*/
+  }
+
+  .form-order__list--personification .form-order__label {
+    padding-right: 3.72%;
   }
 
   .form-order__item-color {
     width: 33.3%; /*резина*/
+    padding-left: 11.98%;  /*резина*/
   }
 
   .form-order__flex-wrapper {
-    width: 80%; /*резина*/
-  }
-
-  .form-order__order {
-    position: static;
-
-    margin-right: 0;
-    margin-left: 0;
+    padding-right: 16.67%;
+    padding-left: 16.67%;
   }
 }
