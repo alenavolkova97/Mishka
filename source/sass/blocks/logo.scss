@@ -1,5 +1,17 @@
 .logo {
   display: block;
+  width: 130px;
+  padding: 22px;
+}
+
+.logo__picture {
+  display: block;
+}
+
+.logo__image {
+  display: block;
+  width: 86px;
+  height: 35px;
 }
 
 @media (min-width: $tablet-width) {
