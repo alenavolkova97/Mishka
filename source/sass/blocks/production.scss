@@ -79,14 +79,14 @@
   .production {
     padding-top: 0;
     padding-bottom: 105px;
-    padding-left: 63.65%; /*резина*/
   }
 
   .production__wrapper {
+    margin-left: 64.95%; /*резина*/
     padding-top: 47px;
-    padding-right: 15.53%;/*резина*/
+    padding-right: 67px;
     padding-bottom: 60px;
-    padding-left: 21.53%; /*резина*/
+    padding-left: 78px;
   }
 
   .production__title {
@@ -97,7 +97,6 @@
   .production__process {
     left: 4.35%; /*резина*/
 
-    width: 64.95%;  /*резина*/
     margin: 0;
   }
 
