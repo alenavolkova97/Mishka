@@ -81,11 +81,15 @@
   .popular__title-wrapper {
     flex-direction: row-reverse;
     justify-content: space-between;
+    align-items: center;
     padding-right: 28px;
   }
 
   .popular__title {
+    width: 70px;
+
     line-height: 17px;
+    text-align: center;
   }
 
   .popular__desc-wrapper {
@@ -132,7 +136,7 @@
   .popular__title {
     position: absolute;
     top: 15px;
-    left: 0;
+    left: 36px;
   }
 
   .popular__desc-wrapper {
