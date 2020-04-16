@@ -25,12 +25,26 @@
 @media (min-width: $tablet-width) {
   .user-list__link {
     margin: 0;
-    padding-left: 83px;
+    padding-top: 33px;
+    padding-bottom: 31px;
+    padding-left: 81px; /*масштабируемость???*/
 
     box-shadow: none;
+    border-left: 1px solid $border-grey;
 
     &--no-text {
       font-size: 0;
     }
+  }
+
+  .user-list__item:first-child {
+    margin-left: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-list__link {
+    padding-top: 33px;
+    padding-bottom: 32px;
   }
 }

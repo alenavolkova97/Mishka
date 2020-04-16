@@ -5,20 +5,33 @@
 }
 
 .product-list__link {
+  display: block;
   padding-top: 32px;
   padding-bottom: 30px;
 
+  font-size: 15px;
   line-height: 24px;
   font-weight: bold;
   color: $black;
 }
 
+.product-list__item {
+  margin-right: 60px;
+}
+
 .product-list__item:nth-child(2) {
-  margin-left: 60px;
+  margin-right: 0;
 }
 
 @media (min-width: $desktop-width) {
   .product-list {
     display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+  }
+
+  .product-list__link {
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 }

@@ -7,8 +7,6 @@
 .header__grid-wrapper {
   position: relative;
   z-index: 2;
-
-  outline: 1px solid green;
 }
 
 .header__logo {
@@ -18,7 +16,7 @@
 .header__toggle {
   position: absolute;
   top: 30px;
-  right: 9.36%;
+  right: 9.36%; /*резина*/
 
   padding: 0;
 
@@ -33,50 +31,63 @@
 }
 
 @media (min-width: $tablet-width) {
+  .header {
+    box-shadow:
+      inset 0 -1px 0 0 $border-grey,
+      inset 0 1px 0 0 $border-grey;
+  }
+
   .header__grid-wrapper {
     position: relative;
 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 768px;
-    height: 88px; /*min?*/
+    height: 88px;
     margin-right: auto;
     margin-left: auto;
-    padding-right: 50px;
-    padding-left: 50px;
+    padding: 0 6.51%; /*резина*/
   }
 
   .header__logo {
     position: absolute;
-    top: 22px;
-    left: 50px;
+    top: 0;
+    left: 6.51%;  /*резина*/
   }
 
   .header__toggle {
     display: none;
   }
 
+  .header__nav {
+    width: 50%;
+    margin: 0;
+  }
+
   .header__user-wrapper {
     order: 1;
-    margin-left: auto;
+    padding: 0;
   }
 
   .header__user-list {
     display: flex;
+    flex-wrap: wrap;
     padding-left: 115px;
   }
 
   .header__text {
     display: block;
     order: 3;
-    margin-top: 30px;
+    margin-top: 24px;
+
+    font-size: 15px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .header__grid-wrapper {
     width: 1150px;
+    padding: 0 50px; /*резина?*/
   }
 
   .header__logo {
@@ -88,6 +99,12 @@
 
   .header__user-wrapper {
     order: 2;
+
+    width: 50%;
+  }
+
+  .header__user-list {
+    padding: 0;
   }
 
   .header__product-list {
