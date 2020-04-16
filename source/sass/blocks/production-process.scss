@@ -1,0 +1,26 @@
+.production-process {
+  position: relative;
+}
+
+.production-process__picture {
+  display: block;
+}
+
+.production-process__image {
+  display: block;
+}
+
+.production-process__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .production-process__image {
+    width: 100%;
+  }
+}

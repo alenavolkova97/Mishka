@@ -1,0 +1,18 @@
+@media (min-width: $tablet-width) {
+  .main-nav {
+    order: 2;
+
+    padding: 0;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    order: 1;
+  }
+}

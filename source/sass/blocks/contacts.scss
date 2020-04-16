@@ -1,9 +1,28 @@
+.contacts {
+  padding-top: 44px;
+  padding-bottom: 39px;
+}
+
 .contacts__title {
   margin: 0;
 
   font-size: 18px;
-  font-weight: bold;
-  color: $black;
+}
+
+.contacts__info {
+  width: 100%;
+  margin-bottom: 42px;
+}
+
+.contacts__picture {
+  display: block;
+  margin-right: -11.54%;
+  margin-left: -11.54%;
+}
+
+.contacts__image {
+  display: block;
+  margin-bottom: 39px;
 }
 
 .contacts__write-us {
@@ -11,4 +30,73 @@
 
   font-size: 18px;
   line-height: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    padding-top: 72px;
+    padding-bottom: 57px;
+  }
+
+  .contacts__title {
+    font-size: 43px;
+  }
+
+  .contacts__info {
+    margin-bottom: 61px;
+  }
+
+  .contacts__picture {
+    display: block;
+    margin-right: -7.49%;
+    margin-left: -7.49%;
+  }
+
+  .contacts__image {
+    margin-bottom: 55px;
+  }
+
+  .contacts__write-us {
+    width: 34.43%;
+    margin: 0 auto;
+
+    font-size: 17px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    position: relative;
+
+    padding-bottom: 105px;
+  }
+
+  .contacts__title {
+    margin-top: 81px;
+    margin-bottom: 25px;
+    padding-right: 50%; /*резина*/
+    padding-left: 16.67%; /*резина*/
+
+    font-size: 53px;
+  }
+
+  .contacts__info {
+    padding-left: 16.67%; /*резина*/
+    padding-right: 50%; /*резина*/
+  }
+
+  .contacts__picture {
+    position: absolute;
+    top: 71px;
+    right: 4.35%;  /*резина*/
+
+    width: auto;
+    margin: 0;
+  }
+
+  .contacts__write-us {
+    width: 22%; /*резина*/
+    margin-top: 84px;
+    margin-left: 16.67%; /*резина*/
+  }
 }

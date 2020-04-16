@@ -1,12 +1,16 @@
 .categories-list {
-  @include list-reset;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  list-style: none;
 }
 
 .categories-list__link {
   display: block;
-  margin-right: -30px;
-  margin-left: -30px;
+  margin-right: -9.38%;
+  margin-left: -9.38%;
   padding-top: 30px;
+  padding-right: 185px;
   padding-bottom: 30px;
   padding-left: 30px;
 
@@ -21,5 +25,33 @@
 
   &--toys {
     background-color: $dark-green;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .categories-list {
+    display: flex;
+  }
+
+  .categories-list__item {
+    width: 50%; /*резина*/
+  }
+
+  .categories-list__link {
+    margin-right: 0;
+    margin-left: 0;
+    padding-top: 35px;
+    padding-right: 185px;
+    padding-bottom: 34px;
+    padding-left: 36px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .categories-list__link {
+    padding-right: 377px;
   }
 }

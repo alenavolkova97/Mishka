@@ -1,9 +1,65 @@
 .modal-order {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  display: none;
+  width: 100%;
+  height: 100%;
+
+  background-color: $modal-layer-color;
+}
+
+.modal-order__wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding-top: 36px;
+  padding-bottom: 46px;
+
+  background-color: $white;
   border: solid 1px #c6c6c6;
   box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
 }
 
 .modal-order__title {
+  margin: 0;
+  padding: 0 55px; /*?*/
+  font-size: 25px;
+  font-weight: bold;
+  color: $black;
+
   text-align: center;
   text-transform: uppercase;
+}
+
+.modal-order__form {
+  width: 100%;
+  margin-top: 25px;
+}
+
+@media (min-width: $tablet-width) {
+  .modal-order__wrapper {
+    width: 73.7%; /*резина*/
+    padding-top: 51px;
+    padding-right: 13.2%; /*резина*/
+    padding-left: 13.2%; /*резина*/
+  }
+
+  .modal-order__title {
+    padding: 0; /*?*/
+    font-size: 30px;
+    line-height: 57px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .modal-order__wrapper {
+    width: 49.22%; /*резина*/
+    padding-right: 8.96%; /*резина*/
+    padding-left: 8.96%; /*резина*/
+  }
 }

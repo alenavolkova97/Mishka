@@ -3,6 +3,7 @@
 
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Каталог интернет-магазина игрушек ручной работы «Мишка»</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -10,20 +11,33 @@
   <body>
 
     <header class="header">
-      <a class="header__logo logo" href="index.html" aria-label="Перейти на главную страницу сайта">
-        <img class="logo__image" src="" width="" height="" alt="Логотип интернет-магазина игрушек ручной работы «Мишка»">
-      </a>
-      <button class="header__toggle" type="button" aria-label="Открыть меню"></button>
-      <nav class="main-nav container">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a class="site-list__link">Каталог товаров</a></li>
-          <li class="site-list__item"><a class="site-list__link" href="form.html">Вязание на заказ</a></li>
+      <div class="header__grid-wrapper">
+        <a class="header__logo logo" href="index.html">
+          <picture class="logo__picture">
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="logo__image" src="img/logo-mobile.svg" alt="Логотип интернет-магазина игрушек ручной работы «Мишка»">
+          </picture>
+        </a>
+        <button class="header__toggle" type="button" aria-label="Открыть меню">К</button>
+        <nav class="header__nav main-nav container">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item"><a class="site-list__link">Каталог товаров</a></li>
+            <li class="site-list__item"><a class="site-list__link"  href="form.html">Вязание на заказ</a></li>
+          </ul>
+        </nav>
+        <div class="header__user-wrapper container">
+          <ul class="header__user-list user-list">
+            <li class="user-list__item user-list__item--search"><a class="user-list__link user-list__link--no-text" href="#" aria-label="Поиск по сайту">Поиск по сайту</a></li>
+            <li class="user-list__item user-list__item--basket"><a class="user-list__link" href="#">Корзина: пока пуста</a></li>
+          </ul>
+        </div>
+        <ul class="header__product-list product-list">
+          <li class="product-list__item"><a class="product-list__link" href="#">Новые поступления</a></li>
+          <li class="product-list__item"><a class="product-list__link"  href="#">Распродажа</a></li>
         </ul>
-        <ul class="main-nav__list user-list">
-          <li class="user-list__item user-list__item--search"><a class="user-list__link" href="#">Поиск по сайту</a></li>
-          <li class="user-list__item user-list__item--basket"><a class="user-list__link" href="#">Корзина: пока пуста</a></li>
-        </ul>
-      </nav>
+        <p class="header__text">Бесплатная доставка по России</p>
+      </div>
     </header>
 
     <main class="catalog-main">
@@ -33,12 +47,16 @@
         <ul class="catalog__list">
           <li class="catalog__item catalog-item">
             <a class="catalog-item__link" href="#">
-              <img class="catalog-item__image" src="" width="" height="" alt="">
+              <picture class="catalog-item__picture">
+                <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg">
+                <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg">
+                <img class="catalog-item__image" src="img/photo-hare-mobile@1x.jpg" alt="Голубо-белый вязаный зайчик">
+              </picture>
             </a>
             <div class="catalog-item__features">
               <h3 class="catalog-item__title"><a class="catalog-item__link" href="#">Зайчик-попрыгайчик</a></h3>
               <p class="catalog-item__desc">Рост 30 см, вес 200 г</p>
-              <div>
+              <div class="catalog-item__order-wrapper">
                 <p class="catalog-item__price">1200 руб.</p>
                 <a class="catalog-item__to-basket" href="#" aria-label="Добавить в корзину"></a>
               </div>
@@ -46,12 +64,16 @@
           </li>
           <li class="catalog__item catalog-item">
             <a class="catalog-item__link" href="#">
-              <img class="catalog-item__image" src="" width="" height="" alt="">
+              <picture class="catalog-item__picture">
+                <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg">
+                <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg">
+                <img class="catalog-item__image" src="img/photo-bowl-mobile@1x.jpg" alt="Оранжево-белая вязаная корзинка для белья">
+              </picture>
             </a>
             <div class="catalog-item__features">
               <h3 class="catalog-item__title"><a class="catalog-item__link" href="#">Корзинка для белья</a></h3>
               <p class="catalog-item__desc">Диаметр 15 см, высота 10 см</p>
-              <div>
+              <div class="catalog-item__order-wrapper">
                 <p class="catalog-item__price">690 руб.</p>
                 <a class="catalog-item__to-basket" href="#" aria-label="Добавить в корзину"></a>
               </div>
@@ -59,12 +81,16 @@
           </li>
           <li class="catalog__item catalog-item">
             <a class="catalog-item__link" href="#">
-              <img class="catalog-item__image" src="" width="" height="" alt="">
+              <picture class="catalog-item__picture">
+                <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg">
+                <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg">
+                <img class="catalog-item__image" src="img/photo-toys-mobile@1x.jpg" alt="Большая зелено-белая вязаная корзинка для игрушек">
+              </picture>
             </a>
             <div class="catalog-item__features">
               <h3 class="catalog-item__title"><a class="catalog-item__link" href="#">Большая корзинка для игрушек</a></h3>
-              <p class="catalog-item__desc">Диаметр 30 см, высота 30 см</p>
-              <div>
+              <p class="catalog-item__desc catalog-item__desc--long-title">Диаметр 30 см, высота 30 см</p>
+              <div class="catalog-item__order-wrapper">
                 <p class="catalog-item__price">1500 руб.</p>
                 <a class="catalog-item__to-basket" href="#" aria-label="Добавить в корзину"></a>
               </div>
@@ -76,8 +102,12 @@
         <div class="production__wrapper">
           <h2 class="production__title">Процесс производства</h2>
           <div class="production__process production-process">
-            <img src="" width="" height="" alt="Процесс производства товаров интернет-магазина">
-            <button class="production-process__play" type="button" aria-label="Смотреть "></button>
+            <picture class="production-process__picture">
+              <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg">
+              <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg">
+              <img class="production-process__image" src="img/video-mobile@1x.jpg" alt="Процесс производства товаров интернет-магазина">
+            </picture>
+            <button class="production-process__play" type="button" aria-label="Смотреть">КНОПКА</button>
           </div>
           <p class="production__text">
             По просьбам наших
@@ -93,7 +123,10 @@
     </main>
 
     <footer class="footer">
-      <div class="container">
+      <div class="footer__flex-wrapper container">
+        <a class="footer__logo logo" href="index.html" aria-label="Перейти на главную страницу сайта"> <!--logo?-->
+          <img class="logo__image" src="" width="" height="" alt="Логотип интернет-магазина игрушек ручной работы «Мишка»">
+        </a>
         <ul class="social__list social">
           <li class="social__item"><a class="social__link social__link--instagram" href="#" aria-label="Мы в Инстаграме"></a></li>
           <li class="social__item"><a class="social__link social__link--facebook" href="#" aria-label="Мы в Фейсбуке"></a></li>
@@ -108,26 +141,28 @@
       </div>
     </footer>
 
-    <section class="modal-order container">
-        <h2 class="modal-order__title title">Добавить в корзину</h2>
+    <section class="modal-order">
+      <div class="modal-order__wrapper container"> <!--контейнер убрать?-->
+        <h2 class="modal-order__title">Добавить в корзину</h2>
         <form class="modal-order__form form-size" action="https://echo.htmlacademy.ru" method="post">
           <p class="form-size__text">Выберите размер:</p>
           <ul class="form-size__list">
             <li class="form-size__item">
-              <input class="visually-hidden" type="radio" name="size_group" value="s" id="s_field" checked>
+              <input class="visually-hidden form-size__field" type="radio" name="size-group" value="s" id="s_field" checked>
               <label class="form-size__value" for="s_field">s</label>
             </li>
             <li class="form-size__item">
-              <input class="visually-hidden" type="radio" name="size-group" value="m" id="m_field">
+              <input class="visually-hidden form-size__field" type="radio" name="size-group" value="m" id="m_field">
               <label class="form-size__value" for="m_field">m</label>
             </li>
             <li class="form-size__item">
-              <input class="visually-hidden" type="radio" name="size-group" value="l" id="l_field">
+              <input class="visually-hidden form-size__field" type="radio" name="size-group" value="l" id="l_field">
               <label class="form-size__value" for="l_field">l</label>
             </li>
           </ul>
           <button class="form-size__to-basket button button--modal" type="submit">Добавить</button>
         </form>
+      </div>
     </section>
 
   </body>

@@ -1,5 +1,10 @@
 .about-us {
   padding-top: 34px;
+  padding-bottom: 25px;
+}
+
+.about-us__title {
+  margin-bottom: 30px;
 }
 
 .about-us__list {
@@ -7,8 +12,78 @@
 }
 
 .about-us__item {
+  margin-bottom: 33px;
+
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
   color: $black;
+}
+
+@media (min-width: $tablet-width) {
+  .about-us {
+    padding-top: 60px;
+    padding-bottom: 24px;
+  }
+
+  .about-us__title {
+    margin-bottom: 47px;
+  }
+
+  .about-us__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about-us__item {
+    width: 50%; /*резина*/
+    margin-bottom: 58px;
+    padding-right: 85px;
+
+    font-size: 20px;
+    line-height: 22px;
+
+    &--ecology {
+      order: 1;
+      padding-right: 130px;
+    }
+
+    &--handmade {
+      order: 2;
+    }
+
+    &--price {
+      order: 3;
+      padding-right: 90px;
+    }
+
+    &--native {
+      order: 4;
+      padding-right: 35px;
+    }
+
+    &--likes {
+      order: 5;
+      padding-right: 120px;
+    }
+
+    &--present {
+      order: 6;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-us {
+    padding-top: 70px;
+  }
+
+  .about-us__title {
+    padding-left: 16.67%; /*резина*/
+  }
+
+  .about-us__list {
+    padding-right: 16.67%; /*резина*/
+    padding-left: 16.67%; /*резина*/
+  }
 }

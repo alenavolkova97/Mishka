@@ -1,3 +1,22 @@
 .footer {
   background-color: $main-grey;
 }
+
+.footer__flex-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__logo {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .footer__flex-wrapper {
+    flex-direction: row;
+  }
+
+  .footer__logo {
+    display: block;
+  }
+}

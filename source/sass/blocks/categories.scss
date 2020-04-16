@@ -1,8 +1,18 @@
 .categories {
-  padding-top: 93px;
+  position: relative;
+
+  padding-top: 76px;
+
+  background-color: $categories-color;
 }
 
 .categories__intro {
+  position: relative;
+  z-index: 2;
+
+  margin-top: 0;
+  margin-bottom: 120px;
+
   font-size: 27px;
   line-height: 30px;
   font-weight: bold;
@@ -11,6 +21,54 @@
   color: #010000;
 }
 
+.categories__image {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  z-index: 1;
+
+  transform: translateX(-50%);
+}
+
 .categories__list {
+  position: relative;
+  z-index: 2;
+
   margin-top: 120px;
+}
+
+.categories-list__item {
+  width: 100%; /*только для резины*/
+}
+
+@media (min-width: $tablet-width) {
+  .categories {
+    padding-top: 161px;
+  }
+
+  .categories__intro {
+    margin-bottom: 371px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .categories__image {
+    top: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .categories__intro {
+    margin-bottom: 354px;
+    padding-right: 268px;
+    padding-left: 268px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .categories__image {
+    top: 0;
+  }
 }
