@@ -2,6 +2,10 @@
   @include list-reset;
 }
 
+.header--menu-closed .user-list {
+  display: none;
+}
+
 .user-list__link {
   display: block;
   margin: 0 -11.54%; /*резина*/

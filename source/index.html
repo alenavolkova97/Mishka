@@ -10,16 +10,16 @@
 
   <body>
 
-    <header class="header">
+    <header class="header header--menu-opened header--nojs">
       <div class="header__grid-wrapper">
         <a class="header__logo header-logo">
-          <picture class="logo__picture">
+          <picture class="header-logo__picture">
             <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img class="logo__image" src="img/logo-mobile.svg" alt="Логотип интернет-магазина игрушек ручной работы «Мишка»">
+            <img class="header-logo__image" src="img/logo-mobile.svg" alt="Логотип интернет-магазина игрушек ручной работы «Мишка»">
           </picture>
         </a>
-        <button class="header__toggle" type="button" aria-label="Открыть меню">К</button>
+        <button class="header__toggle" type="button" aria-label="Открыть меню"></button>
         <nav class="header__nav main-nav container">
           <ul class="main-nav__list site-list">
             <li class="site-list__item"><a class="site-list__link" href="catalog.html">Каталог товаров</a></li>
@@ -167,7 +167,7 @@
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
             <img class="logo__image" src="img/logo-mobile.svg" alt="Логотип интернет-магазина игрушек ручной работы «Мишка»">
           </picture> -->
-          <img class="logo__image" src="" width="" height="" alt="Логотип интернет-магазина игрушек ручной работы «Мишка»">
+          <img class="footer-logo__image" src="" width="" height="" alt="Логотип интернет-магазина игрушек ручной работы «Мишка»">
         </a>
         <ul class="social__list social">
           <li class="social__item"><a class="social__link social__link--instagram" href="#" aria-label="Мы в Инстаграме"></a></li>
@@ -206,6 +206,23 @@
         </form>
       </div>
     </section>
+
+    <script> /*не работает, куда класть код?, подключить код на все страницы*/
+      var header = document.querySelector('.header');
+      var button = header.querySelector('.header__toggle');
+
+      header.classList.remove('.header--nojs');
+
+      button.addEventListener('click', function () {
+        if (header.classList.contains('header--menu-closed')) {
+          header.classList.remove('header--menu-closed');
+          header.classList.add('header--menu-opened');
+        } else {
+          header.classList.remove('header--menu-opened');
+          header.classList.add('header--menu-closed');
+        }
+      });
+    </script>
 
   </body>
 </html>
