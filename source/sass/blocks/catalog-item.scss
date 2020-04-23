@@ -6,6 +6,15 @@
 
   background-color: $white;
   border: solid 1px $border-grey;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 10px 0 $black-10;
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 $black-10;
+  }
 }
 
 .catalog-item__title {
@@ -21,6 +30,15 @@
   display: block;
 
   color: inherit;
+
+  &:hover,
+  &:focus {
+    color: $black-60;
+  }
+
+  &:active {
+    color: $black-30;
+  }
 }
 
 .catalog-item__picture {

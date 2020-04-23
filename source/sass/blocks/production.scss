@@ -9,6 +9,15 @@
   padding-bottom: 33px;
 
   border: solid 1px $border-grey;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 10px 0 $black-10;
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 $black-10;
+  }
 }
 
 .production__title {

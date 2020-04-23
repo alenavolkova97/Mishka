@@ -37,6 +37,15 @@
 
   cursor: pointer;
   user-select: none;
+
+  &:hover,
+  &:focus {
+    border-color: $border-darkgrey;
+  }
+
+  &:active {
+    border-color: $underline-color;
+  }
 }
 
 .form-size__field:checked + .form-size__value {

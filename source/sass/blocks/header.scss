@@ -21,9 +21,11 @@
   z-index: 2;
 
   width: 20px;
+  height: 20px;
   padding: 0;
 
   cursor: pointer;
+  background: none;
   border: none;
 }
 
@@ -33,6 +35,8 @@
     content: "";
 
     position: absolute;
+    top: 10px;
+    left: 0;
 
     width: 20px;
     height: 2px;
@@ -54,12 +58,14 @@
     content: "";
 
     position: absolute;
+    top: 0;
+    left: 0;
 
     width: 20px;
     height: 2px;
 
     background-color: $button-color;
-    box-shadow: 0 4px 0 0 $button-color, 0 8px 0 0 $button-color;
+    box-shadow: 0 6px 0 0 $button-color, 0 12px 0 0 $button-color;
   }
 }
 
