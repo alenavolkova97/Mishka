@@ -1,6 +1,8 @@
 .contacts {
   padding-top: 44px;
   padding-bottom: 39px;
+
+  overflow: hidden;
 }
 
 .contacts__title {
@@ -22,6 +24,7 @@
 
 .contacts__image {
   display: block;
+  width: 100%;
   margin-bottom: 39px;
 }
 
@@ -48,8 +51,8 @@
 
   .contacts__picture {
     display: block;
-    margin-right: -7.49%;
-    margin-left: -7.49%;
+    margin-right: -50px;
+    margin-left: -50px;
   }
 
   .contacts__image {

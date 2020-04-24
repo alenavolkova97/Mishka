@@ -22,7 +22,7 @@
 
 .production__title {
   margin: 0;
-  padding-left: 34.62%; /*резина*/
+  padding-left: 34.62%;
 
   font-size: 17px;
   line-height: 24px;
@@ -38,11 +38,16 @@
 .production__text {
   margin: 0;
   margin-bottom: 29px;
-  padding-right: 16.2%; /*резина*/
-  padding-left: 13.08%; /*резина*/
+  padding-right: 16.2%;
+  padding-left: 13.08%;
 
   font-size: 13px;
   line-height: 24px;
+}
+
+.production__link {
+  width: 73.85%;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {

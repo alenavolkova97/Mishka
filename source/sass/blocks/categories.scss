@@ -1,6 +1,8 @@
 .categories {
   position: relative;
 
+  overflow: hidden;
+
   padding-top: 76px;
 
   background-color: $categories-color;
@@ -38,10 +40,6 @@
   z-index: 2;
 
   margin-top: 120px;
-}
-
-.categories-list__item {
-  width: 100%; /*только для резины*/
 }
 
 @media (min-width: $tablet-width) {

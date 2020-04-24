@@ -26,23 +26,21 @@
 }
 
 .popular__features {
-  width: 100%; /*для резины*/
+  width: 100%;
   margin-bottom: 28px;
 
   line-height: 20px;
 }
 
 .popular__field {
+  width: 40%; /*регулир*/
   padding: 10px 0;
 
   border-bottom: 1px solid $border-grey;
 }
 
 .popular__value {
-  padding-top: 10px;
-  padding-right: 0;
-  padding-bottom: 10px;
-  padding-left: 31px;
+  padding: 10px 0;
 
   border-bottom: 1px solid $border-grey;
 }
@@ -53,6 +51,7 @@
 
 .popular__image {
   display: block;
+  margin: 0 auto;
 }
 
 .popular__price {

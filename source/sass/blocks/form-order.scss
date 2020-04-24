@@ -14,14 +14,14 @@
     top: 8px;
     right: 0;
 
-    width: 76.15%; /*резина*/
+    width: 76.15%;
     height: 1px;
 
     background-color: $underline-color;
   }
 
   &--email::before {
-    width: 68.85%; /*резина*/
+    width: 68.85%;
   }
 }
 
@@ -39,7 +39,7 @@
   @include list-reset;
 
   &--choice {
-    padding-left: 23.85%; /*резина*/
+    padding-left: 23.85%;
   }
 
   &--type {
@@ -114,7 +114,7 @@
     margin-top: 23px;
     margin-bottom: 18px;
     padding-top: 18px;
-    padding-left: 6.54%; /*резина*/
+    padding-left: 17px;
 
     background-color: $white;
     border: solid 2px $greyish-brown;
