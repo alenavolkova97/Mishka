@@ -1,7 +1,7 @@
 .header {
   position: relative;
   z-index: 2;
-  background-color: #ffffff;
+  background-color: $white;
 
   @include header-shadow;
 }
@@ -82,13 +82,18 @@
 }
 
 @media (min-width: $tablet-width) {
+  .header {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom, $white 88px, #e7e7e7 88px, #e7e7e7 89px, $categories-color 89px);
+    box-shadow: none;
+  }
+
   .header__grid-wrapper {
     position: relative;
 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    height: 88px;
     margin-right: auto;
     margin-left: auto;
     padding: 0 50px;
@@ -134,16 +139,17 @@
 
 @media (min-width: $desktop-width) {
   .header__logo {
-    top: 50%;
+    top: 0;
     left: 50%;
 
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
   }
 
   .header__user-wrapper {
     order: 2;
 
     width: 50%;
+    margin-left: 0;
   }
 
   .header__user-list {
