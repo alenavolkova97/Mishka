@@ -91,13 +91,13 @@
     height: 88px;
     margin-right: auto;
     margin-left: auto;
-    padding: 0 6.51%; /*резина*/
+    padding: 0 50px;
   }
 
   .header__logo {
     position: absolute;
     top: 0;
-    left: 6.51%;  /*резина*/
+    left: 50px;
   }
 
   .header__toggle {
@@ -111,13 +111,16 @@
 
   .header__user-wrapper {
     order: 1;
+
+    width: 100%;
+    margin-left: 18%;
     padding: 0;
   }
 
   .header__user-list {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 115px;
+    justify-content: flex-end;
   }
 
   .header__text {
@@ -130,11 +133,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .header__grid-wrapper {
-    width: 1150px;
-    padding: 0 50px; /*резина?*/
-  }
-
   .header__logo {
     top: 50%;
     left: 50%;
