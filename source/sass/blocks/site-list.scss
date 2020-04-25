@@ -2,10 +2,6 @@
   @include list-reset;
 }
 
-.header--menu-closed .site-list {
-  display: none;
-}
-
 .site-list__link {
   display: block;
   margin: 0 -11.54%; /*резина*/
@@ -23,6 +19,12 @@
 
   &[href]:active {
     color: $black-30;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .header--menu-closed .site-list {
+    display: none;
   }
 }
 
