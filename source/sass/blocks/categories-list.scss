@@ -61,24 +61,17 @@
   }
 
   .categories-list__item {
-    width: 50%; /*резина*/
+    width: 50%;
   }
 
-  .categories-list__link { /*размеры*/
+  .categories-list__link {
     margin-right: 0;
     margin-left: 0;
     padding-top: 35px;
-    padding-right: 185px;
     padding-bottom: 34px;
     padding-left: 36px;
 
     font-size: 20px;
     line-height: 30px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .categories-list__link { /*размеры*/
-    padding-right: 377px;
   }
 }

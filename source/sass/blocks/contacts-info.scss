@@ -1,5 +1,5 @@
 .contacts-info__field {
-  width: 30%; /*регулир*/
+  width: 30%; /*регулир, повляет на планшет*/
   padding: 0;
   padding-top: 40px;
 
@@ -42,12 +42,8 @@
     flex-wrap: wrap;
   }
 
-  .contacts-info__field {
-    padding-right: 26px;
-  }
-
   .contacts-info__trow {
-    width: 50%; /*резина*/
+    width: 50%;
   }
 
   .contacts-info__address {

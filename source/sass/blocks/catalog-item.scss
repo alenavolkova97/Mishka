@@ -75,11 +75,17 @@
 }
 
 @media (min-width: $tablet-width) {
+  .catalog-item__link--image {
+    width: 50%;
+  }
+
   .catalog-item__features {
-    width: 50%; /*резина*/
+    display: flex;
+    flex-direction: column;
+    width: 50%;
     padding-top: 29px;
-    padding-right: 4.94%;  /*резина*/
-    padding-left: 4.04%;  /*резина*/
+    padding-right: 4.94%;
+    padding-left: 4.04%;
   }
 
   .catalog-item__title {
@@ -88,13 +94,12 @@
 
   .catalog-item__desc {
     margin-top: 15px;
-    margin-bottom: 182px;
 
     font-size: 15px;
+  }
 
-    &--long-title {
-      margin-bottom: 156px;
-    }
+  .catalog-item__order-wrapper {
+    margin-top: auto;
   }
 
   .catalog-item__price {
@@ -103,10 +108,14 @@
 }
 
 @media (min-width: $desktop-width) {
+  .catalog-item__link--image {
+    width: 100%;
+  }
+
   .catalog-item__features {
-    width: 100%; /*резина*/
-    padding-right: 8.86%;  /*резина*/
-    padding-left: 10.13%;  /*резина*/
+    width: 100%;
+    padding-right: 8.86%;
+    padding-left: 10.13%;
   }
 
   .catalog-item__desc {

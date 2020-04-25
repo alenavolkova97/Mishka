@@ -77,29 +77,29 @@
   .contacts__title {
     margin-top: 81px;
     margin-bottom: 25px;
-    padding-right: 50%; /*резина*/
-    padding-left: 16.67%; /*резина*/
+    padding-right: 50%;
+    padding-left: 16.67%;
 
     font-size: 53px;
   }
 
   .contacts__info {
-    padding-left: 16.67%; /*резина*/
-    padding-right: 50%; /*резина*/
+    padding-left: 16.67%;
+    padding-right: 50%;
   }
 
   .contacts__picture {
     position: absolute;
     top: 71px;
-    right: 4.35%;  /*резина*/
+    right: 50px;
 
     width: auto;
     margin: 0;
   }
 
   .contacts__write-us {
-    width: 22%; /*резина*/
+    width: 22%;
     margin-top: 84px;
-    margin-left: 16.67%; /*резина*/
+    margin-left: 16.67%;
   }
 }

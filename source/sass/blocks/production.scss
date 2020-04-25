@@ -60,13 +60,13 @@
 
   .production__wrapper {
     padding-top: 43px;
-    padding-right: 6.29%; /*резина*/
-    padding-left: 6.29%; /*резина*/
+    padding-right: 6.29%;
+    padding-left: 6.29%;
     padding-bottom: 46px;
   }
 
   .production__title {
-    padding-left: 9.73%; /*резина*/
+    padding-left: 9.73%;
 
     font-size: 20px;
   }
@@ -74,7 +74,7 @@
   .production__process {
     position: absolute;
     top: 0;
-    left: 6.51%; /*резина*/
+    left: 6.51%;
 
     margin: 0;
   }
@@ -96,9 +96,9 @@
   }
 
   .production__wrapper {
-    margin-left: 64.95%; /*резина*/
+    margin-left: 64.95%;
     padding-top: 47px;
-    padding-right: 67px;
+    padding-right: 65px;
     padding-bottom: 60px;
     padding-left: 78px;
   }
@@ -109,12 +109,17 @@
   }
 
   .production__process {
-    left: 4.35%; /*резина*/
+    left: 50px;
 
     margin: 0;
   }
 
   .production__text {
     margin-bottom: 51px;
+  }
+
+  .production__link {
+    width: 100%;
+    margin: 0;
   }
 }
