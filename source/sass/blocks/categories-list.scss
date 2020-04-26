@@ -32,6 +32,8 @@
   }
 
   &--interior {
+    position: relative;
+    top: 5px;
     background-color: $main-green;
 
     &:hover,
@@ -42,9 +44,6 @@
   }
 
   &--toys {
-    position: relative;
-    z-index: 2;
-
     background-color: $dark-green;
 
     &:hover,
@@ -73,5 +72,9 @@
 
     font-size: 20px;
     line-height: 30px;
+
+    &--interior {
+      top: 0;
+    }
   }
 }
