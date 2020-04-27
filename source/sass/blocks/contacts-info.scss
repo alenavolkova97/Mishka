@@ -1,8 +1,7 @@
 .contacts-info__field {
-  width: 29px;
+  width: 30%; /*регулир, повляет на планшет*/
   padding: 0;
   padding-top: 40px;
-  padding-right: 32px;
 
   vertical-align: top;
 }
@@ -12,14 +11,23 @@
   padding-top: 40px;
 }
 
-// .contacts-info__value--email {                  делалось для подчеркивания
-//   border-bottom: 1px solid $underline-color;
-// }
-
 .contacts-info__link {
   color: inherit;
 
   border-bottom: 1px solid $underline-color;
+
+  &:hover,
+  &:focus {
+    color: $email-color;
+
+    border-bottom-color: $email-color;
+  }
+
+  &:active {
+    color: $email-color-30;
+
+    border-bottom-color: $email-color-30;
+  }
 }
 
 .contacts-info__address {
@@ -34,12 +42,8 @@
     flex-wrap: wrap;
   }
 
-  .contacts-info__field {
-    padding-right: 26px;
-  }
-
   .contacts-info__trow {
-    width: 50%; /*резина*/
+    width: 50%;
   }
 
   .contacts-info__address {

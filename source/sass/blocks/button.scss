@@ -16,6 +16,19 @@
 
   cursor: pointer;
 
+  &:hover,
+  &:focus {
+    color: $white;
+
+    background-color: $greyish-brown;
+  }
+
+  &:active {
+    color: $white-30;
+
+    background-color: $greyish-brown;
+  }
+
   &--modal {
     padding: 18px 0;
 
@@ -23,5 +36,11 @@
 
     background-color: $main-green;
     border: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $dark-green;
+    }
   }
 }

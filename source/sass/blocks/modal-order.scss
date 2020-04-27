@@ -17,8 +17,12 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
+  width: 566px;
+  max-width: 100%;
   padding-top: 36px;
+  padding-right: 30px;
   padding-bottom: 46px;
+  padding-left: 30px;
 
   background-color: $white;
   border: solid 1px #c6c6c6;
@@ -27,7 +31,7 @@
 
 .modal-order__title {
   margin: 0;
-  padding: 0 55px; /*?*/
+  padding: 0;
   font-size: 25px;
   font-weight: bold;
   color: $black;
@@ -37,29 +41,20 @@
 }
 
 .modal-order__form {
-  width: 100%;
   margin-top: 25px;
 }
 
 @media (min-width: $tablet-width) {
   .modal-order__wrapper {
-    width: 73.7%; /*резина*/
     padding-top: 51px;
-    padding-right: 13.2%; /*резина*/
-    padding-left: 13.2%; /*резина*/
+    padding-right: 108px;
+    padding-left: 108px;
   }
 
   .modal-order__title {
-    padding: 0; /*?*/
     font-size: 30px;
     line-height: 57px;
-  }
-}
 
-@media (min-width: $desktop-width) {
-  .modal-order__wrapper {
-    width: 49.22%; /*резина*/
-    padding-right: 8.96%; /*резина*/
-    padding-left: 8.96%; /*резина*/
+    white-space: nowrap;
   }
 }

@@ -14,14 +14,14 @@
     top: 8px;
     right: 0;
 
-    width: 76.15%; /*резина*/
+    width: 76.15%;
     height: 1px;
 
     background-color: $underline-color;
   }
 
   &--email::before {
-    width: 68.85%; /*резина*/
+    width: 68.85%;
   }
 }
 
@@ -39,7 +39,7 @@
   @include list-reset;
 
   &--choice {
-    padding-left: 23.85%; /*резина*/
+    padding-left: 23.85%;
   }
 
   &--type {
@@ -60,7 +60,8 @@
 
 .form-order__list--personification .form-order__input {
   margin-bottom: 24px;
-  padding: 18px 0;
+  padding-top: 18px;
+  padding-bottom: 18px;
 }
 
 .form-order__item-type {
@@ -79,7 +80,7 @@
 }
 
 .form-order__input {
-  width: 100%; /*на планшете и десктопе съедает все пространство*/
+  width: 100%;
   padding: 0;
 
   font: inherit;
@@ -89,6 +90,12 @@
 
   border: none;
   box-shadow: inset 0 -2px 0 0 $black;
+
+  &:hover,
+  &:focus,
+  &:active {
+    box-shadow: inset 0 -2px 0 0 $underline-color;
+  }
 
   &--tel {
     margin-top: 9px;
@@ -108,13 +115,20 @@
     margin-top: 23px;
     margin-bottom: 18px;
     padding-top: 18px;
-    padding-left: 6.54%; /*резина*/
+    padding-left: 17px;
 
     background-color: $white;
     border: solid 2px $greyish-brown;
     box-shadow: none;
 
     resize: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+      box-shadow: none;
+      border: solid 2px $underline-color;
+    }
   }
 
   &::placeholder {   /*доб префиксы для ie11*/
@@ -141,7 +155,7 @@
   .form-order__fieldset {
     position: relative;
 
-    padding-left: 25%; /*резина*/
+    padding-left: 25%;
 
     &::before {
       display: none;
@@ -157,12 +171,12 @@
   }
 
   .form-order__fieldset-wrapper {
-    margin-right: -7.49%;  /*резина*/
-    margin-left: -7.49%; /*резина*/
+    margin-right: -50px;
+    margin-left: -50px;
     padding-top: 50px;
-    padding-right: 7.49%; /*резина*/
+    padding-right: 50px;
     padding-bottom: 26px;
-    padding-left: 7.49%; /*резина*/
+    padding-left: 50px;
 
     background-color: $main-grey;
 
@@ -179,7 +193,7 @@
 
   .form-order__list {
     &--choice {
-      padding-left: 11.98%; /*резина*/
+      padding-left: 11.98%;
     }
 
     &--type {
@@ -210,9 +224,9 @@
   }
 
   .form-order__item-color {
-    width: 50%; /*резина*/
+    width: 50%;
     margin-bottom: 56px;
-    padding-left: 11.98%; /*резина*/
+    padding-left: 11.98%;
   }
 
   .form-order__item-text {
@@ -226,6 +240,8 @@
   }
 
   .form-order__input {
+    padding-left: 17px;
+
     &--tel {
       margin-top: 0;
       margin-bottom: 24px;
@@ -239,7 +255,6 @@
     &--textarea {
       margin-top: 50px;
       margin-bottom: 50px;
-      padding-left: 3.39%;
     }
 
     &::placeholder {   /*доб префиксы для ie11*/
@@ -262,14 +277,14 @@
   }
 
   .form-order__order {
-    width: 34.43%; /*резина*/
+    width: 34.43%;
   }
 }
 
 @media (min-width: $desktop-width) {
   .form-order__fieldset {
-    padding-right: 16.67%; /*резина*/
-    padding-left: 16.67%; /*резина*/
+    padding-right: 16.67%;
+    padding-left: 16.67%;
 
     &--color {
       padding-right: 14.19%;
@@ -277,16 +292,16 @@
   }
 
   .form-order__fieldset-wrapper {
-    margin-right: -4.77%;  /*резина*/
-    margin-left: -4.77%; /*резина*/
-    padding-right: 4.77%; /*резина*/
-    padding-left: 4.77%; /*резина*/
+    margin-right: -50px;
+    margin-left: -50px;
+    padding-right: 50px;
+    padding-left: 50px;
   }
 
   .form-order__legend {
     position: absolute;
     top: 0;
-    left: 6.1%; /*резина*/
+    left: 6.1%;
   }
 
   .form-order__list--personification .form-order__label {
@@ -294,8 +309,8 @@
   }
 
   .form-order__item-color {
-    width: 33.3%; /*резина*/
-    padding-left: 11.98%;  /*резина*/
+    width: 33.3%;
+    padding-left: 11.98%;
   }
 
   .form-order__flex-wrapper {

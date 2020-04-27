@@ -10,20 +10,20 @@
 
   <body>
 
-    <header class="header">
+    <header class="header header--menu-opened header--nojs">
       <div class="header__grid-wrapper">
-        <a class="header__logo logo" href="index.html">
-          <picture class="logo__picture">
+        <a class="header__logo header-logo" href="index.html">
+          <picture>
             <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img class="logo__image" src="img/logo-mobile.svg" alt="Логотип интернет-магазина игрушек ручной работы «Мишка»">
+            <img class="header-logo__image" src="img/logo-mobile.svg" alt="Логотип интернет-магазина игрушек ручной работы «Мишка»">
           </picture>
         </a>
-        <button class="header__toggle" type="button" aria-label="Открыть меню">К</button>
+        <button class="header__toggle" type="button" aria-label="Открыть меню"></button>
         <nav class="header__nav main-nav container">
           <ul class="main-nav__list site-list">
             <li class="site-list__item"><a class="site-list__link">Каталог товаров</a></li>
-            <li class="site-list__item"><a class="site-list__link"  href="form.html">Вязание на заказ</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="form.html">Вязание на заказ</a></li>
           </ul>
         </nav>
         <div class="header__user-wrapper container">
@@ -46,10 +46,10 @@
         <h2 class="visually-hidden">Каталог</h2>
         <ul class="catalog__list">
           <li class="catalog__item catalog-item">
-            <a class="catalog-item__link" href="#">
-              <picture class="catalog-item__picture">
+            <a class="catalog-item__link catalog-item__link--image" href="#">
+              <picture>
                 <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg">
-                <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg">
+                <source media="(min-width: 361px)" srcset="img/photo-hare-tablet@1x.jpg">
                 <img class="catalog-item__image" src="img/photo-hare-mobile@1x.jpg" alt="Голубо-белый вязаный зайчик">
               </picture>
             </a>
@@ -63,10 +63,10 @@
             </div>
           </li>
           <li class="catalog__item catalog-item">
-            <a class="catalog-item__link" href="#">
-              <picture class="catalog-item__picture">
+            <a class="catalog-item__link catalog-item__link--image" href="#">
+              <picture>
                 <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg">
-                <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg">
+                <source media="(min-width: 361px)" srcset="img/photo-bowl-tablet@1x.jpg">
                 <img class="catalog-item__image" src="img/photo-bowl-mobile@1x.jpg" alt="Оранжево-белая вязаная корзинка для белья">
               </picture>
             </a>
@@ -80,10 +80,10 @@
             </div>
           </li>
           <li class="catalog__item catalog-item">
-            <a class="catalog-item__link" href="#">
-              <picture class="catalog-item__picture">
+            <a class="catalog-item__link catalog-item__link--image" href="#">
+              <picture>
                 <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg">
-                <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg">
+                <source media="(min-width: 361px)" srcset="img/photo-toys-tablet@1x.jpg">
                 <img class="catalog-item__image" src="img/photo-toys-mobile@1x.jpg" alt="Большая зелено-белая вязаная корзинка для игрушек">
               </picture>
             </a>
@@ -102,11 +102,11 @@
         <div class="production__wrapper">
           <h2 class="production__title">Процесс производства</h2>
           <div class="production__process production-process">
-            <picture class="production-process__picture">
+            <!-- <picture class="production-process__picture">
               <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg">
-              <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg">
+              <source media="(min-width: 361px)" srcset="img/video-tablet@1x.jpg">
               <img class="production-process__image" src="img/video-mobile@1x.jpg" alt="Процесс производства товаров интернет-магазина">
-            </picture>
+            </picture> -->
             <button class="production-process__play" type="button" aria-label="Смотреть">КНОПКА</button>
           </div>
           <p class="production__text">
@@ -118,23 +118,27 @@
           </p>
           <a class="production__link button" href="form.html">Сделать заказ</a>
         </div>
-
       </section>
     </main>
 
     <footer class="footer">
       <div class="footer__flex-wrapper container">
-        <a class="footer__logo logo" href="index.html" aria-label="Перейти на главную страницу сайта"> <!--logo?-->
-          <img class="logo__image" src="" width="" height="" alt="Логотип интернет-магазина игрушек ручной работы «Мишка»">
+        <a class="footer__logo footer-logo" aria-label="Перейти на главную страницу сайта"> <!--footer-logo?-->
+          <!-- <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="logo__image" src="img/logo-mobile.svg" alt="Логотип интернет-магазина игрушек ручной работы «Мишка»">
+          </picture> -->
+          <img class="footer-logo__image" src="" width="" height="" alt="Логотип интернет-магазина игрушек ручной работы «Мишка»">
         </a>
         <ul class="social__list social">
-          <li class="social__item"><a class="social__link social__link--instagram" href="#" aria-label="Мы в Инстаграме"></a></li>
-          <li class="social__item"><a class="social__link social__link--facebook" href="#" aria-label="Мы в Фейсбуке"></a></li>
-          <li class="social__item"><a class="social__link social__link--twitter" href="#" aria-label="Мы в Твиттере"></a></li>
+          <li class="social__item"><a class="social__link social__link--instagram" href="#" aria-label="Мы в Инстаграме" target="_blank"></a></li>
+          <li class="social__item"><a class="social__link social__link--facebook" href="#" aria-label="Мы в Фейсбуке" target="_blank"></a></li>
+          <li class="social__item"><a class="social__link social__link--twitter" href="#" aria-label="Мы в Твиттере" target="_blank"></a></li>
         </ul>
         <div class="footer__copyright copyright">
-          <p class="copyright__text">Разработано</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Профессиональный онлайн‑курс HTML и CSS, уровень 2" target="_blank">
+            <p class="copyright__text">Разработано</p> <!--КАК ЧИТАЕТ?-->
             <img src="" width="" height="" alt="Логотип «HTML Academy»">
           </a>
         </div>
@@ -164,6 +168,8 @@
         </form>
       </div>
     </section>
+
+    <script src="js/script.js"></script>
 
   </body>
 </html>

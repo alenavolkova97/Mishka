@@ -7,10 +7,10 @@
 
 .categories-list__link {
   display: block;
-  margin-right: -9.38%;
-  margin-left: -9.38%;
+  margin-right: -30px;
+  margin-left: -30px;
   padding-top: 30px;
-  padding-right: 185px;
+  padding-right: 65%;
   padding-bottom: 30px;
   padding-left: 30px;
 
@@ -19,12 +19,38 @@
   font-weight: bold;
   color: $white;
 
+  transform: translateY(5px);
+  transition: 0.3s;
+
+  &:hover,
+  &:focus {
+    transform: translateY(0);
+  }
+
+  &:active {
+    color: $white-30;
+  }
+
   &--interior {
+    position: relative;
+    top: 5px;
     background-color: $main-green;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #59d5bc;
+    }
   }
 
   &--toys {
     background-color: $dark-green;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #46c1ae;
+    }
   }
 }
 
@@ -34,24 +60,21 @@
   }
 
   .categories-list__item {
-    width: 50%; /*резина*/
+    width: 50%;
   }
 
   .categories-list__link {
     margin-right: 0;
     margin-left: 0;
     padding-top: 35px;
-    padding-right: 185px;
     padding-bottom: 34px;
     padding-left: 36px;
 
     font-size: 20px;
     line-height: 30px;
-  }
-}
 
-@media (min-width: $desktop-width) {
-  .categories-list__link {
-    padding-right: 377px;
+    &--interior {
+      top: 0;
+    }
   }
 }

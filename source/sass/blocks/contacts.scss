@@ -1,6 +1,8 @@
 .contacts {
   padding-top: 44px;
   padding-bottom: 39px;
+
+  overflow: hidden;
 }
 
 .contacts__title {
@@ -16,12 +18,13 @@
 
 .contacts__picture {
   display: block;
-  margin-right: -11.54%;
-  margin-left: -11.54%;
+  margin-right: -30px;
+  margin-left: -30px;
 }
 
 .contacts__image {
   display: block;
+  width: 100%;
   margin-bottom: 39px;
 }
 
@@ -48,8 +51,8 @@
 
   .contacts__picture {
     display: block;
-    margin-right: -7.49%;
-    margin-left: -7.49%;
+    margin-right: -50px;
+    margin-left: -50px;
   }
 
   .contacts__image {
@@ -74,29 +77,29 @@
   .contacts__title {
     margin-top: 81px;
     margin-bottom: 25px;
-    padding-right: 50%; /*резина*/
-    padding-left: 16.67%; /*резина*/
+    padding-right: 50%;
+    padding-left: 16.67%;
 
     font-size: 53px;
   }
 
   .contacts__info {
-    padding-left: 16.67%; /*резина*/
-    padding-right: 50%; /*резина*/
+    padding-left: 16.67%;
+    padding-right: 50%;
   }
 
   .contacts__picture {
     position: absolute;
     top: 71px;
-    right: 4.35%;  /*резина*/
+    right: 50px;
 
     width: auto;
     margin: 0;
   }
 
   .contacts__write-us {
-    width: 22%; /*резина*/
+    width: 22%;
     margin-top: 84px;
-    margin-left: 16.67%; /*резина*/
+    margin-left: 16.67%;
   }
 }

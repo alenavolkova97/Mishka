@@ -4,10 +4,10 @@
 
 .site-list__link {
   display: block;
-  margin: 0 -11.54%; /*резина*/
+  margin: 0 -30px;
   padding-top: 32px;
   padding-bottom: 30px;
-  padding-left: 29.23%; /*резина*/
+  padding-left: 29.23%;
 
   @include nav-item-font;
   @include header-shadow;
@@ -22,9 +22,15 @@
   }
 }
 
+@media (max-width: $mobile-width-only) {
+  .header--menu-closed .site-list {
+    display: none;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .site-list__item {
-    margin-right: 37px;
+    margin-right: 8.22%;
   }
 
   .site-list__item:nth-child(2n) {

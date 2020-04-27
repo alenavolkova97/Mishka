@@ -26,33 +26,28 @@
 }
 
 .popular__features {
-  width: 100%; /*для резины*/
+  width: 100%;
   margin-bottom: 28px;
 
   line-height: 20px;
 }
 
 .popular__field {
+  width: 40%; /*регулир*/
   padding: 10px 0;
 
   border-bottom: 1px solid $border-grey;
 }
 
 .popular__value {
-  padding-top: 10px;
-  padding-right: 0;
-  padding-bottom: 10px;
-  padding-left: 31px;
+  padding: 10px 0;
 
   border-bottom: 1px solid $border-grey;
 }
 
-.popular__picture {
-  display: block;
-}
-
 .popular__image {
   display: block;
+  margin: 0 auto;
 }
 
 .popular__price {
@@ -73,7 +68,6 @@
 
 @media (min-width: $tablet-width) {
   .popular {
-    position: relative;
     padding-top: 55px;
     padding-bottom: 53px;
   }
@@ -81,16 +75,21 @@
   .popular__title-wrapper {
     flex-direction: row-reverse;
     justify-content: space-between;
+    align-items: center;
     padding-right: 28px;
   }
 
   .popular__title {
+    width: 70px;
+
     line-height: 17px;
+    text-align: center;
   }
 
   .popular__desc-wrapper {
+    position: relative;
     margin-top: 55px;
-    padding-right: 56.59%; /*резина*/
+    padding-right: 56.59%;
   }
 
   .popular__desc {
@@ -105,8 +104,8 @@
 
   .popular__image {
     position: absolute;
-    top: 170px;
-    right: 50px;
+    top: 0;
+    right: 0;
   }
 
   .popular__price {
@@ -117,7 +116,8 @@
 
 @media (min-width: $desktop-width) {
   .popular {
-    padding-top: 120px;
+    position: relative;
+    padding-top: 71px;
     padding-bottom: 73px;
   }
 
@@ -126,23 +126,26 @@
     z-index: 1;
 
     flex-direction: row;
-    padding-left: 16.67%;  /*резина*/
+    padding-top: 49px;
+    padding-left: 16.67%;
   }
 
   .popular__title {
     position: absolute;
-    top: 15px;
-    left: 0;
+    top: 60px;
+    left: 36px;
   }
 
   .popular__desc-wrapper {
+    position: static;
     margin-top: 52px;
-    padding-right: 55.32%; /*резина*/
-    padding-left: 16.67%;  /*резина*/
+    padding-right: 55.32%;
+    padding-left: 16.67%;
   }
 
   .popular__image {
     top: 71px;
+    right: 50px;
   }
 
   .popular__price {
