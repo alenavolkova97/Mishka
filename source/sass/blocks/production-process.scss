@@ -1,14 +1,11 @@
 .production-process {
   position: relative;
-}
 
-.production-process__picture {
-  display: block;
-}
+  height: 150px;
 
-.production-process__image {
-  display: block;
-  width: 100%;
+  background-image: url("../../img/video-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .production-process__play {
@@ -18,4 +15,20 @@
   transform: translate(-50%, -50%);
 
   border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .production-process {
+    height: 455px;
+
+    background-image: url("../../img/video-tablet@1x.jpg");
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .production-process {
+    width: 682px;
+
+    background-image: url("../../img/video-desktop@1x.jpg");
+  }
 }
