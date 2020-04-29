@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Интернет-магазин игрушек ручной работы «Мишка»</title>
+    <script>document.createElement( "picture" );</script>
+    <script src="js/picturefill-min.js" async></script>
     <link href="css/style.css" rel="stylesheet">
   </head>
 
@@ -16,7 +18,7 @@
           <picture>
             <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img class="header-logo__image" src="img/logo-mobile.svg" alt="Логотип интернет-магазина игрушек ручной работы «Мишка»">
+            <img class="header-logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина игрушек ручной работы «Мишка»">
           </picture>
         </a>
         <button class="header__toggle" type="button" aria-label="Открыть меню"></button>
@@ -46,9 +48,9 @@
         <h2 class="visually-hidden">Категории товаров интернет-магазина</h2>
         <p class="categories__intro container">Милые штуки ручной работы&nbsp;для дома</p>
         <picture>
-          <source media="(min-width: 1150px)" srcset="img/hero-desktop@1x.jpg">
-          <source media="(min-width: 768px)" srcset="img/hero-tablet@1x.jpg">
-          <img class="categories__image" src="img/hero-mobile@1x.jpg" alt="Игрушки и корзинки в интерьере">
+          <source media="(min-width: 1150px)" srcset="img/hero-desktop@1x.jpg 1x, img/hero-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/hero-tablet@1x.jpg 1x, img/hero-tablet@2x.jpg 2x">
+          <img class="categories__image" src="img/hero-mobile@1x.jpg" srcset="img/hero-mobile@2x.jpg 2x" alt="Игрушки и корзинки в интерьере"> <!--размеры?-->
         </picture>
         <ul class="categories__list categories-list container">
           <li class="categories-list__item">
@@ -82,9 +84,9 @@
             </tr>
           </table>
           <picture>
-            <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg">
-            <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg">
-            <img class="popular__image" src="img/triple-set-mobile@1x.jpg" alt="Двухцветные вязаные корзинки трёх размеров">
+            <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+            <img class="popular__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Двухцветные вязаные корзинки трёх размеров"> <!--размеры?-->
           </picture>
           <p class="popular__price">Цена: 990 руб.</p>
           <a class="popular__order button" href="#">Заказать</a>
@@ -143,7 +145,7 @@
                 <address class="contacts-info__address">
                   г.&nbsp;Санкт-Петербург,
                   ул.&nbsp;Большая Конюшенная,
-                  д.&nbsp;19/8, офис&nbsp;101
+                  д.&nbsp;19/8, офис&nbsp;101s
                 </address>
               </td>
             </tr>
@@ -151,9 +153,9 @@
         </table>
         <!--будет iframe-->
         <picture class="contacts__picture">
-          <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg">
-          <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg">
-          <img class="contacts__image" src="img/map-mobile@1x.jpg" alt="Офис интернет-магазина по адресу ул. Большая Конюшенная, д. 19/8, офис 101, г. Санкт-Петербург">
+          <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+          <img class="contacts__image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Офис интернет-магазина по адресу ул. Большая Конюшенная, д. 19/8, офис 101, г. Санкт-Петербург"> <!--размеры?-->
         </picture>
         <a class="contacts__write-us button" href="#">Напишите нам</a>
       </section>
