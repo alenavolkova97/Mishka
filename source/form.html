@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Оформление заказа в интернет-магазине игрушек ручной работы «Мишка»</title>
     <script>document.createElement( "picture" );</script>
-    <script src="js/picturefill-min.js" async></script>
+    <script src="js/picturefill-min.js" async=""></script>
     <link href="css/style.css" rel="stylesheet">
     <link href="img/favicon-16x16.png" rel="icon" sizes="16x16">
     <link href="img/favicon-32x32.png" rel="icon" sizes="32x32">
@@ -38,7 +38,7 @@
         </div>
         <ul class="header__product-list product-list">
           <li class="product-list__item"><a class="product-list__link" href="#">Новые поступления</a></li>
-          <li class="product-list__item"><a class="product-list__link"  href="#">Распродажа</a></li>
+          <li class="product-list__item"><a class="product-list__link" href="#">Распродажа</a></li>
         </ul>
         <p class="header__text">Бесплатная доставка по России</p>
       </div>
@@ -58,7 +58,7 @@
             <legend class="form-order__legend">Тип</legend>
             <ul class="form-order__list form-order__list--type form-order__list--choice">
               <li class="form-order__item-type">
-                <input class="visually-hidden" type="radio" name="type_group" value="accessory" id="accessory_field" checked>
+                <input class="visually-hidden" type="radio" name="type_group" value="accessory" id="accessory_field" checked="">
                 <label class="form-order__label" for="accessory_field">Аксессуар для интерьера</label>
               </li>
               <li class="form-order__item-type">
@@ -72,11 +72,11 @@
               <legend class="form-order__legend">Цвет</legend>
               <ul class="form-order__list form-order__list--color form-order__list--choice">
                 <li class="form-order__item-color">
-                  <input class="visually-hidden" type="checkbox" name="white" id="white_field" checked>
+                  <input class="visually-hidden" type="checkbox" name="white" id="white_field" checked="">
                   <label class="form-order__label" for="white_field">Белый</label>
                 </li>
                 <li class="form-order__item-color">
-                  <input class="visually-hidden" type="checkbox" name="gray" id="gray_field" checked>
+                  <input class="visually-hidden" type="checkbox" name="gray" id="gray_field" checked="">
                   <label class="form-order__label" for="gray_field">Серый</label>
                 </li>
                 <li class="form-order__item-color">
@@ -103,11 +103,11 @@
               <ul class="form-order__list form-order__list--personification">
                 <li class="form-order__item-text">
                   <label class="form-order__label" for="name_field">Имя:</label>
-                  <input class="form-order__input" type="text" name="name" id="name_field" placeholder="Введите ваше имя*" required>
+                  <input class="form-order__input" type="text" name="name" id="name_field" placeholder="Введите ваше имя*" required="">
                 </li>
                 <li class="form-order__item-text">
                   <label class="form-order__label" for="surname_field">Фамилия:</label>
-                  <input class="form-order__input" type="text" name="surname" id="surname_field" placeholder="Укажите фамилию*" required>
+                  <input class="form-order__input" type="text" name="surname" id="surname_field" placeholder="Укажите фамилию*" required="">
                 </li>
                 <li class="form-order__item-text">
                   <label class="form-order__label" for="patronymic_field">Отчество:</label>
@@ -119,12 +119,12 @@
             <fieldset class="form-order__fieldset form-order__fieldset--tel">
               <legend class="form-order__legend">Тел</legend>
                 <label class="visually-hidden" for="tel_field">Ваш мобильный номер</label>
-                <input class="form-order__input form-order__input--tel" type="tel" name="tel" id="tel_field" pattern="\+7\s[0-9]{3}\s[0-9]{3}\s[0-9]{2}\s[0-9]{2}" placeholder="+7 XXX XXX XX XX*" required>
+                <input class="form-order__input form-order__input--tel" type="tel" name="tel" id="tel_field" pattern="\+7\s[0-9]{3}\s[0-9]{3}\s[0-9]{2}\s[0-9]{2}" placeholder="+7 XXX XXX XX XX*" required="">
             </fieldset>
             <fieldset class="form-order__fieldset form-order__fieldset--email">
               <legend class="form-order__legend">e-mail</legend>
                 <label class="visually-hidden" for="e-mail_field">Ваш e-mail</label>
-                <input class="form-order__input form-order__input--email" type="email" name="e-mail" id="e-mail_field" placeholder="Ваш Email*" required>
+                <input class="form-order__input form-order__input--email" type="email" name="e-mail" id="e-mail_field" placeholder="Ваш Email*" required="">
             </fieldset>
           </div>
           <fieldset class="form-order__fieldset">
