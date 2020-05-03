@@ -66,17 +66,116 @@
 
 .form-order__item-type {
   margin-bottom: 25px;
+
+  input:checked + label::before,
+  input:not(:checked) + label::before {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: -62px;
+
+    width: 40px;
+    height: 40px;
+
+    border: solid 2px $greyish-brown;
+    border-radius: 50%;
+
+    transform: translateY(-50%);
+  }
+
+  input:checked + label::after {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: -50px;
+
+    width: 16px;
+    height: 16px;
+
+    background-color: #62d1ba;
+    border-radius: 50%;
+
+    transform: translateY(-50%);
+  }
+
+  input:checked:not(:disabled):not(:active):hover + label::before,
+  input:not(:checked):not(:disabled):not(:active):hover + label::before,
+  input:checked:not(:disabled):not(:active):focus + label::before,
+  input:not(:checked):not(:disabled):not(:active):focus + label::before {
+    border-color: #62d1ba;
+  }
+
+  input:not(:checked):not(:disabled):active + label::before {
+    border-color: $border-darkgrey;
+  }
+
+  input:disabled + label::before {
+    opacity: 0.3;
+  }
+
+  input:disabled + label {
+    opacity: 0.3;
+  }
 }
 
 .form-order__item-color {
   margin-bottom: 44px;
+
+  input:checked + label::before,
+  input:not(:checked) + label::before {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: -60px;
+
+    width: 40px;
+    height: 40px;
+
+    border: solid 2px $greyish-brown;
+
+    transform: translateY(-50%);
+  }
+
+  input:checked + label::before {
+    background-image: url("../../img/icon-tick.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 22px 16px;
+  }
+
+  input:checked:not(:disabled):not(:active):hover + label::before,
+  input:not(:checked):not(:disabled):not(:active):hover + label::before,
+  input:checked:not(:disabled):not(:active):focus + label::before,
+  input:not(:checked):not(:disabled):not(:active):focus + label::before {
+    border-color: #62d1ba;
+  }
+
+  input:active:not(:disabled) + label::before {
+    border-color: $border-darkgrey;
+  }
+
+  input:disabled + label::before {
+    opacity: 0.3;
+  }
+
+  input:disabled + label {
+    opacity: 0.3;
+  }
 }
 
 .form-order__label {
+  position: relative;
+
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
   color: $black;
+
+  cursor: pointer;
+  user-select: none;
 }
 
 .form-order__input {
@@ -221,12 +320,39 @@
 
   .form-order__item-type {
     margin-bottom: 57px;
+
+    input:checked + label::before,
+    input:not(:checked) + label::before {
+      left: -80px;
+
+      width: 52px;
+      height: 52px;
+    }
+
+    input:checked + label::after {
+      left: -65px;
+
+      width: 22px;
+      height: 22px;
+    }
   }
 
   .form-order__item-color {
     width: 50%;
     margin-bottom: 56px;
     padding-left: 11.98%;
+
+    input:checked + label::before,
+    input:not(:checked) + label::before {
+      left: -82px;
+
+      width: 54px;
+      height: 52px;
+    }
+
+    input:checked + label::before {
+      background-size: 33px 22px;
+    }
   }
 
   .form-order__item-text {
