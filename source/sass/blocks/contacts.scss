@@ -39,6 +39,10 @@
   .contacts {
     padding-top: 72px;
     padding-bottom: 57px;
+
+    background-image: url("../../img/icon-flag.svg");
+    background-repeat: no-repeat;
+    background-position: 96% 47px;
   }
 
   .contacts__title {
@@ -72,6 +76,8 @@
     position: relative;
 
     padding-bottom: 105px;
+
+    background-position: 113px 133px;
   }
 
   .contacts__title {

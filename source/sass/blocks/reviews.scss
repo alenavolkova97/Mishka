@@ -29,9 +29,30 @@
   padding: 0;
 
   background-color: $white;
+  background-repeat: no-repeat;
   border: solid 1px $border-grey;
 
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--prev {
+    background-image: url("../../img/icon-left-arrow.svg");
+    background-position: 50% 50%;
+    border-right: none;
+  }
+
+  &--next {
+    background-image: url("../../img/icon-right-arrow.svg");
+    background-position: 50% 50%;
+  }
 }
 
 .reviews__author-name {
@@ -104,9 +125,12 @@
     bottom: 120px;
   }
 
-  // .reviews__control {
-  //   border: none;
-  // }
+  .reviews__control {
+    width: 130px;
+    height: 52px;
+
+    border: none;
+  }
 
   .reviews__write {
     width: 26.2%;
