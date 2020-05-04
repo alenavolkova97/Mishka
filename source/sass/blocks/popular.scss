@@ -47,6 +47,8 @@
 
 .popular__image {
   display: block;
+  width: 260px;
+  height: 315px;
   margin: 0 auto;
 }
 
@@ -106,6 +108,9 @@
     position: absolute;
     top: 0;
     right: 0;
+
+    width: 333px;
+    height: 404px;
   }
 
   .popular__price {
@@ -146,6 +151,9 @@
   .popular__image {
     top: 71px;
     right: 50px;
+
+    width: 525px;
+    height: 636px;
   }
 
   .popular__price {

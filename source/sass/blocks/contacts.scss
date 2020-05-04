@@ -25,6 +25,7 @@
 .contacts__image {
   display: block;
   width: 100%;
+  height: auto;
   margin-bottom: 39px;
 }
 
@@ -101,6 +102,11 @@
 
     width: auto;
     margin: 0;
+  }
+
+  .contacts__image {
+    width: 525px;
+    height: 457px;
   }
 
   .contacts__write-us {
