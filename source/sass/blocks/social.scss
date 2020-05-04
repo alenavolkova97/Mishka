@@ -6,15 +6,15 @@
 
 .social__link {
   display: block;
-}
 
-.social__link:hover .social-icon,
-.social__link:focus .social-icon {
-  fill: $email-color;
-}
+  &:hover .social__icon,
+  &:focus .social__icon {
+    fill: $email-color;
+  }
 
-.social__link:active .social-icon {
-  opacity: 0.3;
+  &:active .social__icon {
+    opacity: 0.3;
 
-  fill: $email-color;
+    fill: $email-color;
+  }
 }

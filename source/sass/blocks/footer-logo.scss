@@ -1,0 +1,22 @@
+.footer-logo {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .footer-logo {
+    display: block;
+    width: 102px;
+    height: 34px;
+
+    &[href]:hover .footer-logo__icon,
+    &[href]:focus .footer-logo__icon {
+      fill: $email-color;
+    }
+
+    &[href]:active .footer-logo__icon {
+      opacity: 0.3;
+
+      fill: $email-color;
+    }
+  }
+}

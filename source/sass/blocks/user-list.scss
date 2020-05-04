@@ -15,11 +15,27 @@
   &:hover,
   &:focus {
     color: $black-60;
+
+    .user-list__icon {
+      opacity: 1;
+
+      fill: $main-green;
+    }
   }
 
   &:active {
     color: $black-30;
+
+    .user-list__icon {
+      opacity: 0.3;
+
+      fill: $main-green;
+    }
   }
+}
+
+.user-list__icon {
+  opacity: 0.2;
 }
 
 @media (max-width: $mobile-width-only) {

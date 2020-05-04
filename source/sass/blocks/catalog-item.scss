@@ -70,6 +70,27 @@
   color: $black;
 }
 
+.catalog-item__to-basket {
+  display: block;
+
+  &:hover .catalog-item__icon,
+  &:focus .catalog-item__icon {
+    opacity: 1;
+
+    fill: $main-green;
+  }
+
+  &:active .catalog-item__icon {
+    opacity: 0.3;
+
+    fill: $main-green;
+  }
+}
+
+.catalog-item__icon {
+  opacity: 0.2;
+}
+
 @media (min-width: $tablet-width) {
   .catalog-item__link--image {
     width: 50%;
