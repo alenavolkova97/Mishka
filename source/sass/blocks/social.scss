@@ -1,3 +1,20 @@
 .social {
+  display: flex;
+
   @include list-reset;
+}
+
+.social__link {
+  display: block;
+}
+
+.social__link:hover .social-icon,
+.social__link:focus .social-icon {
+  fill: $email-color;
+}
+
+.social__link:active .social-icon {
+  opacity: 0.3;
+
+  fill: $email-color;
 }
