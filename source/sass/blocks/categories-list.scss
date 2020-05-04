@@ -12,7 +12,6 @@
   margin-right: -30px;
   margin-left: -30px;
   padding-top: 30px;
-  padding-right: 65%;
   padding-bottom: 30px;
   padding-left: 30px;
 
@@ -107,6 +106,10 @@
   }
 }
 
+.categories-list__text {
+  width: 106px;
+}
+
 @media (min-width: $tablet-width) {
   .categories-list {
     display: flex;
@@ -120,6 +123,7 @@
     margin-right: 0;
     margin-left: 0;
     padding-top: 35px;
+    padding-right: 58%;
     padding-bottom: 34px;
     padding-left: 36px;
 
@@ -139,6 +143,10 @@
       top: 31px;
       right: 34px;
     }
+  }
+
+  .categories-list__text {
+    width: auto;
   }
 }
 

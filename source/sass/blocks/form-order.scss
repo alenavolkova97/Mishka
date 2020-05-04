@@ -194,6 +194,12 @@
   &:focus,
   &:active {
     box-shadow: inset 0 -2px 0 0 $underline-color;
+
+    & + .form-order__icon {
+      opacity: 1;
+
+      fill: $underline-color;
+    }
   }
 
   &--tel {
@@ -240,6 +246,14 @@
   &--tel::placeholder { /*доб префиксы для ie11*/
     font-size: 19px;
   }
+}
+
+.form-order__icon {
+  position: absolute;
+  top: 40px;
+  right: 0;
+
+  opacity: 0.2;
 }
 
 .form-order__note {
@@ -388,6 +402,10 @@
     }
   }
 
+  .form-order__icon {
+    top: 25px;
+  }
+
   .form-order__flex-wrapper {
     display: flex;
     flex-direction: row-reverse;
@@ -437,6 +455,11 @@
   .form-order__item-color {
     width: 33.3%;
     padding-left: 11.98%;
+  }
+
+  .form-order__icon {
+    top: 25px;
+    right: 17%;
   }
 
   .form-order__flex-wrapper {

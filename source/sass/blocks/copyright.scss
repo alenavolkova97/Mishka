@@ -1,29 +1,23 @@
 .copyright__link {
   display: flex;
 
+  font-size: 19px;
+  line-height: 18px;
+  font-weight: bold;
+  color: $black;
+
   &:hover .copyright__icon,
   &:focus .copyright__icon {
     fill: $email-color;
   }
 
-  &:active .copyright__text {
+  &:active {
     opacity: 0.3;
   }
 
   &:active .copyright__icon {
-    opacity: 0.3;
-
     fill: $email-color;
   }
-}
-
-.copyright__text {
-  margin: 0;
-
-  font-size: 19px;
-  line-height: 18px;
-  font-weight: bold;
-  color: $black;
 }
 
 .copyright__icon {
