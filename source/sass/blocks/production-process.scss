@@ -3,12 +3,12 @@
 
   height: 150px;
 
-  background-image: url("../../img/video-mobile@1x.jpg");
+  background-image: url("../../img/ignored_by_webp/video-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../../img/video-mobile@2x.jpg");
+    background-image: url("../../img/ignored_by_webp/video-mobile@2x.jpg");
   }
 }
 
