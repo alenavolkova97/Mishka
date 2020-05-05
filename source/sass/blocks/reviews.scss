@@ -1,5 +1,10 @@
 .reviews {
   padding-bottom: 45px;
+
+  background-image: url("../../img/bg-zigzag-line.svg");
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 100% 6px;
 }
 
 .reviews__title {
@@ -92,11 +97,20 @@
     padding-top: 86px;
     padding-bottom: 122px;
 
-    background: url("../img/ignored_by_webp/review@1x.jpg") no-repeat;
-    background-size: 350px auto;
+    background-image:
+      url("../img/ignored_by_webp/review@1x.jpg"),
+      url("../../img/bg-zigzag-line.svg");
+    background-position:
+      0 0,
+      0 100%;
+    background-size:
+      350px auto,
+      100% 15px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/ignored_by_webp/review@2x.jpg");
+      background-image:
+        url("../img/ignored_by_webp/review@2x.jpg"),
+        url("../../img/bg-zigzag-line.svg");
     }
   }
 
@@ -147,7 +161,13 @@
     padding-top: 80px;
     padding-bottom: 169px;
 
-    background-position: 50px 0;
+    background-position:
+      50px 0,
+      50px 100%;
+
+    background-size:
+      350px auto,
+      1050px 23px;
   }
 
   .reviews__title {
