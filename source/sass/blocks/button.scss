@@ -1,6 +1,6 @@
 .button {
   display: block;
-  width: 100%; /*резина*/
+  width: 100%;
   padding: 16px 0;
 
   font-size: 17px;
@@ -13,6 +13,8 @@
 
   background-color: $white;
   border: solid 2px $greyish-brown;
+
+  transition: all 0.4s;
 
   cursor: pointer;
 
@@ -36,6 +38,8 @@
 
     background-color: $main-green;
     border: none;
+
+    transition: none;
 
     &:hover,
     &:focus,
