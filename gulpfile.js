@@ -40,7 +40,8 @@ gulp.task("server", function () {
     notify: false,
     open: true,
     cors: true,
-    ui: false
+    ui: false,
+    index: "index.min.html"
   });
 
   gulp.watch("source/sass/**/*.scss", gulp.series("css"));
@@ -105,8 +106,7 @@ gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
-    "source/*.ico",
-    "source/*.html"
+    "source/*.ico"
   ], {
     base: "source"
   })
