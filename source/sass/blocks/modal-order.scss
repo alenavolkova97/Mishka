@@ -11,7 +11,7 @@
   background-color: $modal-layer-color;
 }
 
-.modal-order__wrapper {
+.modal-order__popup {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -45,7 +45,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .modal-order__wrapper {
+  .modal-order__popup {
     padding-top: 51px;
     padding-right: 108px;
     padding-left: 108px;

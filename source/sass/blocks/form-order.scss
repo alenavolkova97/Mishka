@@ -237,14 +237,25 @@
     }
   }
 
-  &::placeholder {   /*доб префиксы для ie11*/
+  &:-ms-input-placeholder {
     font: inherit;
     font-size: 17px;
     line-height: 18px;
     color: $placeholder-color;
   }
 
-  &--tel::placeholder { /*доб префиксы для ie11*/
+  &::placeholder {
+    font: inherit;
+    font-size: 17px;
+    line-height: 18px;
+    color: $placeholder-color;
+  }
+
+  &--tel:-ms-input-placeholder {
+    font-size: 19px;
+  }
+
+  &--tel::placeholder {
     font-size: 19px;
   }
 }
