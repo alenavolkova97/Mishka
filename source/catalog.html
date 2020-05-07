@@ -59,7 +59,7 @@
         <h2 class="visually-hidden">Каталог</h2>
         <ul class="catalog__list">
           <li class="catalog__item catalog-item">
-            <a class="catalog-item__link catalog-item__link--image" href="#">
+            <a class="catalog-item__link catalog-item__link--image" href="#" title="Подробнее">
               <picture>
                 <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.webp 1x, img/photo-hare-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 361px)" srcset="img/photo-hare-tablet@1x.webp 1x, img/photo-hare-tablet@2x.webp 2x">
@@ -70,18 +70,18 @@
               </picture>
             </a>
             <div class="catalog-item__features">
-              <h3 class="catalog-item__title"><a class="catalog-item__link" href="#">Зайчик-попрыгайчик</a></h3>
+              <h3 class="catalog-item__title"><a class="catalog-item__link" href="#" title="Подробнее">Зайчик-попрыгайчик</a></h3>
               <p class="catalog-item__desc">Рост 30 см, вес 200 г</p>
               <div class="catalog-item__order-wrapper">
                 <p class="catalog-item__price">1200 руб.</p>
-                <a class="catalog-item__to-basket" href="#" aria-label="Добавить в корзину">
+                <a class="catalog-item__to-basket" href="#" aria-label="Добавить в корзину" title="Добавить в корзину">
                   <svg class="catalog-item__icon" width="21" height="18"><use xlink:href="#sprite-icon-cart"></use></svg>
                 </a>
               </div>
             </div>
           </li>
           <li class="catalog__item catalog-item">
-            <a class="catalog-item__link catalog-item__link--image" href="#">
+            <a class="catalog-item__link catalog-item__link--image" href="#" title="Подробнее">
               <picture>
                 <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.webp 1x, img/photo-bowl-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 361px)" srcset="img/photo-bowl-tablet@1x.webp 1x, img/photo-bowl-tablet@2x.webp 2x">
@@ -92,18 +92,18 @@
               </picture>
             </a>
             <div class="catalog-item__features">
-              <h3 class="catalog-item__title"><a class="catalog-item__link" href="#">Корзинка для белья</a></h3>
+              <h3 class="catalog-item__title"><a class="catalog-item__link" href="#" title="Подробнее">Корзинка для белья</a></h3>
               <p class="catalog-item__desc">Диаметр 15 см, высота 10 см</p>
               <div class="catalog-item__order-wrapper">
                 <p class="catalog-item__price">690 руб.</p>
-                <a class="catalog-item__to-basket" href="#" aria-label="Добавить в корзину">
+                <a class="catalog-item__to-basket" href="#" aria-label="Добавить в корзину" title="Добавить в корзину">
                   <svg class="catalog-item__icon" width="21" height="18"><use xlink:href="#sprite-icon-cart"></use></svg>
                 </a>
               </div>
             </div>
           </li>
           <li class="catalog__item catalog-item">
-            <a class="catalog-item__link catalog-item__link--image" href="#">
+            <a class="catalog-item__link catalog-item__link--image" href="#" title="Подробнее">
               <picture>
                 <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.webp 1x, img/photo-toys-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 361px)" srcset="img/photo-toys-tablet@1x.webp 1x, img/photo-toys-tablet@2x.webp 2x">
@@ -114,11 +114,11 @@
               </picture>
             </a>
             <div class="catalog-item__features">
-              <h3 class="catalog-item__title"><a class="catalog-item__link" href="#">Большая корзинка для игрушек</a></h3>
+              <h3 class="catalog-item__title"><a class="catalog-item__link" href="#" title="Подробнее">Большая корзинка для игрушек</a></h3>
               <p class="catalog-item__desc catalog-item__desc--long-title">Диаметр 30 см, высота 30 см</p>
               <div class="catalog-item__order-wrapper">
                 <p class="catalog-item__price">1500 руб.</p>
-                <a class="catalog-item__to-basket" href="#" aria-label="Добавить в корзину">
+                <a class="catalog-item__to-basket" href="#" aria-label="Добавить в корзину" title="Добавить в корзину">
                   <svg class="catalog-item__icon" width="21" height="18"><use xlink:href="#sprite-icon-cart"></use></svg>
                 </a>
               </div>
@@ -146,8 +146,8 @@
 
     <footer class="footer">
       <div class="footer__flex-wrapper container">
-        <a class="footer__logo footer-logo" href="index.html" aria-label="Перейти на главную страницу сайта">
-          <svg class="footer-logo__icon" width="102" height="34"><use xlink:href="#sprite-logo-footer"></use></svg>
+        <a class="footer__logo footer-logo" aria-label="Перейти на главную страницу сайта">
+          <svg class="footer-logo__icon" width="102" height="34" role="img" focusable="false"><use xlink:href="#sprite-logo-footer"></use></svg>
         </a>
         <ul class="footer__social social">
           <li>
@@ -165,13 +165,14 @@
               <svg class="social__icon" width="23" height="20"><use xlink:href="#sprite-icon-twitter"></use></svg>
             </a>
           </li>
-          <div class="footer__copyright copyright">
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Профессиональный онлайн‑курс HTML и CSS, уровень 2" target="_blank">
-              Разработано
-              <svg class="copyright__icon" width="27" height="34"><use xlink:href="#sprite-logo-htmlacademy"></use></svg>
-            </a>
-          </div>
-      </ul></div>
+        </ul>
+        <div class="footer__copyright copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Профессиональный онлайн‑курс HTML и CSS, уровень 2" target="_blank">
+            Разработано
+            <svg class="copyright__icon" width="27" height="34" role="img" focusable="false"><use xlink:href="#sprite-logo-htmlacademy"></use></svg>
+          </a>
+        </div>
+      </div>
     </footer>
 
     <section class="modal-order">
