@@ -18,8 +18,10 @@
   margin-bottom: 42px;
 }
 
-.contacts__map {
+.contacts__map-image {
   position: relative;
+
+  outline: 1px solid black; /*УБРАТЬ*/
 
   &::after {
     content: "";
@@ -52,6 +54,14 @@
   margin-bottom: 39px;
 }
 
+.contacts__map {
+  width: 100%;
+  min-height: 457px;
+  margin-bottom: 39px;
+
+  outline: 1px solid red; /*УБРАТЬ*/
+}
+
 .contacts__write-us {
   padding: 14px 0;
 
@@ -77,7 +87,7 @@
     margin-bottom: 61px;
   }
 
-  .contacts__map::after {
+  .contacts__map-image::after {
     left: 52%;
   }
 
@@ -120,7 +130,7 @@
     padding-right: 50%;
   }
 
-  .contacts__map {
+  .contacts__map-image {
     position: absolute;
     top: 71px;
     right: 50px;
