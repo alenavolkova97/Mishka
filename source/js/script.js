@@ -6,6 +6,7 @@ var modalPopup = modal.querySelector(".modal-order__popup");
 var buttons = document.querySelectorAll(".catalog-item__to-basket");
 var modal = document.querySelector(".modal-order");
 var modalPopup = modal.querySelector(".modal-order__popup");
+var map = document.querySelector(".contacts__map");
 
 header.classList.remove('header--nojs');
 
@@ -62,6 +63,25 @@ if (buttons) {
         modalPopup.classList.add("modal-close-animation");
       }
     }
+  });
+}
+
+if (map) {
+  ymaps.ready (function () {
+    var myMap = new ymaps.Map(map, {
+      center: [59.938635, 30.323118],
+      zoom: 15
+    });
+
+    var myPin = new ymaps.Placemark([59.938635, 30.323118] , {
+        hintContent: "Мы здесь!"}, {
+        iconLayout: "default#image",
+        iconImageHref: "../img/icon-map-pin.svg",
+        iconImageSize: [68, 105],
+        iconImageOffset: [-30, -150]
+    });
+
+    myMap.geoObjects.add(myPin);
   });
 }
 

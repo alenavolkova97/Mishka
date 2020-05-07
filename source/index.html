@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Интернет-магазин игрушек ручной работы «Мишка»</title>
-    <link href="fonts/opensans.woff2" rel="preload" as="font">
+    <link href="fonts/opensans.woff2" rel="preload" as="font" type="font/woff2" crossorigin="anonymous">
+    <link href="fonts/opensansbold.woff2" rel="preload" as="font" type="font/woff2" crossorigin="anonymous">
     <link href="css/style.min.css" rel="stylesheet">
     <link href="img/ignored_by_webp/favicon-16x16.png" rel="icon" sizes="16x16">
     <link href="img/ignored_by_webp/favicon-32x32.png" rel="icon" sizes="32x32">
@@ -172,7 +173,7 @@
             </tr>
           </tbody>
         </table>
-        <div class="contacts__picture-wrapper">
+        <div class="contacts__map">
           <picture class="contacts__picture">
             <source type="image/webp" media="(min-width: 1150px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
@@ -241,10 +242,11 @@
       </div>
     </section>
 
-    <div style="display: none">
+    <div style="display: none;">
       <include src="build/img/sprite.svg"></include>
     </div>
 
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=e3efd89f-77ec-4d12-a3e7-b483b2aa817e&lang=ru_RU"></script>
     <script src="js/script.min.js"></script>
     <script src="js/picturefill.min.js" async=""></script>
 

@@ -18,7 +18,7 @@
   margin-bottom: 42px;
 }
 
-.contacts__picture-wrapper {
+.contacts__map {
   position: relative;
 
   &::after {
@@ -77,7 +77,7 @@
     margin-bottom: 61px;
   }
 
-  .contacts__picture-wrapper::after {
+  .contacts__map::after {
     left: 52%;
   }
 
@@ -120,7 +120,7 @@
     padding-right: 50%;
   }
 
-  .contacts__picture-wrapper {
+  .contacts__map {
     position: absolute;
     top: 71px;
     right: 50px;
