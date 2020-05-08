@@ -7,6 +7,7 @@ var buttons = document.querySelectorAll(".catalog-item__to-basket");
 var modal = document.querySelector(".modal-order");
 var modalPopup = modal.querySelector(".modal-order__popup");
 var map = document.querySelector(".contacts__map");
+var mapImage = document.querySelector(".contacts__map-image");
 
 header.classList.remove('header--nojs');
 
@@ -70,14 +71,14 @@ if (map) {
   ymaps.ready (function () {
     var myMap = new ymaps.Map(map, {
       center: [59.938635, 30.323118],
-      zoom: 15
+      zoom: 17
     });
 
     var myPin = new ymaps.Placemark([59.938635, 30.323118] , {
         hintContent: "Мы здесь!"}, {
         iconLayout: "default#image",
         iconImageHref: "../img/icon-map-pin.svg",
-        iconImageSize: [68, 105],
+        iconImageSize: [67, 100],
         iconImageOffset: [-30, -150]
     });
 
@@ -85,3 +86,5 @@ if (map) {
   });
 }
 
+mapImage.classList.add("contacts__map-image--hidden");
+map.classList.add("contacts__map--sizes");
