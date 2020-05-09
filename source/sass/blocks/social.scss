@@ -1,11 +1,28 @@
 .social {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  padding-top: 10px;
+  padding-right: 0;
+  padding-bottom: 10px;
+  padding-left: 0;
 
-  @include list-reset;
+  list-style: none;
+
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .social__link {
   display: block;
+  padding: 20px;
+
+  line-height: 0;
+
+  &--facebook {
+    padding-top: 15px;
+    padding-bottom: 17px;
+  }
 
   &:hover .social__icon,
   &:focus .social__icon {
@@ -16,5 +33,20 @@
     opacity: 0.3;
 
     fill: $email-color;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    width: 27.10%;
+    padding: 0;
+
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social {
+    width: 29.24%;
   }
 }

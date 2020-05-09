@@ -7,16 +7,27 @@
   flex-direction: column;
 }
 
-.footer__logo {
-  display: none;
+.footer__social {
+  margin: 0 auto;
+  margin-top: 7px;
 }
 
 @media (min-width: $tablet-width) {
   .footer__flex-wrapper {
     flex-direction: row;
+    justify-content: space-between;
+
+    padding-top: 36px;
+    padding-bottom: 28px;
   }
 
   .footer__logo {
-    display: block;
+    margin-right: 75px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .footer__social {
+
   }
 }

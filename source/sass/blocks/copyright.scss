@@ -1,5 +1,9 @@
 .copyright__link {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 22px;
+  padding-bottom: 23px;
 
   font-size: 19px;
   line-height: 18px;
@@ -21,5 +25,7 @@
 }
 
 .copyright__icon {
+  margin-left: 30px;
+
   fill: $main-green;
 }
