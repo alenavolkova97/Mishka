@@ -2,6 +2,15 @@
   display: block;
   width: 130px;
   padding: 22px;
+
+  &[href]:hover,
+  &[href]:focus {
+    opacity: 0.6;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
 }
 
 .header-logo__image {

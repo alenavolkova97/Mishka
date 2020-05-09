@@ -7,8 +7,7 @@
   background-color: $white;
   border: solid 1px $border-grey;
 
-  &:hover,
-  &:focus {
+  &:hover {
     box-shadow: 0 6px 10px 0 $black-10;
   }
 
@@ -68,6 +67,27 @@
   line-height: 24px;
   font-weight: bold;
   color: $black;
+}
+
+.catalog-item__to-basket {
+  display: block;
+
+  &:hover .catalog-item__icon,
+  &:focus .catalog-item__icon {
+    opacity: 1;
+
+    fill: $main-green;
+  }
+
+  &:active .catalog-item__icon {
+    opacity: 0.3;
+
+    fill: $main-green;
+  }
+}
+
+.catalog-item__icon {
+  opacity: 0.2;
 }
 
 @media (min-width: $tablet-width) {

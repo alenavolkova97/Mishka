@@ -11,7 +11,7 @@
   background-color: $modal-layer-color;
 }
 
-.modal-order__wrapper {
+.modal-order__popup {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -44,8 +44,49 @@
   margin-top: 25px;
 }
 
+.modal-show {
+  display: block;
+}
+
+.modal-open-animation {
+  animation: bounce 0.5s;
+}
+
+.modal-close-animation {
+  animation: bounce-reverse 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes bounce-reverse {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+
+  70% {
+    transform: translate(-50%, -30%);
+  }
+
+  100% {
+    transform: translate(-50%, -200%);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translate(-50%, -200%);
+  }
+
+  70% {
+    transform: translate(-50%, -30%);
+  }
+
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
 @media (min-width: $tablet-width) {
-  .modal-order__wrapper {
+  .modal-order__popup {
     padding-top: 51px;
     padding-right: 108px;
     padding-left: 108px;

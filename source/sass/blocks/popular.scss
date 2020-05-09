@@ -1,6 +1,11 @@
 .popular {
   padding-top: 34px;
   padding-bottom: 40px;
+
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 100% 6px;
 }
 
 .popular__title-wrapper {
@@ -47,6 +52,8 @@
 
 .popular__image {
   display: block;
+  width: 260px;
+  height: 315px;
   margin: 0 auto;
 }
 
@@ -70,6 +77,8 @@
   .popular {
     padding-top: 55px;
     padding-bottom: 53px;
+
+    background-size: 100% 15px;
   }
 
   .popular__title-wrapper {
@@ -106,6 +115,9 @@
     position: absolute;
     top: 0;
     right: 0;
+
+    width: 333px;
+    height: 404px;
   }
 
   .popular__price {
@@ -119,6 +131,9 @@
     position: relative;
     padding-top: 71px;
     padding-bottom: 73px;
+
+    background-position: 50px 100%;
+    background-size: 1050px 23px;
   }
 
   .popular__title-wrapper {
@@ -146,6 +161,9 @@
   .popular__image {
     top: 71px;
     right: 50px;
+
+    width: 525px;
+    height: 636px;
   }
 
   .popular__price {

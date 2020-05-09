@@ -1,7 +1,7 @@
 .product-list {
-  display: none;
-
   @include list-reset;
+
+  display: none;
 }
 
 .product-list__link {

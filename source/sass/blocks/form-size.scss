@@ -6,15 +6,15 @@
 }
 
 .form-size__list {
+  @include list-reset;
+
   display: flex;
   flex-wrap: wrap;
-
-  @include list-reset;
 }
 
 .form-size__item {
-  width: 31.54%; /*резина*/
-  margin-right: 2.69%;  /*резина*/
+  width: 31.54%;
+  margin-right: 2.69%;
 
   background-color: $white;
 }
