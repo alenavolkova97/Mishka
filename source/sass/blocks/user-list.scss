@@ -55,18 +55,14 @@
     border-left: 1px solid $border-grey;
 
     &--no-text {
+      padding-bottom: 38px;
+
       font-size: 0;
+      line-height: 0;
     }
   }
 
   .user-list__item:first-child {
     margin-left: auto;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .user-list__link {
-    padding-top: 33px;
-    padding-bottom: 32px;
   }
 }
