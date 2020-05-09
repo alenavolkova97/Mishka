@@ -3,12 +3,12 @@
 
   height: 150px;
 
-  background-image: url("../../img/ignored_by_webp/video-mobile@1x.jpg");
+  background-image: url("../img/ignored_by_webp/video-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../../img/ignored_by_webp/video-mobile@2x.jpg");
+    background-image: url("../img/ignored_by_webp/video-mobile@2x.jpg");
   }
 }
 
@@ -21,7 +21,7 @@
   height: 77px;
 
   background-color: transparent;
-  background-image: url("../../img/icon-play.svg");
+  background-image: url("../img/icon-play.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 
@@ -48,10 +48,10 @@
   .production-process {
     height: 455px;
 
-    background-image: url("../../img/ignored_by_webp/video-tablet@1x.jpg");
+    background-image: url("../img/ignored_by_webp/video-tablet@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/ignored_by_webp/video-tablet@2x.jpg");
+      background-image: url("../img/ignored_by_webp/video-tablet@2x.jpg");
     }
   }
 }
@@ -60,10 +60,10 @@
   .production-process {
     width: 682px;
 
-    background-image: url("../../img/ignored_by_webp/video-desktop@1x.jpg");
+    background-image: url("../img/ignored_by_webp/video-desktop@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/ignored_by_webp/video-desktop@2x.jpg");
+      background-image: url("../img/ignored_by_webp/video-desktop@2x.jpg");
     }
   }
 }

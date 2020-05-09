@@ -76,7 +76,7 @@ if (map) {
     var myPin = new ymaps.Placemark([59.938635, 30.323118] , {
         hintContent: "Мы здесь!"}, {
         iconLayout: "default#image",
-        iconImageHref: "../img/icon-map-pin.svg",
+        iconImageHref: "img/icon-map-pin.svg",
         iconImageSize: [67, 100],
         iconImageOffset: [-30, -150]
     });
