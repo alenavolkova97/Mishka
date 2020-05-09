@@ -1,17 +1,16 @@
 var header = document.querySelector('.header');
-var button = header.querySelector('.header__toggle');
+var buttonHeader = header.querySelector('.header__toggle');
 var buttonOrder = document.querySelector(".popular__order");
 var modal = document.querySelector(".modal-order");
 var modalPopup = modal.querySelector(".modal-order__popup");
-var buttons = document.querySelectorAll(".catalog-item__to-basket");
-var modal = document.querySelector(".modal-order");
-var modalPopup = modal.querySelector(".modal-order__popup");
+var modalOption = modal.querySelector(".form-size__value");
+var buttonsCatalog = document.querySelectorAll(".catalog-item__to-basket");
 var map = document.querySelector(".contacts__map");
 var mapImage = document.querySelector(".contacts__map-image");
 
 header.classList.remove('header--nojs');
 
-button.addEventListener('click', function () {
+buttonHeader.addEventListener('click', function () {
   if (header.classList.contains('header--menu-closed')) {
     header.classList.remove('header--menu-closed');
     header.classList.add('header--menu-opened');
@@ -24,10 +23,10 @@ button.addEventListener('click', function () {
 if (buttonOrder) {
   buttonOrder.addEventListener('click', function (evt) {
     evt.preventDefault();
-    console.log("Хелло");
     modalPopup.classList.remove("modal-close-animation");
     modal.classList.add("modal-show");
     modalPopup.classList.add("modal-open-animation");
+    modalOption.focus();
   });
 
   window.addEventListener("keydown", function (evt) {
@@ -43,14 +42,14 @@ if (buttonOrder) {
   });
 }
 
-if (buttons) {
-  for (var i = 0; i < buttons.length; i++) {
-    buttons[i].addEventListener('click', function (evt) {
+if (buttonsCatalog) {
+  for (var i = 0; i < buttonsCatalog.length; i++) {
+    buttonsCatalog[i].addEventListener('click', function (evt) {
     evt.preventDefault();
-    console.log("Хелло");
     modalPopup.classList.remove("modal-close-animation");
     modal.classList.add("modal-show");
     modalPopup.classList.add("modal-open-animation");
+    modalOption.focus();
     });
   }
 

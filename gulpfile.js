@@ -66,7 +66,7 @@ gulp.task("webp", function () {
     "!source/img/ignored_by_webp/",
     "!source/img/ignored_by_webp/*.{png,jpg}"
   ])
-    .pipe(webp({quality: 75}))
+    .pipe(webp({quality: 80}))
     .pipe(gulp.dest("source/img"));
 });
 
