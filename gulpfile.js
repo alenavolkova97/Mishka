@@ -41,7 +41,6 @@ gulp.task("server", function () {
     open: true,
     cors: true,
     ui: false,
-    index: "index.min.html"
   });
 
   gulp.watch("source/sass/**/*.scss", gulp.series("css"));
@@ -85,10 +84,6 @@ gulp.task("html", function() {
       include()
     ]))
     .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(rename(function (path) {
-      path.basename += ".min";
-      path.extname = ".html";
-    }))
     .pipe(gulp.dest("build"));
 });
 
