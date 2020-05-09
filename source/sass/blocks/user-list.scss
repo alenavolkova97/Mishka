@@ -3,14 +3,14 @@
 }
 
 .user-list__link {
+  @include nav-item-font;
+  @include header-shadow;
+
   display: block;
   margin: 0 -30px;
   padding-top: 32px;
   padding-bottom: 30px;
   padding-left: 29.23%;
-
-  @include nav-item-font;
-  @include header-shadow;
 
   &:hover,
   &:focus {

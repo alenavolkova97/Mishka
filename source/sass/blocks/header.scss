@@ -1,9 +1,9 @@
 .header {
+  @include header-shadow;
+
   position: relative;
   z-index: 2;
   background-color: $white;
-
-  @include header-shadow;
 }
 
 .header__grid-wrapper {

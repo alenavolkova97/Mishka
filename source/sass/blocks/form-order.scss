@@ -409,7 +409,11 @@
       margin-bottom: 50px;
     }
 
-    &::placeholder {   /*доб префиксы для ie11*/
+    &:-ms-input-placeholder {
+      font-size: 19px;
+    }
+
+    &::placeholder {
       font-size: 19px;
     }
   }
