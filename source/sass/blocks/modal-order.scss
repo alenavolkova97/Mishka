@@ -57,34 +57,6 @@
   animation-fill-mode: forwards;
 }
 
-@keyframes bounce-reverse {
-  0% {
-    transform: translate(-50%, -50%);
-  }
-
-  70% {
-    transform: translate(-50%, -30%);
-  }
-
-  100% {
-    transform: translate(-50%, -200%);
-  }
-}
-
-@keyframes bounce {
-  0% {
-    transform: translate(-50%, -200%);
-  }
-
-  70% {
-    transform: translate(-50%, -30%);
-  }
-
-  100% {
-    transform: translate(-50%, -50%);
-  }
-}
-
 @media (min-width: $tablet-width) {
   .modal-order__popup {
     padding-top: 51px;
