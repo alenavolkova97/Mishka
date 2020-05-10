@@ -2,8 +2,8 @@ var header = document.querySelector('.header');
 var buttonHeader = header.querySelector('.header__toggle');
 var buttonOrder = document.querySelector(".popular__order");
 var modal = document.querySelector(".modal-order");
-var modalPopup = modal.querySelector(".modal-order__popup");
-var modalOption = modal.querySelector(".form-size__value");
+var modalPopup = document.querySelector(".modal-order__popup");
+var modalOption = document.querySelector(".form-size__value");
 var buttonsCatalog = document.querySelectorAll(".catalog-item__to-basket");
 var map = document.querySelector(".contacts__map");
 var mapImage = document.querySelector(".contacts__map-image");
@@ -21,7 +21,7 @@ buttonHeader.addEventListener('click', function () {
 });
 
 if (buttonOrder) {
-  buttonOrder.addEventListener('click', function (evt) {
+  buttonOrder.addEventListener("click", function (evt) {
     evt.preventDefault();
     modalPopup.classList.remove("modal-close-animation");
     modal.classList.add("modal-show");
@@ -44,7 +44,7 @@ if (buttonOrder) {
 
 if (buttonsCatalog) {
   for (var i = 0; i < buttonsCatalog.length; i++) {
-    buttonsCatalog[i].addEventListener('click', function (evt) {
+    buttonsCatalog[i].addEventListener("click", function (evt) {
     evt.preventDefault();
     modalPopup.classList.remove("modal-close-animation");
     modal.classList.add("modal-show");
@@ -85,5 +85,10 @@ if (map) {
   });
 }
 
-mapImage.classList.add("contacts__map-image--hidden");
+if (mapImage) {
+  mapImage.classList.add("contacts__map-image--hidden");
+}
+
+if (map) {
 map.classList.add("contacts__map--sizes");
+}
