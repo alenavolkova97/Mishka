@@ -6,10 +6,12 @@
   @include nav-item-font;
   @include header-shadow;
 
+  position: relative;
+
   display: block;
   margin: 0 -30px;
-  padding-top: 32px;
-  padding-bottom: 30px;
+  padding-top: 27px;
+  padding-bottom: 28px;
   padding-left: 29.23%;
 
   &:hover,
@@ -35,6 +37,10 @@
 }
 
 .user-list__icon {
+  position: absolute;
+  top: 31px;
+  left: 9.35%;
+
   opacity: 0.2;
 }
 

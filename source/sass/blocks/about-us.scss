@@ -1,6 +1,6 @@
 .about-us {
-  padding-top: 34px;
-  padding-bottom: 61px;
+  padding-top: 28px;
+  padding-bottom: 58px;
 }
 
 .about-us__list {
@@ -10,7 +10,7 @@
 .about-us__item {
   position: relative;
 
-  padding-top: 86px;
+  padding-top: 83px;
 
   font-size: 17px;
   line-height: 20px;
@@ -23,36 +23,36 @@
     padding-right: 86px;
 
     background-image: url("../img/icon-feature-flower.svg");
-    background-position: 4px 29px;
+    background-position: 7px 31px;
   }
 
   &--price {
     padding-right: 60px;
 
     background-image: url("../img/icon-feature-money.svg");
-    background-position: 0 30px;
+    background-position: 0 32px;
   }
 
   &--likes {
     padding-right: 80px;
 
     background-image: url("../img/icon-feature-heart.svg");
-    background-position: 4px 35px;
+    background-position: 7px 37px;
   }
 
   &--handmade {
     padding-right: 49px;
 
     background-image: url("../img/icon-feature-ball.svg");
-    background-position: 4px 32px;
+    background-position: 3px 34px;
   }
 
   &--native::before {
     content: "";
 
     position: absolute;
-    top: 33px;
-    left: -4px;
+    top: 35px;
+    left: -5px;
 
     width: 55px;
     height: 23px;
@@ -64,7 +64,7 @@
     padding-right: 61px;
 
     background-image: url("../img/icon-feature-gift.svg");
-    background-position: 4px 31px;
+    background-position: 2px 34px;
   }
 }
 

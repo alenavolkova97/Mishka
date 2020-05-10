@@ -1,10 +1,10 @@
 .popular {
-  padding-top: 34px;
-  padding-bottom: 40px;
+  padding-top: 29px;
+  padding-bottom: 42px;
 
   background-image: url("../img/bg-zigzag-line.svg");
-  background-repeat: no-repeat;
-  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-position: 8px 100%;
   background-size: 100% 6px;
 }
 
@@ -23,29 +23,39 @@
   color: $main-green;
 }
 
+.popular__subtitle {
+  margin-bottom: 4px;
+}
+
 .popular__desc {
-  margin-top: 30px;
-  margin-bottom: 23px;
+  margin-top: 24px;
+  margin-bottom: 13px;
 
   line-height: 24px;
 }
 
 .popular__features {
   width: 100%;
-  margin-bottom: 28px;
+  margin-bottom: 26px;
 
   line-height: 20px;
 }
 
 .popular__field {
-  width: 40%; /*регулир*/
-  padding: 10px 0;
+  width: 36.75%; /*регулир*/
+  padding-top: 9px;
+  padding-right: 0;
+  padding-bottom: 10px;
+  padding-left: 0;
 
   border-bottom: 1px solid $border-grey;
 }
 
 .popular__value {
-  padding: 10px 0;
+  padding-top: 9px;
+  padding-right: 0;
+  padding-bottom: 10px;
+  padding-left: 0;
 
   border-bottom: 1px solid $border-grey;
 }
@@ -58,8 +68,8 @@
 }
 
 .popular__price {
-  margin-top: 29px;
-  margin-bottom: 28px;
+  margin-top: 24px;
+  margin-bottom: 26px;
 
   font-size: 17px;
   line-height: 24px;

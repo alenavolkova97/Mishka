@@ -1,17 +1,26 @@
+.contacts-info__trow:first-child {
+  .contacts-info__field,
+  .contacts-info__value {
+    padding-top: 23px;
+  }
+}
+
 .contacts-info__field {
   width: 30%; /*регулир, повляет на планшет*/
   padding: 0;
-  padding-top: 40px;
+  padding-top: 29px;
 
   vertical-align: top;
 }
 
 .contacts-info__value {
   padding: 0;
-  padding-top: 40px;
+  padding-top: 29px;
 }
 
 .contacts-info__link {
+  padding-bottom: 4px;
+
   color: inherit;
 
   border-bottom: 1px solid $underline-color;

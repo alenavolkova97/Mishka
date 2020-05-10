@@ -78,7 +78,7 @@ if (map) {
         iconLayout: "default#image",
         iconImageHref: "img/icon-map-pin.svg",
         iconImageSize: [67, 100],
-        iconImageOffset: [-30, -150]
+        iconImageOffset: [-22, -85]
     });
 
     myMap.geoObjects.add(myPin);

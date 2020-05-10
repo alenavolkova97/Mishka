@@ -3,7 +3,7 @@
 
   overflow: hidden;
 
-  padding-top: 76px;
+  padding-top: 72px;
 
   background-color: $categories-color;
 }
@@ -14,7 +14,7 @@
   overflow: hidden;
 
   margin-top: 0;
-  margin-bottom: 120px;
+  margin-bottom: 112px;
 
   font-size: 27px;
   line-height: 30px;
@@ -26,7 +26,7 @@
 
 .categories__image {
   position: absolute;
-  top: 20px;
+  top: -17px;
   left: 50%;
   z-index: 1;
   transform: translateX(-50%);

@@ -1,7 +1,7 @@
 .contacts {
   position: relative;
 
-  padding-top: 44px;
+  padding-top: 36px;
   padding-bottom: 39px;
 
   overflow: hidden;
@@ -15,7 +15,7 @@
 
 .contacts__info {
   margin: 0 30px;
-  margin-bottom: 42px;
+  margin-bottom: 37px;
 }
 
 .contacts__map-image {
@@ -26,7 +26,7 @@
 
     position: absolute;
     left: 53.73%;
-    bottom: 50%;
+    bottom: 46.5%;
 
     width: 67px;
     height: 100px;
@@ -46,7 +46,7 @@
 .contacts__image {
   display: block;
   width: 100%;
-  height: auto;
+  min-height: 457px;
   margin-bottom: 39px;
 }
 
