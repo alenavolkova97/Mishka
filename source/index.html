@@ -2,6 +2,32 @@
 <html lang="ru">
 
   <head>
+    <!-- Pixel Glass -->
+    <style>
+      html {
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        /* По умолчанию показывается мобильный макет */
+        background-image: url("png/главная МОБИЛКА.png");
+      }
+      /* Планшет */
+      @media (min-width: 768px) {
+        html {
+          /* Планшетный макет */
+          background-image: url("png/главная ПЛАНШЕТ.png");
+        }
+      }
+      /* Десктоп */
+      @media (min-width: 1150px) {
+        html {
+          /* Десктопный макет */
+          background-image: url("png/главная ДЕСКТОП.png");
+        }
+      }
+    </style>
+    <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+    <script src="../node_modules/pixel-glass/script.js"></script>
+    <!-- // Pixel Glass -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Интернет-магазин игрушек ручной работы «Мишка»</title>
