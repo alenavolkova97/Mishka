@@ -53,22 +53,40 @@
 @media (min-width: $tablet-width) {
   .user-list__link {
     margin: 0;
-    padding-top: 33px;
-    padding-bottom: 31px;
-    padding-left: 81px;
+    padding-top: 30px;
+    padding-bottom: 34px;
+    padding-left: 83px;
 
     box-shadow: none;
     border-left: 1px solid $border-grey;
 
     &--no-text {
-      padding-bottom: 38px;
+      padding-bottom: 58px;
 
       font-size: 0;
       line-height: 0;
+
+      .user-list__icon {
+        top: 36px;
+        left: 41%;
+      }
     }
+  }
+
+  .user-list__icon {
+    top: 35px;
+    left: 11%;
   }
 
   .user-list__item:first-child {
     margin-left: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-list__link--no-text {
+    .user-list__icon {
+      left: 38%;
+    }
   }
 }
