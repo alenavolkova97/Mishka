@@ -150,7 +150,7 @@
 @media (min-width: $desktop-width) {
   .popular {
     position: relative;
-    padding-top: 71px;
+    padding-top: 67px;
     padding-bottom: 73px;
 
     background-position: 50px 100%;
@@ -163,24 +163,37 @@
 
     flex-direction: row;
     padding-top: 49px;
-    padding-left: 16.67%;
+    padding-left: 16.3%;
   }
 
   .popular__title {
     position: absolute;
-    top: 60px;
-    left: 36px;
+    top: 64px;
+    left: 47px;
   }
 
   .popular__desc-wrapper {
     position: static;
-    margin-top: 52px;
+    margin-top: 49px;
     padding-right: 55.32%;
-    padding-left: 16.67%;
+    padding-left: 16.6%;
+  }
+
+  .popular__desc {
+    margin-bottom: 48px;
+  }
+
+  .popular__field {
+    width: 32.6%;
+    padding-top: 8px;
+  }
+
+  .popular__value {
+    padding-top: 8px;
   }
 
   .popular__image {
-    top: 71px;
+    top: 64px;
     right: 50px;
 
     width: 525px;
@@ -188,7 +201,7 @@
   }
 
   .popular__price {
-    margin-top: 110px;
+    margin-top: 107px;
 
     font-size: 20px;
   }

@@ -1,21 +1,22 @@
-.contacts-info__trow:first-child {
-  .contacts-info__field,
-  .contacts-info__value {
-    padding-top: 23px;
-  }
-}
-
 .contacts-info__field {
-  width: 30%; /*регулир, повляет на планшет*/
+  width: 30%;
   padding: 0;
   padding-top: 29px;
 
   vertical-align: top;
+
+  &--first {
+    padding-top: 23px;
+  }
 }
 
 .contacts-info__value {
   padding: 0;
   padding-top: 29px;
+
+  &--first {
+    padding-top: 23px;
+  }
 }
 
 .contacts-info__link {
@@ -53,6 +54,19 @@
 
   .contacts-info__trow {
     width: 50%;
+  }
+
+  .contacts-info__field {
+    width: 22.4%;
+    padding-top: 44px;
+
+    &--first {
+      width: 26%;
+    }
+  }
+
+  .contacts-info__value {
+    padding-top: 44px;
   }
 
   .contacts-info__address {

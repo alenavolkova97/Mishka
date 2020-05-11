@@ -15,7 +15,7 @@
 
 .contacts__info {
   margin: 0 30px;
-  margin-bottom: 37px;
+  margin-bottom: 36px;
 }
 
 .contacts__map-image {
@@ -74,12 +74,12 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
-    padding-top: 72px;
+    padding-top: 62px;
     padding-bottom: 57px;
 
     background-image: url("../img/icon-flag.svg");
     background-repeat: no-repeat;
-    background-position: 92% 47px;
+    background-position: 92.6% 46px;
   }
 
   .contacts__title {
@@ -90,11 +90,12 @@
 
   .contacts__info {
     margin: 0 50px;
-    margin-bottom: 61px;
+    margin-bottom: 56px;
   }
 
   .contacts__map-image::after {
-    left: 52%;
+    left: 51.7%;
+    bottom: 47.7%;
   }
 
   .contacts__image {
@@ -106,7 +107,7 @@
   }
 
   .contacts__write-us {
-    width: 34.43%;
+    width: 30%;
     margin: 0 auto;
 
     font-size: 17px;

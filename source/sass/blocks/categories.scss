@@ -79,6 +79,17 @@
 }
 
 @media (min-width: $desktop-width) {
+  .categories {
+    &::after {
+      top: 663px;
+
+      height: 34px;
+
+      background-position: 12px 0;
+      background-size: 1250px 34px;
+    }
+  }
+
   .categories__intro {
     margin-bottom: 354px;
     padding-right: 268px;
