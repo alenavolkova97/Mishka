@@ -70,8 +70,8 @@
 
 @media (min-width: $tablet-width) {
   .about-us {
-    padding-top: 60px;
-    padding-bottom: 73px;
+    padding-top: 49px;
+    padding-bottom: 74px;
   }
 
   .about-us__list {
@@ -81,7 +81,7 @@
 
   .about-us__item {
     width: 50%;
-    padding-top: 104px;
+    padding-top: 103px;
     padding-right: 85px;
     padding-bottom: 9px;
 
@@ -92,27 +92,27 @@
       order: 1;
       padding-right: 130px;
 
-      background-position: 4px 47px;
+      background-position: 9px 49px;
     }
 
     &--price {
       order: 3;
       padding-right: 90px;
 
-      background-position: 0 48px;
+      background-position: 1px 49px;
     }
 
     &--likes {
       order: 5;
       padding-right: 120px;
 
-      background-position: 4px 53px;
+      background-position: 8px 54px;
     }
 
     &--handmade {
       order: 2;
 
-      background-position: 4px 50px;
+      background-position: 3px 52px;
     }
 
     &--native {
@@ -120,14 +120,15 @@
       padding-right: 35px;
 
       &::before {
-        top: 51px;
+        top: 53px;
+        left: -6px;
       }
     }
 
     &--present {
       order: 6;
 
-      background-position: 4px 49px;
+      background-position: 3px 50px;
     }
   }
 }
