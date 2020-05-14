@@ -135,12 +135,12 @@
 
 @media (min-width: $desktop-width) {
   .about-us {
-    padding-top: 70px;
-    padding-bottom: 77px;
+    padding-top: 59px;
+    padding-bottom: 79px;
   }
 
   .about-us__title {
-    padding-left: 16.67%;
+    padding-left: 16.25%;
   }
 
   .about-us__list {
@@ -153,29 +153,29 @@
     padding-bottom: 12px;
 
     &--ecology {
-      background-position: 4px 44px;
+      background-position: 9px 49px;
     }
 
     &--price {
-      background-position: 0 45px;
+      background-position: 0 49px;
     }
 
     &--likes {
-      background-position: 4px 50px;
+      background-position: 8px 53px;
     }
 
     &--handmade {
-      background-position: 4px 47px;
+      background-position: 3px 52px;
     }
 
     &--native {
       &::before {
-        top: 48px;
+        top: 52px;
       }
     }
 
     &--present {
-      background-position: 4px 46px;
+      background-position: 3px 49px;
     }
   }
 }

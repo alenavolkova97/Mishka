@@ -4,7 +4,7 @@
 
   background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: repeat-x;
-  background-position: 8px 100%;
+  background-position: 0 100%;
   background-size: 320px 6px;
 }
 
@@ -88,7 +88,7 @@
     padding-top: 38px;
     padding-bottom: 69px;
 
-    background-position: 19px 100%;
+    background-position: 0 100%;
     background-size: 768px 15px;
   }
 
@@ -150,9 +150,11 @@
 @media (min-width: $desktop-width) {
   .popular {
     position: relative;
-    padding-top: 67px;
-    padding-bottom: 73px;
 
+    padding-top: 67px;
+    padding-bottom: 95px;
+
+    background-repeat: no-repeat;
     background-position: 50px 100%;
     background-size: 1050px 23px;
   }

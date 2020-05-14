@@ -78,4 +78,21 @@
   .contacts-info__tbody {
     display: block;
   }
+
+  .contacts-info__field {
+    width: 22.8%;
+    padding-top: 31px;
+
+    &--first {
+      padding-top: 44px;
+    }
+  }
+
+  .contacts-info__value {
+    padding-top: 31px;
+
+    &--first {
+      padding-top: 44px;
+    }
+  }
 }
