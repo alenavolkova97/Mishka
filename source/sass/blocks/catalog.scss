@@ -23,7 +23,7 @@
 
 @media (min-width: $desktop-width) {
   .catalog {
-    padding-top: 128px;
+    padding-top: 112px;
   }
 
   .catalog__list {
@@ -34,9 +34,9 @@
   .catalog__item {
     display: flex;
     flex-direction: column;
-    width: 30.1%;
-    margin-right: 4.85%;
-    margin-bottom: 57px;
+    width: 30%;
+    margin-right: 4.9%;
+    margin-bottom: 58px;
   }
 
   .catalog__item:nth-child(3n) {

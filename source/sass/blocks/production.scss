@@ -104,22 +104,22 @@
 @media (min-width: $desktop-width) {
   .production {
     padding-top: 0;
-    padding-bottom: 105px;
+    padding-bottom: 104px;
   }
 
   .production__wrapper {
-    margin-left: 64.95%;
-    padding-top: 47px;
-    padding-right: 65px;
+    margin-left: 64.8%;
+    padding-top: 40px;
+    padding-right: 57px;
     padding-bottom: 60px;
     padding-left: 78px;
   }
 
   .production__title {
-    padding-top: 53px;
+    padding-top: 54px;
     padding-left: 0;
 
-    background-position: 0 0;
+    background-position: 2px 0;
   }
 
   .production__process {
@@ -129,11 +129,14 @@
   }
 
   .production__text {
-    margin-bottom: 51px;
+    margin-bottom: 47px;
   }
 
   .production__link {
-    width: 100%;
+    width: auto;
     margin: 0;
+    margin-left: 2px;
+    padding-top: 14px;
+    padding-bottom: 18px;
   }
 }
