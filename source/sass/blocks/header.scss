@@ -84,8 +84,12 @@
 @media (min-width: $tablet-width) {
   .header {
     background-color: transparent;
-    background-image: linear-gradient(to bottom, $white 88px, #e7e7e7 88px, #e7e7e7 89px, $categories-color 89px);
+    background-image: linear-gradient(to bottom, $white 88px, #e7e7e7 88px, #e7e7e7 89px, $main-grey 89px);
     box-shadow: none;
+
+    &--main-page {
+      background-image: linear-gradient(to bottom, $white 88px, #e7e7e7 88px, #e7e7e7 89px, $categories-color 89px);
+    }
   }
 
   .header__grid-wrapper {
@@ -102,7 +106,7 @@
   .header__logo {
     position: absolute;
     top: 0;
-    left: 50px;
+    left: 49px;
   }
 
   .header__toggle {
