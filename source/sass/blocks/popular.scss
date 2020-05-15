@@ -85,7 +85,7 @@
 
 @media (min-width: $tablet-width) {
   .popular {
-    padding-top: 38px;
+    padding-top: 34px;
     padding-bottom: 69px;
 
     background-position: 0 100%;
@@ -101,6 +101,7 @@
 
   .popular__title {
     width: 70px;
+    margin-top: 5px;
 
     line-height: 17px;
     text-align: center;
@@ -151,7 +152,7 @@
   .popular {
     position: relative;
 
-    padding-top: 67px;
+    padding-top: 72px;
     padding-bottom: 95px;
 
     background-repeat: no-repeat;
@@ -169,6 +170,8 @@
   }
 
   .popular__title {
+    margin: 0;
+
     position: absolute;
     top: 64px;
     left: 47px;
@@ -195,7 +198,7 @@
   }
 
   .popular__image {
-    top: 64px;
+    top: 68px;
     right: 50px;
 
     width: 525px;

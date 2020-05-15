@@ -45,19 +45,19 @@
 @media (min-width: $tablet-width) {
   .categories {
     padding-top: 88px;
-    padding-bottom: 10px;
+    padding-bottom: 14px;
 
     &::after {
       content: "";
 
       position: absolute;
-      top: 667px;
+      bottom: -4px;
       left: 0;
       z-index: 2;
 
       display: block;
       width: 100%;
-      height: 24px;
+      height: 28px;
 
       background-image: url("../img/bg-zigzag-fill.svg");
       background-repeat: repeat-x;
@@ -80,10 +80,12 @@
 
 @media (min-width: $desktop-width) {
   .categories {
-    &::after {
-      top: 663px;
+    padding-bottom: 6px;
 
-      height: 34px;
+    &::after {
+      bottom: -5px;
+
+      height: 24px;
 
       background-position: 12px 0;
       background-size: 1250px 34px;

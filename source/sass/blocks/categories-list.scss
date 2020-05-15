@@ -116,10 +116,12 @@
   }
 
   .categories-list__item {
+    display: flex;
     width: 50%;
   }
 
   .categories-list__link {
+    width: 100%;
     margin-right: 0;
     margin-left: 0;
     padding-top: 28px;
