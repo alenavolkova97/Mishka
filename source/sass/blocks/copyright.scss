@@ -29,3 +29,9 @@
 
   fill: $main-green;
 }
+
+@media (min-width: $desktop-width) {
+  .copyright__link {
+    padding-top: 18px;
+  }
+}

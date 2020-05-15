@@ -531,13 +531,28 @@
     padding-left: 10.3%;
   }
 
+  .form-order__input--textarea {
+    margin-bottom: 50px;
+  }
+
   .form-order__icon {
-    top: 25px;
-    right: 17%;
+    right: 183px;
+
+    &--email {
+      right: 179px;
+    }
   }
 
   .form-order__flex-wrapper {
     padding-right: 16.67%;
     padding-left: 16.67%;
+  }
+
+  .form-order__note {
+    margin-top: 10px;
+  }
+
+  .form-order__order {
+    width: 32.6%;
   }
 }
