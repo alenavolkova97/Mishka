@@ -1,15 +1,8 @@
-.form-order__fieldset {
+.form-order {
   position: relative;
-
-  width: 100%;
-  margin: 0;
-  padding: 0;
-
-  border: none;
 
   &::before {
     content: "";
-
     position: absolute;
     top: 8px;
     right: 0;
@@ -19,9 +12,36 @@
 
     background-color: $underline-color;
   }
+}
 
-  &--email::before {
+.form-order__fieldset {
+  position: relative;
+
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  border: none;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    right: 0;
+    bottom: -8px;
+
+    width: 76.15%;
+    height: 1px;
+
+    background-color: $underline-color;
+  }
+
+  &--tel::after {
     width: 68.85%;
+  }
+
+  &--add::after {
+    display: none;
   }
 }
 
@@ -266,13 +286,15 @@
 
 .form-order__icon {
   position: absolute;
-  top: 34px;
+  // top: 34px;
   right: 8px;
+  bottom: 49px;
 
   opacity: 0.2;
 
   &--email {
     right: 4px;
+    bottom: 41px;
   }
 }
 
@@ -285,12 +307,16 @@
 }
 
 @media (min-width: $tablet-width) {
+  .form-order::before {
+    display: none;
+  }
+
   .form-order__fieldset {
     position: relative;
 
     padding-left: 25%;
 
-    &::before {
+    &::after {
       display: none;
     }
 
@@ -453,12 +479,14 @@
   }
 
   .form-order__icon {
-    top: 11px;
+    // top: 11px;
     right: 26px;
+    bottom: 43px;
 
     &--email {
-      top: 10px;
+      // top: 10px;
       right: 22px;
+      bottom: 34px;
     }
   }
 
