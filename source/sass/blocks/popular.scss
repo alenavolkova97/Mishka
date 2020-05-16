@@ -42,7 +42,7 @@
 }
 
 .popular__field {
-  width: 36.75%;
+  width: 31.5%;
   padding-top: 9px;
   padding-right: 0;
   padding-bottom: 10px;
@@ -55,7 +55,7 @@
   padding-top: 9px;
   padding-right: 0;
   padding-bottom: 10px;
-  padding-left: 0;
+  padding-left: 15px;
 
   border-bottom: 1px solid $border-grey;
 }
@@ -78,7 +78,7 @@
 }
 
 .popular__order {
-  padding: 14px 0;
+  padding: 14px 10px;
 
   line-height: 20px;
 }
@@ -109,6 +109,7 @@
 
   .popular__subtitle {
     margin-bottom: 0;
+    margin-right: 50px;
   }
 
   .popular__desc-wrapper {
@@ -128,7 +129,7 @@
   }
 
   .popular__field {
-    width: 32.3%;
+    width: 27.5%;
   }
 
   .popular__image {

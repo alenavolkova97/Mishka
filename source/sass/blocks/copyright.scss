@@ -1,5 +1,6 @@
 .copyright__link {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding-top: 19px;
@@ -24,8 +25,13 @@
   }
 }
 
+.copyright__text {
+  width: 130px;
+  margin: 0;
+}
+
 .copyright__icon {
-  margin-left: 30px;
+  margin-left: 25px;
 
   fill: $main-green;
 }

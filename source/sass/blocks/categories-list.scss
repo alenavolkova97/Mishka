@@ -57,7 +57,7 @@
       content: "";
 
       position: absolute;
-      top: 23px;
+      top: 22%;
       right: 36px;
 
       width: 40px;
@@ -93,7 +93,7 @@
       content: "";
 
       position: absolute;
-      top: 21px;
+      top: 20%;
       right: 27px;
 
       width: 60px;
@@ -125,7 +125,6 @@
     margin-right: 0;
     margin-left: 0;
     padding-top: 28px;
-    padding-right: 58%;
     padding-bottom: 34px;
     padding-left: 36px;
 
@@ -136,19 +135,19 @@
       top: 0;
 
       &::after {
-        top: 30px;
+        top: 24.5%;
         right: 36px;
       }
     }
 
     &--toys::after {
-      top: 31px;
+      top: 26.2%;
       right: 34px;
     }
   }
 
   .categories-list__text {
-    width: auto;
+    width: 112px;
   }
 }
 
