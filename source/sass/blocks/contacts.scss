@@ -83,7 +83,9 @@
   }
 
   .contacts__title {
-    margin: 0 46px;
+    margin: 0;
+    margin-left: 46px;
+    margin-right: 160px;
 
     font-size: 43px;
   }
@@ -128,6 +130,7 @@
   .contacts__title {
     margin-top: 79px;
     margin-right: 0;
+    margin-bottom: 14px;
     margin-left: 0;
     padding-right: 50%;
     padding-left: 16.15%;

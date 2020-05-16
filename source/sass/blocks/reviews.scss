@@ -118,6 +118,7 @@
   }
 
   .reviews__title {
+    max-width: 450px;
     margin-bottom: 0;
   }
 
@@ -135,7 +136,7 @@
   }
 
   .reviews__author-name {
-    font-size: 18px; /*?*/
+    font-size: 18px;
   }
 
   .reviews__button-wrapper {
@@ -180,6 +181,7 @@
   }
 
   .reviews__title {
+    max-width: 800px;
     padding-left: 16.25%;
   }
 
@@ -189,7 +191,7 @@
   }
 
   .reviews__text {
-    margin-bottom: 37px;
+    margin-bottom: 36px;
     padding-right: 80px;
   }
 
@@ -203,7 +205,6 @@
 
   .reviews__write {
     width: 16.67%;
-    margin-top: 9px;
-    padding: 0 14px;
+    margin-top: 8px;
   }
 }

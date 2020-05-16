@@ -154,12 +154,12 @@
 @media (min-width: $desktop-width) {
   .categories-list__link {
     &--interior::after {
-      top: 30px;
+      top: 25.2%;
       right: 36px;
     }
 
     &--toys::after {
-      top: 32px;
+      top: 26.6%;
       right: 35px;
     }
   }
