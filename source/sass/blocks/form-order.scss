@@ -5,9 +5,9 @@
     content: "";
     position: absolute;
     top: 8px;
-    right: 0;
+    right: 30px;
 
-    width: 76.15%;
+    width: 61.88%;
     height: 1px;
 
     background-color: $underline-color;
@@ -36,8 +36,22 @@
     background-color: $underline-color;
   }
 
+  &--color,
+  &--tel,
+  &--email {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  &--color::after,
+  &--email::after {
+    width: 61.88%;
+    right: 30px;
+  }
+
   &--tel::after {
-    width: 68.85%;
+    width: 55.94%;
+    right: 30px;
   }
 
   &--add::after {
@@ -287,13 +301,13 @@
 .form-order__icon {
   position: absolute;
   // top: 34px;
-  right: 8px;
+  right: 38px;
   bottom: 49px;
 
   opacity: 0.2;
 
   &--email {
-    right: 4px;
+    right: 34px;
     bottom: 41px;
   }
 }
@@ -321,21 +335,22 @@
     }
 
     &--color {
+      padding-right: 0;
       padding-left: 21.2%;
     }
 
     &--tel {
       margin-top: 0;
+      padding-right: 0;
     }
 
     &--email {
       margin-bottom: 0;
+      padding-right: 0;
     }
   }
 
   .form-order__fieldset-wrapper {
-    margin-right: -50px;
-    margin-left: -50px;
     padding-top: 50px;
     padding-right: 50px;
     padding-bottom: 0;
@@ -516,13 +531,22 @@
     padding-left: 16.67%;
 
     &--color {
-      padding-right: 8.3%;
+      width: 1050px;
+      margin: 0 auto;
+      padding-right: 84px;
+      padding-left: 174px;
+    }
+
+    &--tel,
+    &--email {
+      width: 1050px;
+      margin: 0 auto;
+      padding-right: 175px;
+      padding-left: 175px;
     }
   }
 
   .form-order__fieldset-wrapper {
-    margin-right: -50px;
-    margin-left: -50px;
     padding-right: 50px;
     padding-left: 50px;
   }
