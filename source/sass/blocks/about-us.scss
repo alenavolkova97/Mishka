@@ -82,7 +82,6 @@
   .about-us__item {
     width: 50%;
     padding-top: 103px;
-    padding-right: 85px;
     padding-bottom: 9px;
 
     font-size: 20px;
@@ -90,7 +89,7 @@
 
     &--ecology {
       order: 1;
-      padding-right: 130px;
+      padding-right: 123px;
 
       background-position: 9px 49px;
     }
@@ -104,20 +103,21 @@
 
     &--likes {
       order: 5;
-      padding-right: 120px;
+      padding-right: 115px;
 
       background-position: 8px 54px;
     }
 
     &--handmade {
       order: 2;
+      padding-right: 80px;
 
       background-position: 3px 52px;
     }
 
     &--native {
       order: 4;
-      padding-right: 35px;
+      padding-right: 34px;
 
       &::before {
         top: 53px;
@@ -127,6 +127,7 @@
 
     &--present {
       order: 6;
+      padding-right: 85px;
 
       background-position: 3px 50px;
     }
