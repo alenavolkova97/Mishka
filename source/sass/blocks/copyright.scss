@@ -31,7 +31,7 @@
 }
 
 .copyright__icon {
-  margin-left: 25px;
+  margin-left: 27px;
 
   fill: $main-green;
 }
@@ -39,5 +39,9 @@
 @media (min-width: $desktop-width) {
   .copyright__link {
     padding-top: 18px;
+  }
+
+  .copyright__icon {
+    margin-left: 28px;
   }
 }

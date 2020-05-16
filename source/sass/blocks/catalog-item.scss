@@ -132,6 +132,8 @@
   }
 
   .catalog-item__features {
+    flex-grow: 1;
+
     width: 100%;
     padding-right: 9.8%;
     padding-left: 8.2%;
