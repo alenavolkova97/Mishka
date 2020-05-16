@@ -1,11 +1,10 @@
 .modal-order {
-  // position: fixed;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 10;
 
-  // display: none;
+  display: none;
   width: 100%;
   height: 100%;
 
@@ -14,9 +13,9 @@
 
 .modal-order__popup {
   position: absolute;
-  // top: 50%;
-  // left: 50%;
-  // transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
   width: 566px;
   max-width: 100%;
@@ -60,7 +59,7 @@
 
 @media (min-width: $tablet-width) {
   .modal-order__popup {
-    padding-top: 51px;
+    padding-top: 34px;
     padding-right: 108px;
     padding-left: 108px;
   }
