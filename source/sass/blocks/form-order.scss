@@ -334,8 +334,6 @@
   }
 
   .form-order__fieldset-wrapper {
-    margin-right: -50px;
-    margin-left: -50px;
     padding-top: 50px;
     padding-right: 50px;
     padding-bottom: 0;
@@ -516,13 +514,22 @@
     padding-left: 16.67%;
 
     &--color {
-      padding-right: 8.3%;
+      width: 1050px;
+      margin: 0 auto;
+      padding-right: 84px;
+      padding-left: 174px;
+    }
+
+    &--tel,
+    &--email {
+      width: 1050px;
+      margin: 0 auto;
+      padding-right: 175px;
+      padding-left: 175px;
     }
   }
 
   .form-order__fieldset-wrapper {
-    margin-right: -50px;
-    margin-left: -50px;
     padding-right: 50px;
     padding-left: 50px;
   }
