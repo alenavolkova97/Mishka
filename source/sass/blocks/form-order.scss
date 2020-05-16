@@ -1,6 +1,8 @@
 .form-order {
   position: relative;
 
+  padding-bottom: 55px;
+
   &::before {
     content: "";
     position: absolute;
@@ -256,6 +258,7 @@
   }
 
   &--textarea {
+    min-height: 142px;
     margin-top: 25px;
     margin-bottom: 16px;
     padding-top: 14px;
@@ -266,6 +269,7 @@
     box-shadow: none;
 
     resize: none;
+    overflow: auto;
 
     &:hover,
     &:focus,
@@ -300,7 +304,6 @@
 
 .form-order__icon {
   position: absolute;
-  // top: 34px;
   right: 38px;
   bottom: 49px;
 
@@ -321,6 +324,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .form-order {
+    padding-bottom: 50px;
+  }
+
   .form-order::before {
     display: none;
   }
