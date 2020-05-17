@@ -93,20 +93,13 @@
   }
 
   .header__grid-wrapper {
-    position: relative;
-
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 0 50px;
   }
 
   .header__logo {
-    position: absolute;
-    top: 0;
-    left: 49px;
+    margin: 0;
   }
 
   .header__toggle {
@@ -114,16 +107,13 @@
   }
 
   .header__nav {
-    width: 50%;
+    width: 60%;
     margin: 0;
   }
 
   .header__user-wrapper {
     order: 1;
-
-    width: 100%;
-    margin-left: 18%;
-    padding: 0;
+    max-width: 80%;
   }
 
   .header__user-list {
@@ -135,6 +125,7 @@
   .header__text {
     display: block;
     order: 3;
+    max-width: 40%;
     margin-top: 18px;
 
     font-size: 15px;
@@ -143,21 +134,29 @@
 
 @media (min-width: $desktop-width) {
   .header__grid-wrapper {
+    position: relative;
+
+    justify-content: flex-start;
     width: 1150px;
   }
 
   .header__logo {
+    position: absolute;
     top: 0;
     left: 50%;
 
     transform: translateX(-50%);
   }
 
+  .header__nav {
+    padding-right: 200px;
+  }
+
   .header__user-wrapper {
     order: 2;
 
-    width: 50%;
-    margin-left: 0;
+    max-width: 40%;
+    margin-left: auto;
   }
 
   .header__user-list {
@@ -171,5 +170,7 @@
   .header__text {
     display: block;
     order: 4;
+    max-width: 50%;
+    margin-left: auto;
   }
 }

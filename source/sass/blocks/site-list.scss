@@ -30,11 +30,7 @@
 
 @media (min-width: $tablet-width) {
   .site-list__item {
-    margin-right: 10.7%;
-  }
-
-  .site-list__item:nth-child(2n) {
-    margin-right: 0;
+    margin-right: 9%;
   }
 
   .site-list__link {
@@ -60,14 +56,12 @@
     padding-bottom: 32px;
 
     font-size: 17px;
-
-    border-right: 1px solid $border-grey;
   }
 
   .site-list__item:nth-child(2n) .site-list__link {
     padding-right: 0;
     padding-left: 35px;
 
-    border: none;
+    border-left: 1px solid $border-grey;
   }
 }
