@@ -19,13 +19,13 @@
 
   width: 566px;
   max-width: 100%;
-  padding-top: 36px;
+  padding-top: 31px;
   padding-right: 30px;
   padding-bottom: 46px;
   padding-left: 30px;
 
   background-color: $white;
-  border: solid 1px #c6c6c6;
+  border: solid 1px rgb(138, 83, 83);
   box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
 }
 
@@ -41,7 +41,7 @@
 }
 
 .modal-order__form {
-  margin-top: 25px;
+  margin-top: 12px;
 }
 
 .modal-show {
@@ -57,37 +57,9 @@
   animation-fill-mode: forwards;
 }
 
-@keyframes bounce-reverse {
-  0% {
-    transform: translate(-50%, -50%);
-  }
-
-  70% {
-    transform: translate(-50%, -30%);
-  }
-
-  100% {
-    transform: translate(-50%, -200%);
-  }
-}
-
-@keyframes bounce {
-  0% {
-    transform: translate(-50%, -200%);
-  }
-
-  70% {
-    transform: translate(-50%, -30%);
-  }
-
-  100% {
-    transform: translate(-50%, -50%);
-  }
-}
-
 @media (min-width: $tablet-width) {
   .modal-order__popup {
-    padding-top: 51px;
+    padding-top: 34px;
     padding-right: 108px;
     padding-left: 108px;
   }

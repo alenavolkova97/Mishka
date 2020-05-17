@@ -11,8 +11,8 @@
   display: block;
   margin-right: -30px;
   margin-left: -30px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 26px;
+  padding-bottom: 34px;
   padding-left: 30px;
 
   font-size: 19px;
@@ -57,7 +57,7 @@
       content: "";
 
       position: absolute;
-      top: 23px;
+      top: 22%;
       right: 36px;
 
       width: 40px;
@@ -93,7 +93,7 @@
       content: "";
 
       position: absolute;
-      top: 21px;
+      top: 20%;
       right: 27px;
 
       width: 60px;
@@ -116,14 +116,15 @@
   }
 
   .categories-list__item {
+    display: flex;
     width: 50%;
   }
 
   .categories-list__link {
+    width: 100%;
     margin-right: 0;
     margin-left: 0;
-    padding-top: 35px;
-    padding-right: 58%;
+    padding-top: 28px;
     padding-bottom: 34px;
     padding-left: 36px;
 
@@ -134,31 +135,31 @@
       top: 0;
 
       &::after {
-        top: 30px;
+        top: 24.5%;
         right: 36px;
       }
     }
 
     &--toys::after {
-      top: 31px;
+      top: 26.2%;
       right: 34px;
     }
   }
 
   .categories-list__text {
-    width: auto;
+    width: 112px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .categories-list__link {
     &--interior::after {
-      top: 30px;
+      top: 25.2%;
       right: 36px;
     }
 
     &--toys::after {
-      top: 32px;
+      top: 26.6%;
       right: 35px;
     }
   }

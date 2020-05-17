@@ -9,7 +9,6 @@
 
 .footer__social {
   margin: 0 auto;
-  margin-top: 7px;
 }
 
 @media (min-width: $tablet-width) {
@@ -25,5 +24,9 @@
     margin-right: 75px;
     padding-top: 16px;
     padding-bottom: 16px;
+  }
+
+  .footer__social {
+    margin-top: 7px;
   }
 }

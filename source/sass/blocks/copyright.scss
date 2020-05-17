@@ -1,8 +1,9 @@
 .copyright__link {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding-top: 22px;
+  padding-top: 19px;
   padding-bottom: 23px;
 
   font-size: 19px;
@@ -24,8 +25,23 @@
   }
 }
 
+.copyright__text {
+  width: 130px;
+  margin: 0;
+}
+
 .copyright__icon {
-  margin-left: 30px;
+  margin-left: 27px;
 
   fill: $main-green;
+}
+
+@media (min-width: $desktop-width) {
+  .copyright__link {
+    padding-top: 18px;
+  }
+
+  .copyright__icon {
+    margin-left: 28px;
+  }
 }

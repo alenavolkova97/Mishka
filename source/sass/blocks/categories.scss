@@ -3,7 +3,7 @@
 
   overflow: hidden;
 
-  padding-top: 76px;
+  padding-top: 72px;
 
   background-color: $categories-color;
 }
@@ -13,8 +13,9 @@
   z-index: 2;
   overflow: hidden;
 
-  margin-top: 0;
-  margin-bottom: 120px;
+  max-width: 550px;
+  margin: 0 auto;
+  margin-bottom: 112px;
 
   font-size: 27px;
   line-height: 30px;
@@ -26,7 +27,7 @@
 
 .categories__image {
   position: absolute;
-  top: 20px;
+  top: -17px;
   left: 50%;
   z-index: 1;
   transform: translateX(-50%);
@@ -44,48 +45,62 @@
 
 @media (min-width: $tablet-width) {
   .categories {
-    padding-top: 161px;
+    padding-top: 88px;
+    padding-bottom: 14px;
 
     &::after {
       content: "";
 
       position: absolute;
-      top: 98%;
+      bottom: -4px;
       left: 0;
       z-index: 2;
 
+      display: block;
       width: 100%;
-      height: 20px;
+      height: 28px;
 
       background-image: url("../img/bg-zigzag-fill.svg");
       background-repeat: repeat-x;
-      background-position: 30px 0;
+      background-position: 0 0;
+      background-size: 768px 24px;
     }
   }
 
   .categories__intro {
-    margin-bottom: 371px;
+    max-width: 870px;
+    margin-bottom: 368px;
 
     font-size: 43px;
     line-height: 50px;
   }
 
   .categories__image {
-    top: 0;
+    top: -66px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .categories {
+    padding-bottom: 6px;
+
+    &::after {
+      bottom: -5px;
+
+      height: 24px;
+
+      background-position: 12px 0;
+      background-size: 1250px 34px;
+    }
+  }
+
   .categories__intro {
+    max-width: none;
     margin-bottom: 354px;
     padding-right: 268px;
     padding-left: 268px;
 
     font-size: 53px;
     line-height: 57px;
-  }
-
-  .categories__image {
-    top: 0;
   }
 }

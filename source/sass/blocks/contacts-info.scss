@@ -1,17 +1,28 @@
 .contacts-info__field {
-  width: 30%; /*регулир, повляет на планшет*/
+  width: 30%;
   padding: 0;
-  padding-top: 40px;
+  padding-top: 29px;
 
   vertical-align: top;
+
+  &--first {
+    padding-top: 23px;
+  }
 }
 
 .contacts-info__value {
   padding: 0;
-  padding-top: 40px;
+  padding-top: 29px;
+  padding-left: 15px;
+
+  &--first {
+    padding-top: 23px;
+  }
 }
 
 .contacts-info__link {
+  padding-bottom: 4px;
+
   color: inherit;
 
   border-bottom: 1px solid $underline-color;
@@ -40,10 +51,32 @@
   .contacts-info__tbody {
     display: flex;
     flex-wrap: wrap;
+    width: 668px;
   }
 
   .contacts-info__trow {
-    width: 50%;
+    display: flex;
+    max-width: 50%;
+
+    &:nth-child(2n-1) {
+      width: 282px;
+      margin-right: 51px;
+    }
+  }
+
+  .contacts-info__field {
+    padding-top: 47px;
+
+    width: 18%;
+
+    &--first {
+      width: 21.4%;
+    }
+  }
+
+  .contacts-info__value {
+    padding-top: 47px;
+    padding-left: 24px;
   }
 
   .contacts-info__address {
@@ -54,5 +87,14 @@
 @media (min-width: $desktop-width) {
   .contacts-info__tbody {
     display: block;
+  }
+
+  .contacts-info__field {
+    padding-top: 32px;
+  }
+
+  .contacts-info__value {
+    padding-top: 32px;
+    padding-left: 27px;
   }
 }

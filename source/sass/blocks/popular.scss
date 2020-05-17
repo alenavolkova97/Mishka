@@ -1,11 +1,11 @@
 .popular {
-  padding-top: 34px;
-  padding-bottom: 40px;
+  padding-top: 29px;
+  padding-bottom: 42px;
 
   background-image: url("../img/bg-zigzag-line.svg");
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   background-position: 0 100%;
-  background-size: 100% 6px;
+  background-size: 320px 6px;
 }
 
 .popular__title-wrapper {
@@ -23,29 +23,39 @@
   color: $main-green;
 }
 
+.popular__subtitle {
+  margin-bottom: 4px;
+}
+
 .popular__desc {
-  margin-top: 30px;
-  margin-bottom: 23px;
+  margin-top: 24px;
+  margin-bottom: 13px;
 
   line-height: 24px;
 }
 
 .popular__features {
   width: 100%;
-  margin-bottom: 28px;
+  margin-bottom: 26px;
 
   line-height: 20px;
 }
 
 .popular__field {
-  width: 40%; /*регулир*/
-  padding: 10px 0;
+  width: 31.5%;
+  padding-top: 9px;
+  padding-right: 0;
+  padding-bottom: 10px;
+  padding-left: 0;
 
   border-bottom: 1px solid $border-grey;
 }
 
 .popular__value {
-  padding: 10px 0;
+  padding-top: 9px;
+  padding-right: 0;
+  padding-bottom: 10px;
+  padding-left: 15px;
 
   border-bottom: 1px solid $border-grey;
 }
@@ -58,8 +68,8 @@
 }
 
 .popular__price {
-  margin-top: 29px;
-  margin-bottom: 28px;
+  margin-top: 24px;
+  margin-bottom: 26px;
 
   font-size: 17px;
   line-height: 24px;
@@ -68,17 +78,18 @@
 }
 
 .popular__order {
-  padding: 14px 0;
+  padding: 14px 10px;
 
   line-height: 20px;
 }
 
 @media (min-width: $tablet-width) {
   .popular {
-    padding-top: 55px;
-    padding-bottom: 53px;
+    padding-top: 34px;
+    padding-bottom: 69px;
 
-    background-size: 100% 15px;
+    background-position: 0 100%;
+    background-size: 768px 15px;
   }
 
   .popular__title-wrapper {
@@ -90,19 +101,25 @@
 
   .popular__title {
     width: 70px;
+    margin-top: 5px;
 
     line-height: 17px;
     text-align: center;
   }
 
+  .popular__subtitle {
+    margin-bottom: 0;
+    margin-right: 50px;
+  }
+
   .popular__desc-wrapper {
     position: relative;
-    margin-top: 55px;
+    margin-top: 50px;
     padding-right: 56.59%;
   }
 
   .popular__desc {
-    margin-bottom: 44px;
+    margin-bottom: 33px;
 
     line-height: 30px;
   }
@@ -111,9 +128,13 @@
     font-size: 15px;
   }
 
+  .popular__field {
+    width: 27.5%;
+  }
+
   .popular__image {
     position: absolute;
-    top: 0;
+    top: 8px;
     right: 0;
 
     width: 333px;
@@ -121,17 +142,21 @@
   }
 
   .popular__price {
-    margin-top: 59px;
-    margin-bottom: 34px;
+    margin-top: 52px;
+    margin-bottom: 35px;
+
+    font-size: 20px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .popular {
     position: relative;
-    padding-top: 71px;
-    padding-bottom: 73px;
 
+    padding-top: 72px;
+    padding-bottom: 95px;
+
+    background-repeat: no-repeat;
     background-position: 50px 100%;
     background-size: 1050px 23px;
   }
@@ -141,25 +166,45 @@
     z-index: 1;
 
     flex-direction: row;
+    justify-content: flex-start;
     padding-top: 49px;
-    padding-left: 16.67%;
+    padding-left: 16.3%;
   }
 
   .popular__title {
+    margin: 0;
+
     position: absolute;
-    top: 60px;
-    left: 36px;
+    top: 64px;
+    left: 47px;
+  }
+
+  .popular__subtitle {
+    margin-right: 0;
   }
 
   .popular__desc-wrapper {
     position: static;
-    margin-top: 52px;
+    margin-top: 49px;
     padding-right: 55.32%;
-    padding-left: 16.67%;
+    padding-left: 16.5%;
+  }
+
+  .popular__desc {
+    margin-bottom: 48px;
+  }
+
+  .popular__field {
+    width: 27.7%;
+    padding-top: 8px;
+  }
+
+  .popular__value {
+    padding-top: 6px;
   }
 
   .popular__image {
-    top: 71px;
+    top: 68px;
     right: 50px;
 
     width: 525px;
@@ -167,7 +212,7 @@
   }
 
   .popular__price {
-    margin-top: 110px;
+    margin-top: 107px;
 
     font-size: 20px;
   }

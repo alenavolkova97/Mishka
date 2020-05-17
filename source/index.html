@@ -14,8 +14,8 @@
 
   <body>
 
-    <header class="header header--menu-opened header--nojs">
-      <div class="header__grid-wrapper">
+    <header class="header header--menu-opened header--nojs header--main-page">
+      <div class="header__grid-wrapper container">
         <a class="header__logo header-logo">
           <picture>
             <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
@@ -24,13 +24,13 @@
           </picture>
         </a>
         <button class="header__toggle" type="button" aria-label="Открыть меню"></button>
-        <nav class="header__nav main-nav container">
+        <nav class="header__nav main-nav">
           <ul class="main-nav__list site-list">
             <li class="site-list__item"><a class="site-list__link" href="catalog.html">Каталог товаров</a></li>
             <li class="site-list__item"><a class="site-list__link" href="form.html">Вязание на заказ</a></li>
           </ul>
         </nav>
-        <div class="header__user-wrapper container">
+        <div class="header__user-wrapper">
           <ul class="header__user-list user-list">
             <li class="user-list__item">
               <a class="user-list__link user-list__link--no-text" href="#" aria-label="Поиск по сайту">
@@ -68,12 +68,12 @@
           <img class="categories__image" src="img/hero-mobile@1x.jpg" srcset="img/hero-mobile@2x.jpg 2x" alt="Игрушки и корзинки в интерьере">
         </picture>
         <ul class="categories__list categories-list container">
-          <li class="categories-list__item">
+          <li class="categories-list__item categories-list__item--interior">
             <a class="categories-list__link categories-list__link--interior" href="#">
               <div class="categories-list__text">Предметы интерьера</div>
             </a>
           </li>
-          <li class="categories-list__item">
+          <li class="categories-list__item categories-list__item--toys">
             <a class="categories-list__link categories-list__link--toys" href="#">
               <div class="categories-list__text">Детские игрушки</div>
             </a>
@@ -136,7 +136,7 @@
                 такого количества лайков, как у
                 популярных инстамамочек. В
                 отчаянии, я накупила аксессуаров
-                и игрушек в Мишке, и мои
+                и игрушек в Мишке, и&nbsp;мои
                 фотографии сразу стали более
                 стильными, а также набирают
                 больше лайков!
@@ -158,8 +158,8 @@
           <caption class="visually-hidden">Контактная информация</caption>
           <tbody class="contacts-info__tbody">
             <tr class="contacts-info__trow">
-              <td class="contacts-info__field">e&#8209;mail:</td>
-              <td class="contacts-info__value"><a class="contacts-info__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
+              <td class="contacts-info__field contacts-info__field--first">e&#8209;mail:</td>
+              <td class="contacts-info__value contacts-info__value--first"><a class="contacts-info__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
             </tr>
             <tr class="contacts-info__trow">
               <td class="contacts-info__field">адрес:</td>
@@ -212,7 +212,7 @@
         </ul>
         <div class="footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Профессиональный онлайн‑курс HTML и CSS, уровень 2" target="_blank">
-            Разработано
+            <p class="copyright__text">Разработано</p>
             <svg class="copyright__icon" width="27" height="34" role="img" focusable="false"><use xlink:href="#sprite-logo-htmlacademy"></use></svg>
           </a>
         </div>
@@ -221,7 +221,7 @@
 
     <section class="modal-order">
       <div class="modal-order__popup">
-        <h2 class="modal-order__title">Добавить в корзину</h2>
+        <h2 class="modal-order__title">Добавить в&nbsp;корзину</h2>
         <form class="modal-order__form form-size" action="https://echo.htmlacademy.ru" method="post">
           <p class="form-size__text">Выберите размер:</p>
           <ul class="form-size__list">

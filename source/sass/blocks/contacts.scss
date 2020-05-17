@@ -1,7 +1,7 @@
 .contacts {
   position: relative;
 
-  padding-top: 44px;
+  padding-top: 36px;
   padding-bottom: 39px;
 
   overflow: hidden;
@@ -15,7 +15,7 @@
 
 .contacts__info {
   margin: 0 30px;
-  margin-bottom: 42px;
+  margin-bottom: 36px;
 }
 
 .contacts__map-image {
@@ -26,7 +26,7 @@
 
     position: absolute;
     left: 53.73%;
-    bottom: 50%;
+    bottom: 46.5%;
 
     width: 67px;
     height: 100px;
@@ -46,7 +46,7 @@
 .contacts__image {
   display: block;
   width: 100%;
-  height: auto;
+  min-height: 457px;
   margin-bottom: 39px;
 }
 
@@ -66,7 +66,7 @@
   width: auto;
   margin-right: 30px;
   margin-left: 30px;
-  padding: 14px 0;
+  padding: 14px 10px;
 
   font-size: 18px;
   line-height: 20px;
@@ -74,27 +74,30 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
-    padding-top: 72px;
+    padding-top: 62px;
     padding-bottom: 57px;
 
     background-image: url("../img/icon-flag.svg");
     background-repeat: no-repeat;
-    background-position: 92% 47px;
+    background-position: 92.6% 46px;
   }
 
   .contacts__title {
-    margin: 0 50px;
+    margin: 0;
+    margin-left: 46px;
+    margin-right: 160px;
 
     font-size: 43px;
   }
 
   .contacts__info {
-    margin: 0 50px;
-    margin-bottom: 61px;
+    margin: 0 auto;
+    margin-bottom: 56px;
   }
 
   .contacts__map-image::after {
-    left: 52%;
+    left: 51.7%;
+    bottom: 47.7%;
   }
 
   .contacts__image {
@@ -106,7 +109,7 @@
   }
 
   .contacts__write-us {
-    width: 34.43%;
+    width: 30%;
     margin: 0 auto;
 
     font-size: 17px;
@@ -117,40 +120,40 @@
   .contacts {
     width: 1150px;
     padding-right: 50px;
-    padding-bottom: 105px;
+    padding-bottom: 104px;
     padding-left: 50px;
     margin: 0 auto;
 
-    background-position: 113px 133px;
+    background-position: 113px 132px;
   }
 
   .contacts__title {
-    margin-top: 81px;
+    margin-top: 79px;
     margin-right: 0;
-    margin-bottom: 25px;
+    margin-bottom: 14px;
     margin-left: 0;
     padding-right: 50%;
-    padding-left: 16.67%;
+    padding-left: 16.15%;
 
     font-size: 53px;
   }
 
   .contacts__info {
     margin: 0;
-    padding-left: 16.67%;
-    padding-right: 50%;
+    padding-left: 16.25%;
+    padding-right: 51%;
   }
 
   .contacts__map-image {
     position: absolute;
     top: 71px;
-    right: 50px;
+    right: 51px;
 
     width: 525px;
 
     &::after {
-      left: 53.73%;
-      bottom: 53%;
+      left: 51.8%;
+      bottom: 52%;
     }
   }
 
@@ -172,7 +175,7 @@
 
   .contacts__write-us {
     width: 22%;
-    margin-top: 84px;
-    margin-left: 16.67%;
+    margin-top: 78px;
+    margin-left: 16.6%;
   }
 }
