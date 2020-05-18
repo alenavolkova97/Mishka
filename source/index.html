@@ -2,6 +2,32 @@
 <html lang="ru">
 
   <head>
+    <!-- Pixel Glass -->
+    <style>
+      html {
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        /* По умолчанию показывается мобильный макет */
+        background-image: url("img/главная МОБИЛКА С МЕНЮ.png");
+      }
+      /* Планшет */
+      @media (min-width: 768px) {
+        html {
+          /* Планшетный макет */
+          background-image: url("img/главная ПЛАНШЕТ.png");
+        }
+      }
+      /* Десктоп */
+      @media (min-width: 1150px) {
+        html {
+          /* Десктопный макет */
+          background-image: url("img/главная ДЕСКТОП.png");
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="https://yoksel.github.io/pixel-glass-js/styles.css">
+    <script src="https://yoksel.github.io/pixel-glass-js/script.js" ></script>
+    <!-- // Pixel Glass -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Интернет-магазин игрушек ручной работы «Мишка»</title>

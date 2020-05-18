@@ -98,23 +98,34 @@
     padding-top: 79px;
     padding-bottom: 132px;
 
-    background-image:
-      url("../img/ignored_by_webp/review@1x.jpg"),
-      url("../img/bg-zigzag-line.svg");
-    background-repeat:
-      no-repeat,
-      repeat-x;
-    background-position:
-      0 0,
-      0 100%;
-    background-size:
-      350px auto,
-      768px 15px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-position: 0 100%;
+    background-size: 768px 15px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image:
-        url("../img/ignored_by_webp/review@2x.jpg"),
-        url("../img/bg-zigzag-line.svg");
+      background-image: url("../img/bg-zigzag-line.svg");
+    }
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+
+      width: 350px;
+      height: 457px;
+
+      background-color: #f2f2f2;
+      background-image: url("../img/ignored_by_webp/review@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/ignored_by_webp/review@2x.jpg");
+      }
     }
   }
 
@@ -172,13 +183,13 @@
 
     background-repeat: no-repeat;
 
-    background-position:
-      50px 0,
-      50px 100%;
+    background-position: 50px 100%;
 
-    background-size:
-      350px auto,
-      1050px 23px;
+    background-size: 1050px 23px;
+
+    &::before {
+      left: 50px;
+    }
   }
 
   .reviews__title {
