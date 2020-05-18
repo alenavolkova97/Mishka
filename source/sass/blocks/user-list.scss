@@ -48,6 +48,10 @@
   .header--menu-closed .user-list {
     display: none;
   }
+
+  .header--nojs .user-list {
+    display: block;
+  }
 }
 
 @media (min-width: $tablet-width) {
