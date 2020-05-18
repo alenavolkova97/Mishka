@@ -9,6 +9,10 @@
   height: 100%;
 
   background-color: $modal-layer-color;
+
+  &--modal-show {
+    display: block;
+  }
 }
 
 .modal-order__popup {
@@ -27,6 +31,15 @@
   background-color: $white;
   border: solid 1px rgb(138, 83, 83);
   box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
+
+  &--modal-open-animated {
+    animation: bounce 0.5s;
+  }
+
+  &--modal-close-animated {
+    animation: bounce-reverse 0.5s;
+    animation-fill-mode: forwards;
+  }
 }
 
 .modal-order__title {
@@ -42,19 +55,6 @@
 
 .modal-order__form {
   margin-top: 12px;
-}
-
-.modal-show {
-  display: block;
-}
-
-.modal-open-animation {
-  animation: bounce 0.5s;
-}
-
-.modal-close-animation {
-  animation: bounce-reverse 0.5s;
-  animation-fill-mode: forwards;
 }
 
 @media (min-width: $tablet-width) {

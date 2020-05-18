@@ -23,9 +23,9 @@ buttonHeader.addEventListener('click', function () {
 if (buttonOrder) {
   buttonOrder.addEventListener("click", function (evt) {
     evt.preventDefault();
-    modalPopup.classList.remove("modal-close-animation");
-    modal.classList.add("modal-show");
-    modalPopup.classList.add("modal-open-animation");
+    modalPopup.classList.remove("modal-order__popup--modal-close-animated");
+    modal.classList.add("modal-order--modal-show");
+    modalPopup.classList.add("modal-order__popup--modal-open-animated");
     modalOption.focus();
   });
 
@@ -33,10 +33,10 @@ if (buttonOrder) {
     if (evt.keyCode === 27) {
       evt.preventDefault();
 
-      if (modal.classList.contains("modal-show")) {
-        timer = setTimeout('modal.classList.remove("modal-show")', 1000);
-        modalPopup.classList.remove("modal-open-animation");
-        modalPopup.classList.add("modal-close-animation");
+      if (modal.classList.contains("modal-order--modal-show")) {
+        timer = setTimeout('modal.classList.remove("modal-order--modal-show")', 1000);
+        modalPopup.classList.remove("modal-order__popup--modal-open-animated");
+        modalPopup.classList.add("modal-order__popup--modal-close-animated");
       }
     }
   });
@@ -46,9 +46,9 @@ if (buttonsCatalog) {
   for (var i = 0; i < buttonsCatalog.length; i++) {
     buttonsCatalog[i].addEventListener("click", function (evt) {
     evt.preventDefault();
-    modalPopup.classList.remove("modal-close-animation");
-    modal.classList.add("modal-show");
-    modalPopup.classList.add("modal-open-animation");
+    modalPopup.classList.remove("modal-order__popup--modal-close-animated");
+    modal.classList.add("modal-order--modal-show");
+    modalPopup.classList.add("modal-order__popup--modal-open-animated");
     modalOption.focus();
     });
   }
@@ -57,10 +57,10 @@ if (buttonsCatalog) {
     if (evt.keyCode === 27) {
       evt.preventDefault();
 
-      if (modal.classList.contains("modal-show")) {
-        timer = setTimeout('modal.classList.remove("modal-show")', 1000);
-        modalPopup.classList.remove("modal-open-animation");
-        modalPopup.classList.add("modal-close-animation");
+      if (modal.classList.contains("modal-order--modal-show")) {
+        timer = setTimeout('modal.classList.remove("modal-order--modal-show")', 1000);
+        modalPopup.classList.remove("modal-order__popup--modal-open-animated");
+        modalPopup.classList.add("modal-order__popup--modal-close-animated");
       }
     }
   });
