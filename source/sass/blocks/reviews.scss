@@ -73,6 +73,8 @@
 .reviews__author-nickname {
   font-style: normal;
   font-size: 17px;
+
+  word-break: break-all;
 }
 
 .reviews__button-wrapper {
@@ -149,6 +151,10 @@
 
   .reviews__author-name {
     font-size: 18px;
+  }
+
+  .reviews__author-nickname {
+    padding-right: 175px;
   }
 
   .reviews__button-wrapper {
