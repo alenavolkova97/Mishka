@@ -60,12 +60,12 @@
   .production {
     position: relative;
 
-    padding-top: 455px;
+    padding-top: 59%;
     padding-bottom: 63px;
   }
 
   .production__wrapper {
-    padding-top: 36px;
+    padding-top: 38px;
     padding-right: 5.9%;
     padding-left: 5.9%;
     padding-bottom: 45px;
@@ -83,10 +83,11 @@
   .production__process {
     position: absolute;
     top: 0;
-    left: 50px;
     right: 50px;
+    left: 50px;
 
     margin: 0;
+    padding-top: 59%;
   }
 
   .production__text {
@@ -126,8 +127,9 @@
 
   .production__process {
     left: 50px;
+    right: inherit;
 
-    margin: 0;
+    padding-top: 0;
   }
 
   .production__text {
