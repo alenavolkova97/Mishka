@@ -4,6 +4,9 @@
   position: relative;
   z-index: 2;
   background-color: $white;
+
+  overflow: hidden;
+  word-break: break-all;
 }
 
 .header__grid-wrapper {
@@ -83,12 +86,12 @@
 
 @media (min-width: $tablet-width) {
   .header {
-    background-color: transparent;
-    background-image: linear-gradient(to bottom, $white 88px, #e7e7e7 88px, #e7e7e7 89px, $main-grey 89px);
     box-shadow: none;
 
+    background-color: $main-grey;
+
     &--main-page {
-      background-image: linear-gradient(to bottom, $white 88px, #e7e7e7 88px, #e7e7e7 89px, $categories-color 89px);
+      background-color: $categories-color;
     }
   }
 
@@ -112,8 +115,27 @@
   }
 
   .header__user-wrapper {
+    position: relative;
+
     order: 1;
     max-width: 80%;
+
+    &::before {
+      content: "";
+
+      @include header-shadow;
+
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      z-index: -1;
+
+      transform: translateX(-50%);
+
+      width: 999999999px;
+
+      background-color: $white;
+    }
   }
 
   .header__user-list {

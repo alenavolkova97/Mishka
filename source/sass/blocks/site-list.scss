@@ -38,6 +38,7 @@
   }
 
   .site-list__link {
+    height: 100%;
     margin: 0;
     padding-top: 19px;
     padding-bottom: 24px;
@@ -50,7 +51,12 @@
 }
 
 @media (min-width: $desktop-width) {
+  .site-list {
+    height: 100%;
+  }
+
   .site-list__item {
+    max-width: 192px;
     margin-right: 0;
   }
 
