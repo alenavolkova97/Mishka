@@ -40,13 +40,15 @@
     border-bottom-color: $email-color-30;
   }
 
-  word-break: break-all;
+  word-break: break-word;
 }
 
 .contacts-info__address {
   padding-right: 30px;
 
   font-style: normal;
+
+  word-break: break-word;
 }
 
 @media (min-width: $tablet-width) {

@@ -6,6 +6,8 @@
   background-repeat: repeat-x;
   background-position: 0 100%;
   background-size: 320px 6px;
+
+  word-break: break-word;
 }
 
 .popular__title-wrapper {
@@ -100,7 +102,7 @@
   }
 
   .popular__title {
-    width: 70px;
+    width: 72px;
     margin-top: 5px;
 
     line-height: 17px;
