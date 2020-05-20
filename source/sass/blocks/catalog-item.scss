@@ -113,6 +113,7 @@
 
   .catalog-item__desc {
     margin-top: 6px;
+    margin-bottom: 0;
 
     font-size: 15px;
   }
@@ -148,14 +149,6 @@
 
   .catalog-item__title {
     padding-right: 17px;
-  }
-
-  .catalog-item__desc {
-    margin-bottom: 39px;
-
-    &--long-title {
-      margin-bottom: 15px;
-    }
   }
 
   .catalog-item__order-wrapper {

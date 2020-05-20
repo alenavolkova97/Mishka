@@ -1,5 +1,5 @@
 .contacts-info__field {
-  width: 30%;
+  width: 23%;
   padding: 0;
   padding-top: 29px;
 
@@ -39,6 +39,8 @@
 
     border-bottom-color: $email-color-30;
   }
+
+  word-break: break-all;
 }
 
 .contacts-info__address {
@@ -70,7 +72,7 @@
     width: 18%;
 
     &--email {
-      width: 21.4%;
+      width: 18.5%;
     }
   }
 
@@ -91,6 +93,10 @@
 
   .contacts-info__field {
     padding-top: 32px;
+
+    &--email {
+      width: 17.9%;
+    }
   }
 
   .contacts-info__value {
