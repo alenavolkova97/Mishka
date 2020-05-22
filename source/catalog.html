@@ -2,6 +2,33 @@
 <html lang="ru">
 
   <head>
+    <!-- Pixel Glass -->
+    <style>
+      html {
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        /* По умолчанию показывается мобильный макет */
+        background-image: url("img/каталог МОБИЛКА.png");
+      }
+      /* Планшет */
+      @media (min-width: 768px) {
+        html {
+          /* Планшетный макет */
+          background-image: url("img/каталог ПЛАНШЕТ.png");
+        }
+      }
+      /* Десктоп */
+      @media (min-width: 1150px) {
+        html {
+          /* Десктопный макет */
+          background-image: url("img/каталог ДЕСКТОП.png");
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="https://yoksel.github.io/pixel-glass-js/styles.css">
+    <script src="https://yoksel.github.io/pixel-glass-js/script.js" ></script>
+    <!-- // Pixel Glass -->
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Каталог интернет-магазина игрушек ручной работы «Мишка»</title>
@@ -64,11 +91,11 @@
             <a class="catalog-item__link catalog-item__link--image" href="hare.html" title="Подробнее">
               <div class="catalog-item__image-wrapper">
                 <picture>
-                  <source type="image/webp" media="(min-width: 950px)" srcset="img/photo-hare-desktop@1x.webp 1x, img/photo-hare-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 361px)" srcset="img/photo-hare-tablet@1x.webp 1x, img/photo-hare-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.webp 1x, img/photo-hare-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.webp 1x, img/photo-hare-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/photo-hare-mobile@1x.webp 1x, img/photo-hare-mobile@2x.webp 2x">
-                  <source media="(min-width: 950px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
-                  <source media="(min-width: 361px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
+                  <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
                   <img class="catalog-item__image" width="260" height="195" src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" alt="Голубо-белый вязаный зайчик">
                 </picture>
               </div>
@@ -88,11 +115,11 @@
             <a class="catalog-item__link catalog-item__link--image" href="bowl.html" title="Подробнее">
               <div class="catalog-item__image-wrapper">
                 <picture>
-                  <source type="image/webp" media="(min-width: 950px)" srcset="img/photo-bowl-desktop@1x.webp 1x, img/photo-bowl-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 361px)" srcset="img/photo-bowl-tablet@1x.webp 1x, img/photo-bowl-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.webp 1x, img/photo-bowl-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.webp 1x, img/photo-bowl-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/photo-bowl-mobile@1x.webp 1x, img/photo-bowl-mobile@2x.webp 2x">
-                  <source media="(min-width: 950px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
-                  <source media="(min-width: 361px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
+                  <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
                   <img class="catalog-item__image" width="260" height="195" src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" alt="Оранжево-белая вязаная корзинка для белья">
                 </picture>
               </div>
@@ -112,11 +139,11 @@
             <a class="catalog-item__link catalog-item__link--image" href="toys-basket.html" title="Подробнее">
               <div class="catalog-item__image-wrapper">
                 <picture>
-                  <source type="image/webp" media="(min-width: 950px)" srcset="img/photo-toys-desktop@1x.webp 1x, img/photo-toys-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 361px)" srcset="img/photo-toys-tablet@1x.webp 1x, img/photo-toys-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.webp 1x, img/photo-toys-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.webp 1x, img/photo-toys-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/photo-toys-mobile@1x.webp 1x, img/photo-toys-mobile@2x.webp 2x">
-                  <source media="(min-width: 950px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
-                  <source media="(min-width: 361px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
+                  <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
                   <img class="catalog-item__image" width="260" height="195" src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" alt="Большая зелено-белая вязаная корзинка для игрушек">
                 </picture>
               </div>
@@ -140,7 +167,7 @@
             <div class="production__process production-process">
               <picture>
                 <source type="image/webp" media="(min-width: 950px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 361px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
                 <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">

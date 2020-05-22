@@ -92,13 +92,15 @@
 
 @media (min-width: $tablet-width) {
   .catalog-item__link--image {
-    width: 50%;
+    flex-shrink: 0;
+    width: 334px;
+    height: 334px;
   }
 
   .catalog-item__features {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    flex-grow: 1;
     min-height: 334px;
     padding-top: 25px;
     padding-right: 4.94%;
@@ -131,12 +133,13 @@
 @media (min-width: $desktop-width) {
   .catalog-item__link--image {
     width: 100%;
+    height: auto;
   }
 
-  .catalog-item__image-wrapper {
-    width: 316px;
-    height: 462px;
-  }
+  // .catalog-item__image-wrapper {
+  //   width: 316px;
+  //   height: 462px;
+  // }
 
   .catalog-item__features {
     flex-grow: 1;

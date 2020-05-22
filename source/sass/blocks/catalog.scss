@@ -1,4 +1,7 @@
 .catalog {
+  width: 320px;
+  margin-right: auto;
+  margin-left: auto;
   padding-top: 30px;
 
   overflow: hidden;
@@ -16,6 +19,7 @@
 
 @media (min-width: $tablet-width) {
   .catalog {
+    width: 100%;
     padding-top: 66px;
   }
 
@@ -27,6 +31,8 @@
 
 @media (min-width: $desktop-width) {
   .catalog {
+    width: 1150px;
+    margin: 0 auto;
     padding-top: 112px;
   }
 
