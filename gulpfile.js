@@ -18,6 +18,8 @@ var del = require("del");
 var htmlmin = require('gulp-htmlmin');
 var uglify = require('gulp-uglify');
 
+var outDir = 'docs';
+
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
     .pipe(plumber())
@@ -26,17 +28,17 @@ gulp.task("css", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest(`${outDir}/css`))
     .pipe(csso())
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest(`${outDir}/css`))
     .pipe(server.stream());
 });
 
 gulp.task("server", function () {
   server.init({
-    server: "build/",
+    server: `${outDir}/`,
     notify: false,
     open: true,
     cors: true,
@@ -84,7 +86,7 @@ gulp.task("html", function() {
       include()
     ]))
     .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(gulp.dest("build"));
+    .pipe(gulp.dest(outDir));
 });
 
 gulp.task("js", function () {
@@ -94,7 +96,7 @@ gulp.task("js", function () {
       path.basename += ".min";
       path.extname = ".js";
     }))
-    .pipe(gulp.dest("build/js"));
+    .pipe(gulp.dest(`${outDir}/js`));
 });
 
 gulp.task("copy", function () {
@@ -106,11 +108,11 @@ gulp.task("copy", function () {
   ], {
     base: "source"
   })
-  .pipe(gulp.dest("build"));
+  .pipe(gulp.dest(outDir));
 });
 
 gulp.task("clean", function () {
-  return del("build");
+  return del(outDir);
 });
 
 gulp.task("refresh", function (done) {
